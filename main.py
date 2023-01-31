@@ -1,6 +1,6 @@
 import sys
 
-sys.path.append(r"D:\Program Files (x86)\CST Studio Suite 2022\AMD64\python_cst_libraries")
+sys.path.append(r"D:\Program Files (x86)\CST Studio Suite 2023\AMD64\python_cst_libraries")
 import cst
 import cst.interface
 import cst.results
