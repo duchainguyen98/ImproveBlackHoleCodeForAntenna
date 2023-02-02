@@ -27,14 +27,14 @@ max_iter = 5 # number of generations
 WL=np.zeros((n,1))
 WH = np.zeros((n,1))
 
-WL[0]= 5
+WL[0] = 5
 WH[0] = 7
-WL[1]=6
-WH[1]=6.15
-WL[2]=11
-WH[2]=14
-WL[3]=15.5
-WH[3]=18.5
+WL[1] = 6
+WH[1] = 6.15
+WL[2] = 11
+WH[2] = 14
+WL[3] = 15.5
+WH[3] = 18.5
 
 min_values_loc = WL
 max_values_loc = WH
