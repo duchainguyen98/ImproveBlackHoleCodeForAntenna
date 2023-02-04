@@ -1,0 +1,32 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+def objective_function(antenna_structure):
+    """
+    Calculate the objective function value for a given antenna structure.
+    In this example, the objective function is the gain of the antenna.
+    """
+    gain = calculate_gain(antenna_structure)
+    return gain
+
+def black_hole_algorithm(population_size, num_generations, min_mass, max_mass):
+    """
+    Main function to implement the Black Hole Algorithm for synthesizing new antenna structures.
+    """
+    population = []
+    masses = np.linspace(min_mass, max_mass, population_size)
+    for i in range(population_size):
+        population.append(np.random.rand(10) * 10)
+    
+    for generation in range(num_generations):
+        fitness = [objective_function(antenna) for antenna in population]
+        best_antenna = population[np.argmax(fitness)]
+        for i in range(population_size):
+            if fitness[i] < objective_function(best_antenna):
+                population[i] = best_antenna + masses[i] * (np.random.rand(10) - 0.5)
+    
+    best_antenna = population[np.argmax(fitness)]
+    return best_antenna
+
+# Run the Black Hole Algorithm
+best_antenna = black_hole_algorithm(population_size=50, num_generations=100, min_mass=0.1, max_mass=0.5)
