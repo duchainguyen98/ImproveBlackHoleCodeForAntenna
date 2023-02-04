@@ -1,32 +1,48 @@
 import numpy as np
-import matplotlib.pyplot as plt
+import random
 
-def objective_function(antenna_structure):
-    """
-    Calculate the objective function value for a given antenna structure.
-    In this example, the objective function is the gain of the antenna.
-    """
-    gain = calculate_gain(antenna_structure)
-    return gain
+def cost_function(x):
+    # Define the mean squared error between the current solution and the desired frequency range
+    freq_range = [2.4, 2.5]
+    return np.mean((x[0]-freq_range[0])**2 + (x[1]-freq_range[1])**2)
 
-def black_hole_algorithm(population_size, num_generations, min_mass, max_mass):
-    """
-    Main function to implement the Black Hole Algorithm for synthesizing new antenna structures.
-    """
-    population = []
-    masses = np.linspace(min_mass, max_mass, population_size)
-    for i in range(population_size):
-        population.append(np.random.rand(10) * 10)
+def black_hole_algorithm(num_iterations, num_pixels, num_black_holes):
+    # Initialize the population of pixels
+    population = np.random.rand(num_pixels, 2)
     
-    for generation in range(num_generations):
-        fitness = [objective_function(antenna) for antenna in population]
-        best_antenna = population[np.argmax(fitness)]
-        for i in range(population_size):
-            if fitness[i] < objective_function(best_antenna):
-                population[i] = best_antenna + masses[i] * (np.random.rand(10) - 0.5)
+    # Initialize the best solution found by the population
+    cost = [cost_function(population[i,:]) for i in range(num_pixels)]
+    best_index = np.argmin(cost)
+    best_solution = population[best_index,:]
     
-    best_antenna = population[np.argmax(fitness)]
-    return best_antenna
+    for i in range(num_iterations):
+        # Evaluate the cost function for each particle
+        for j in range(num_pixels):
+            cost[j] = cost_function(population[j,:])
+        
+        # Update the best solution found by the population
+        best_index = np.argmin(cost)
+        if cost[best_index] < cost_function(best_solution):
+            best_solution = population[best_index,:]
+        
+        # Create the black holes and attract the particles
+        for j in range(num_black_holes):
+            black_hole = np.random.rand(1, 2) # 2-dimensional black hole
+            for k in range(num_pixels):
+                distance = np.linalg.norm(population[k,:] - black_hole)
+                if distance < 1e-6:
+                    population[k,:] = black_hole
+                else:
+                    population[k,:] = black_hole + (population[k,:] - black_hole) / distance**2
+    
+    return best_solution
 
-# Run the Black Hole Algorithm
-best_antenna = black_hole_algorithm(population_size=50, num_generations=100, min_mass=0.1, max_mass=0.5)
+# Define the number of pixels and the number of black holes
+num_pixels = 16
+num_black_holes = 3
+
+# Run the BHA optimization algorithm
+best_solution = black_hole_algorithm(1000, num_pixels, num_black_holes)
+
+# Display the best solution found by the population
+print(best_solution)
