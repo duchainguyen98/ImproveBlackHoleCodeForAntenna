@@ -11,19 +11,59 @@ import random
 import Antenna
 import ImprovedBlackHole
 
-mycst = cst.interface.DesignEnvironment()
-myproject = cst.interface.DesignEnvironment.open_project(mycst,r'E:\Master\Python_code\ANTENNA\2_4.cst')
-x=50
-y=35
-par_change = 'Sub Main () \n StoreParameter("antx", '+str(x)+')'+\
-                '\n StoreParameter("anty", '+str(y)+')' +\
-                '\nRebuildOnParametricChange (bfullRebuild, bShowErrorMsgBox)\nEnd Sub' 
-
-myproject.schematic.execute_vba_code(par_change, timeout=None)
+mycst = cst.interface.DesignEnvironment(mode=cst.interface.DesignEnvironment.StartMode.ExistingOrNew)
+myproject = mycst.open_project(r'E:\Master\Antenna\Anten_AThang.cst')
 myproject.modeler.run_solver()
-project = cst.results.ProjectFile(r"E:\Master\Python_code\ANTENNA\2_4.cst",allow_interactive=True)
+project = cst.results.ProjectFile(r"E:\Master\Antenna\Anten_AThang.cst",allow_interactive=True)
 freq_range = [2,6]
 freq_point=[2.45,3.5,5.8]
+results = project.get_3d().get_result_item(r"1D Results\S-Parameters\S1,1")
+# get frequencies
+freqs = results.get_xdata()
+# get S-Parameter values
+S_Para = results.get_ydata()
+# Initialize value list for one MC sample point over all frequency points
+freq_pos = []
+freq = []
+S = []
+SdB = []
+S_real = []
+S_imag = []
+freq_range_pos = (np.array(freq_point)-freq_range[0])*1000/(freq_range[1]-freq_range[0])
+
+# Get results for each freq. point of interest from CST
+for j in range(len(freq_range_pos)):
+    freq_pos_j = round(freq_range_pos[j])
+    freq_pos.append(freq_pos_j)
+
+    freq_value_j = freqs[freq_pos_j]
+    freq.append(freq_value_j)
+
+    S_real_j = S_Para[freq_pos_j].real
+    S_real.append(S_real_j)
+
+    S_imag_j = S_Para[freq_pos_j].imag
+    S_imag.append(S_imag_j)
+
+    S_j = np.sqrt(S_real_j ** 2 + S_imag_j ** 2)
+    S.append(S_j)
+
+    S_dB_j = 20 * np.log10(S_j)
+    SdB.append(S_dB_j)
+print(str(SdB)) 
+# mycst = cst.interface.DesignEnvironment().active_project() 
+# myproject = cst.interface.DesignEnvironment.open_project(mycst,r'E:\Master\Python_code\ANTENNA\2_4.cst')
+# x=50
+# y=35
+# par_change = 'Sub Main () \n StoreParameter("antx", '+str(x)+')'+\
+#                 '\n StoreParameter("anty", '+str(y)+')' +\
+#                 '\nRebuildOnParametricChange (bfullRebuild, bShowErrorMsgBox)\nEnd Sub' 
+
+# myproject.schematic.execute_vba_code(par_change, timeout=None)
+# myproject.modeler.run_solver()
+# project = cst.results.ProjectFile(r"E:\Master\Python_code\ANTENNA\2_4.cst",allow_interactive=True)
+# freq_range = [2,6]
+# freq_point=[2.45,3.5,5.8]
 # results = project.get_3d().get_result_item(r"1D Results\S-Parameters\S1,1")
 # # get frequencies
 # freqs = results.get_xdata()

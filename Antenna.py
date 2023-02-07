@@ -11,14 +11,14 @@ class Anten:
     def __init__(self, PopX):
         self.PopX = PopX
     def run_antenna(self):
-        mycst = cst.interface.DesignEnvironment()
-        self.myproject = cst.interface.DesignEnvironment.open_project(mycst,r'E:\Master\Antenna\Anten_AThang.cst')
+        mycst = cst.interface.DesignEnvironment(mode=cst.interface.DesignEnvironment.StartMode.ExistingOrNew)
+        self.myproject = mycst.open_project(r'E:\Master\Antenna\Anten_AThang.cst')
+        print("Antenna"+str(self.PopX))
         par_change = 'Sub Main () \n StoreParameter("WL0", '+str(self.PopX[0])+')'+\
                         '\n StoreParameter("WL1", '+str(self.PopX[1])+')' +\
                         '\n StoreParameter("WL2", '+str(self.PopX[2])+')' +\
                         '\n StoreParameter("WL3", '+str(self.PopX[3])+')' +\
                         '\nRebuildOnParametricChange (bfullRebuild, bShowErrorMsgBox)\nEnd Sub' 
-
         self.myproject.schematic.execute_vba_code(par_change, timeout=None) 
         self.myproject.schematic.execute_vba_code(par_change, timeout=None)
         self.myproject.modeler.run_solver()
@@ -42,7 +42,7 @@ class Anten:
         freq_range_pos = (np.array(freq_point)-freq_range[0])*1000/(freq_range[1]-freq_range[0])
 
         # Get results for each freq. point of interest from CST
-        for j in range(len(freq_range)):
+        for j in range(len(freq_range_pos)):
             freq_pos_j = round(freq_range_pos[j])
             freq_pos.append(freq_pos_j)
 
@@ -64,7 +64,7 @@ class Anten:
     def run(self):
         self.run_antenna()
         Sdb=self.get_result_antenna()
-        print('Antenna')
+        print("Antenna Result"+str(Sdb))
         self.myproject.close()
         return Sdb
 

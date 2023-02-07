@@ -39,7 +39,6 @@ WH[3] = 18.5
 min_values_loc = WL
 max_values_loc = WH
 
-
 ibh = ImprovedBlackHole.ImprovedBlackHole(num_stars, min_values_loc, max_values_loc, max_iter)
 best_star = ibh.run()
 # % *********************** %

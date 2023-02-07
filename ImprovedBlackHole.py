@@ -25,8 +25,9 @@ class Star:
 
     def get_fitval(self):
         fitval_sum = 0
-        self.fitval = feval('ObjFunction',self.location)
-        return self.fitval
+        antenna=Antenna.Anten(self.location)
+        S11= antenna.run()
+        return self.location
 
     def update_location(self, best_star):
         for i in range(len(self.location)):
@@ -53,8 +54,8 @@ class ImprovedBlackHole:
             location = []
             for j in range(len(self.min_values_location)):
                 R = random.random()
-                location.append(
-                    self.min_values_location[j] + R * (self.max_values_location[j] - self.min_values_location[j]))
+                change=float(self.min_values_location[j] + R * (self.max_values_location[j] - self.min_values_location[j]))
+                location.append(change)
             self.stars.append(Star(location))
     def get_best_star(self):
         best_star = self.stars[0]
