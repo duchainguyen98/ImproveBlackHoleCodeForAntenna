@@ -10,17 +10,21 @@ import shutil
 class Anten:
     def __init__(self, PopX):
         self.PopX = PopX
-
     def run_antenna(self):
-        self.mycst = cst.interface.DesignEnvironment()
-        # myproject = cst.interface.DesignEnvironment.open_project(mycst,r'E:\Master\Python_code\ANTENNA\2_4.cst')
+        mycst = cst.interface.DesignEnvironment()
+        self.myproject = cst.interface.DesignEnvironment.open_project(mycst,r'E:\Master\Antenna\Anten_AThang.cst')
+        par_change = 'Sub Main () \n StoreParameter("WL0", '+str(self.PopX[0])+')'+\
+                        '\n StoreParameter("WL1", '+str(self.PopX[1])+')' +\
+                        '\n StoreParameter("WL2", '+str(self.PopX[2])+')' +\
+                        '\n StoreParameter("WL3", '+str(self.PopX[3])+')' +\
+                        '\nRebuildOnParametricChange (bfullRebuild, bShowErrorMsgBox)\nEnd Sub' 
 
-        # par_change = 'Sub Main () \nStoreParameter("antx", ’+str(48)+’)\nStoreParameter("groundplane_length",’+str(11)+’)\nRebuildOnParametricChange (bfullRebuild, bShowErrorMsgBox)\nEnd Sub'
-        # myproject.schematic.execute_vba_code(par_change, timeout=None)
-        # myproject.modeler.run_solver()
+        self.myproject.schematic.execute_vba_code(par_change, timeout=None) 
+        self.myproject.schematic.execute_vba_code(par_change, timeout=None)
+        self.myproject.modeler.run_solver()
 
     def get_result_antenna(self):
-        project = cst.results.ProjectFile(r"E:\Master\Python_code\ANTENNA\2_4.cst",allow_interactive=True)
+        project = cst.results.ProjectFile(r"E:\Master\Antenna\Anten_AThang.cst",allow_interactive=True)
         freq_range = [2,6]
         freq_point=[2.45,3.5,5.8]
         results = project.get_3d().get_result_item(r"1D Results\S-Parameters\S1,1")
@@ -61,7 +65,7 @@ class Anten:
         self.run_antenna()
         Sdb=self.get_result_antenna()
         print('Antenna')
-        self.mycst.close()
+        self.myproject.close()
         return Sdb
 
 
