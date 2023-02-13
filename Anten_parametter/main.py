@@ -8,8 +8,8 @@ import scipy.stats
 import time
 import shutil
 import random
-import Antenna
-import ImprovedBlackHole
+import Anten_parametter.Antenna as Antenna
+import Anten_parametter.ImprovedBlackHole as ImprovedBlackHole
 #
 # mycst = cst.interface.DesignEnvironment()
 # myproject = cst.interface.DesignEnvironment.open_project(mycst,r'E:\Master\Python_code\ANTENNA\2_4.cst')

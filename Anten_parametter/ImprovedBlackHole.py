@@ -5,7 +5,7 @@ Authors:
 import math, random
 import numpy as np
 
-import Antenna
+import Anten_parametter.Antenna as Antenna
 
 
 # import main
