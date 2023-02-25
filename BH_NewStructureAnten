@@ -8,28 +8,32 @@ def cost_function(x):
 
 def black_hole_algorithm(num_iterations, num_pixels, num_black_holes):
     # Initialize the population of pixels
-    population = np.random.rand(num_pixels, 2)
-    
+    population = np.random.rand(num_pixels, 2) #so anten trong quan thể = num_pixels
+    print(str(population))
+
     # Initialize the best solution found by the population
     cost = [cost_function(population[i,:]) for i in range(num_pixels)]
     best_index = np.argmin(cost)
+    print(str(best_index))
     best_solution = population[best_index,:]
-    
+    print("xxxx"+str(best_solution))
+
     for i in range(num_iterations):
         # Evaluate the cost function for each particle
         for j in range(num_pixels):
             cost[j] = cost_function(population[j,:])
         
         # Update the best solution found by the population
-        best_index = np.argmin(cost)
+        best_index = np.argmin(cost) #gia tri tot nhat trong quan the hien tai
         if cost[best_index] < cost_function(best_solution):
             best_solution = population[best_index,:]
         
         # Create the black holes and attract the particles
         for j in range(num_black_holes):
-            black_hole = np.random.rand(1, 2) # 2-dimensional black hole
+            black_hole = np.random.rand(1, 2) # 2-dimensional black hole Tao random giatrị 1 
+            print("black_hole"+ black_hole)
             for k in range(num_pixels):
-                distance = np.linalg.norm(population[k,:] - black_hole)
+                distance = np.linalg.norm(population[k,:] - black_hole) #căn bậc 2 bình phương của phan tử trừ đi blackhole
                 if distance < 1e-6:
                     population[k,:] = black_hole
                 else:

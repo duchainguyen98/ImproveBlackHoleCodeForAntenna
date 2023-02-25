@@ -20,7 +20,6 @@ class Anten:
                         '\n StoreParameter("WL3", '+str(self.PopX[3])+')' +\
                         '\nRebuildOnParametricChange (bfullRebuild, bShowErrorMsgBox)\nEnd Sub' 
         self.myproject.schematic.execute_vba_code(par_change, timeout=None) 
-        self.myproject.schematic.execute_vba_code(par_change, timeout=None)
         self.myproject.modeler.run_solver()
 
     def get_result_antenna(self):

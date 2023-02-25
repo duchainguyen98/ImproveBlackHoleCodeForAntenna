@@ -48,7 +48,6 @@ def CstDefineUnits(cst_project):
                         'ThermalSolver.AmbientTemperature \"0\"\n\n'\
                         '\'----------------------------------------------------------------------------'
     cst_project.modeler.add_to_history("set the units", par_change_units, timeout=None)
-
 #set the frequency range
 def CstDefineFrequencyRange(cst_project,frequency_min,frequency_max):
     # define
@@ -81,7 +80,6 @@ def CstDrawBox(cst_project):
                         '\t.Zsymmetry \"none\"\n'\
                         'End With'
     cst_project.modeler.add_to_history("set the DrawBox", par_change_mesh, timeout=None)
-
 #set the Mesh
 def CstMeshInitiator(cst_project):
     par_change_mesh = '\'optimize mesh settings for planar structures\n\n' \
@@ -115,7 +113,6 @@ def CstMeshInitiator(cst_project):
                         '\'\tlocally at edges rather than globally in volume)\n\n'\
                         'MeshAdaption3D.SetAdaptionStrategy \"Energy\"'
     cst_project.modeler.add_to_history("set the Mesh", par_change_mesh, timeout=None)
-
 #switch on FD-TET setting for accurate farfields
 def CstFD_TETsetting(cst_project):
     par_change_mesh ='\'switch on FD-TET setting for accurate farfields\n' \
@@ -130,7 +127,6 @@ def CstFD_TETsetting(cst_project):
                         'End With\n\n'\
                         '\'----------------------------------------------------------------------------'
     cst_project.modeler.add_to_history("switch on FD-TET setting for accurate farfields", par_change_mesh, timeout=None)
-
 #Dim sDefine As String
 def CstDimsDefineg(cst_project):
     par_change_mesh ='Dim sDefineAt As String\n'\
@@ -203,7 +199,6 @@ def CstDimsDefineg(cst_project):
                         '\'----------------------------------------------------------------------------'
 
     cst_project.modeler.add_to_history("Dim sDefine As String", par_change_mesh, timeout=None)
-
 #set the solver type
 def CstSolverType(cst_project):
     par_change_mesh = 'With MeshSettings\n'\
@@ -218,29 +213,63 @@ def CstSolverType(cst_project):
                         '\'----------------------------------------------------------------------------'
     cst_project.modeler.add_to_history("set the solver type", par_change_mesh, timeout=None)
 
-mycst = cst.interface.DesignEnvironment()
-mycst2 = cst.interface.DesignEnvironment.new_mws(mycst)
+
+# mycst = cst.interface.DesignEnvironment()
+# mycst2 = cst.interface.DesignEnvironment.new_mws(mycst)
 
 # CstMeshInitiator(mycst2)
-frequency_min=1
-frequency_max=10
-CstDefineUnits(mycst2)
-CstDefineFrequencyRange(mycst2,frequency_min,frequency_max)
-CstDrawBox(mycst2)
-CstMeshInitiator(mycst2)
-CstFD_TETsetting(mycst2)
-CstDimsDefineg(mycst2)
-CstSolverType(mycst2)
-# mycst2_mws= mycst2.
-# cst_file = r"E:\Master\Python_code\ANTENNA\cst_file.cst"
+# frequency_min=1
+# frequency_max=10
+# CstDefineUnits(mycst2)
+# CstDefineFrequencyRange(mycst2,frequency_min,frequency_max)
+# CstDrawBox(mycst2)
+# CstMeshInitiator(mycst2)
+# CstFD_TETsetting(mycst2)
+# CstDimsDefineg(mycst2)
+# CstSolverType(mycst2)
+
+
+
+mycst = cst.interface.DesignEnvironment(mode=cst.interface.DesignEnvironment.StartMode.ExistingOrNew)
+# myproject = mycst.open_project(r'E:\Master\Antenna\Anten_AThang.cst')
+# cst_file = r"E:\Master\Python_code\ANTENNA\Anten_pixel.cst"
 # prj = mycst2.open_project(cst_file)
-# mycst1 = cst.interface.DesignEnvironment.open_project(mycst,r'E:\Master\Antenna\Patch.cst')
+mycst1 = cst.interface.DesignEnvironment.open_project(mycst,r'E:\Master\Antenna\Anten_pixel.cst')
 # par_change = 'Sub Main () \nStoreParameter("wg_h", ’+str(0.3)+’)\nStoreParameter("groundplane_length",’+str(12)+’)\nRebuildOnParametricChange (bfullRebuild, bShowErrorMsgBox)\nEnd Sub'
+pixel_size=2
+delta_pixel=1
+x=0
+y=2
+arr2 = np.random.randint (2, size = (5,5))
 
+par_change1 = 'With Extrude\n'\
+                '\t.Reset\n'\
+                '\t.Name \"Pixel_Ant_'+str(x)+'_'+str(y)+'\"\n'\
+                '\t.Component \"Antenna\"\n'\
+                '\t.Material \"Copper (annealed)\"\n'\
+                '\t.Mode \"Pointlist\"\n'\
+                '\t.Height \"meta_thick\"\n'\
+                '\t.Twist \"0.0\"\n'\
+                '\t.Taper \"0.0\"\n'\
+                '\t.Origin \"0.0\", \"0.0\", \"0.0\"\n'\
+                '\t.Uvector \"1.0\", \"0.0\", \"0.0\"\n'\
+                '\t.Vvector \"0.0\", \"1.0\", \"0.0\"\n'\
+                '\t.Point \"'+str(x*2*pixel_size+(y%2)*pixel_size-pixel_size)+'\", \"'+str(y*(3*pixel_size/2)+pixel_size/2)+'\"\n'\
+                '\t.LineTo \"'+str(x*2*pixel_size+(y%2)*pixel_size-pixel_size/2)+'\", \"'+str(y*(3*pixel_size/2)+pixel_size/2)+'\"\n'\
+                '\t.LineTo \"'+str(x*2*pixel_size+(y%2)*pixel_size-pixel_size/2)+'\", \"'+str(y*(3*pixel_size/2)+pixel_size)+'\"\n'\
+                '\t.LineTo \"'+str(x*2*pixel_size+(y%2)*pixel_size+pixel_size/2)+'\", \"'+str(y*(3*pixel_size/2)+pixel_size)+'\"\n'\
+                '\t.LineTo \"'+str(x*2*pixel_size+(y%2)*pixel_size+pixel_size/2)+'\", \"'+str(y*(3*pixel_size/2)+pixel_size/2)+'\"\n'\
+                '\t.LineTo \"'+str(x*2*pixel_size+(y%2)*pixel_size+pixel_size)+'\", \"'+str(y*(3*pixel_size/2)+pixel_size/2)+'\"\n'\
+                '\t.LineTo \"'+str(x*2*pixel_size+(y%2)*pixel_size+pixel_size)+'\", \"'+str(y*(3*pixel_size/2)-pixel_size/2)+'\"\n'\
+                '\t.LineTo \"'+str(x*2*pixel_size+(y%2)*pixel_size+pixel_size/2)+'\", \"'+str(y*(3*pixel_size/2)-pixel_size/2)+'\"\n'\
+                '\t.LineTo \"'+str(x*2*pixel_size+(y%2)*pixel_size+pixel_size/2)+'\", \"'+str(y*(3*pixel_size/2)-pixel_size)+'\"\n'\
+                '\t.LineTo \"'+str(x*2*pixel_size+(y%2)*pixel_size-pixel_size/2)+'\", \"'+str(y*(3*pixel_size/2)-pixel_size)+'\"\n'\
+                '\t.LineTo \"'+str(x*2*pixel_size+(y%2)*pixel_size-pixel_size/2)+'\", \"'+str(y*(3*pixel_size/2)-pixel_size/2)+'\"\n'\
+                '\t.LineTo \"'+str(x*2*pixel_size+(y%2)*pixel_size-pixel_size)+'\", \"'+str(y*(3*pixel_size/2)-pixel_size/2)+'\"\n'\
+                '\t.Create\n'\
+                'End With'
 
-# par_change1 = 'With Brick \n.Name "CPW_slot"\n.Component "Antenna"\n .Material "Vacuum"\n.Xrange "1","10"\n.Yrange "1","10"\n.Zrange "0","10"\n.Create\nEnd With'
-#
-# mycst1.modeler.add_to_history( "AT", par_change1 , timeout = None )
+mycst1.modeler.add_to_history( "Pixel_Ant_"+str(x)+"_"+str(y), par_change1 , timeout = None )
 # mycst1.schematic.execute_vba_code(par_change, timeout=None)
 # mycst1.modeler.run_solver()
 

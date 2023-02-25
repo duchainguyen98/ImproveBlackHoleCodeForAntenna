@@ -8,8 +8,8 @@ import scipy.stats
 import time
 import shutil
 import random
-import Anten_parametter.Antenna as Antenna
-import Anten_parametter.ImprovedBlackHole as ImprovedBlackHole
+import Antenna 
+import ImprovedBlackHole 
 #
 # mycst = cst.interface.DesignEnvironment()
 # myproject = cst.interface.DesignEnvironment.open_project(mycst,r'E:\Master\Python_code\ANTENNA\2_4.cst')
@@ -19,9 +19,9 @@ import Anten_parametter.ImprovedBlackHole as ImprovedBlackHole
 # % ** ALGORITHM’S VARIABLES ** %
 # % *************************** %
 
-num_stars = 12 # size of population
+num_stars = 18 # size of population
 n=4     # dimension of problem
-max_iter = 5 # number of generations
+max_iter = 25 # number of generations
 
 #---------Boundary-------
 WL=np.zeros((n,1))
@@ -46,8 +46,8 @@ best_star = ibh.run()
 # % *********************** %
 print("Improved Black Hole Algorithm: Maximum Optimization")
 print("Max Location: %s" % (max_values_loc))
-print("Best Star Location: %s" % (best_star.ImprovedBlackHole.location))
-print("Best Star Fitness Value: %.2f" % (best_star.ImprovedBlackHole.get_fitval()))
+print("Best Star Location: " + str(best_star.location))
+print("Best Star Fitness Value:" + (str(best_star.fitval)))
 # print(ObjValue)
 
 
