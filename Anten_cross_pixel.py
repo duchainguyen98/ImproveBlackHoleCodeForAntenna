@@ -6,7 +6,6 @@ import cst.interface
 import cst.results
 import numpy as np
 import shutil
-import Anten_init
 
 class Anten:
     def __init__(self, PopX):
@@ -47,9 +46,7 @@ class Anten:
         self.myproject.modeler.add_to_history( "delete component: Antenna", par_change1 , timeout = None )
     def run_antenna(self):
         mycst = cst.interface.DesignEnvironment(mode=cst.interface.DesignEnvironment.StartMode.ExistingOrNew)
-        self.myproject = mycst.new_mws()
-        anten_init=Anten_init.Anten_init(self.myproject)
-        anten_init.run()
+        self.myproject = mycst.open_project(r'C:\DATA\Master\Antenna\Anten_pixel_2_45.cst')
         size_antenna_x=len(self.PopX)
         size_antenna_y=len(self.PopX[1])
         pixel_size=1
@@ -62,8 +59,7 @@ class Anten:
         # Anten_Pixel
         self.myproject.modeler.run_solver()    
     def get_result_antenna(self):
-        project_path=self.myproject.filename()    
-        project = cst.results.ProjectFile(project_path,allow_interactive=True)
+        project = cst.results.ProjectFile(r"C:\DATA\Master\Antenna\Anten_pixel_2_45.cst",allow_interactive=True)
         freq_range = [2,6]
         freq_point=[2.45,3.5,5.8]
         results = project.get_3d().get_result_item(r"1D Results\S-Parameters\S1,1")
@@ -104,9 +100,9 @@ class Anten:
         self.run_antenna()
         Sdb=self.get_result_antenna()
         print("Antenna Result"+str(Sdb))
-        # self.Delete_Anten_Pixel()
+        self.Delete_Anten_Pixel()
         # self.myproject.save()
-        self.myproject.close()
+        # self.myproject.close()
         return Sdb
 
 

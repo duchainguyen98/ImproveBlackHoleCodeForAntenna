@@ -19,7 +19,8 @@ class Star:
         S11= antenna.run()
         # S=[S11[0]]
         return S11[0]
-
+        # S11=np.random.randint (1, 10)
+        # return S11
     def is_absorbed(self, R):
         distance = self.fitval
         return True if (distance > R) else False
@@ -41,9 +42,9 @@ class ImprovedBlackHole:
     #Tim giá trị tốt nhất 
     def get_best_star(self):
         for i in range(1, len(self.stars)):
-            if self.stars[i].fitval < best_star.fitval:
-                best_star = self.stars[i]
-        return best_star
+            if self.stars[i].fitval < self.best_star.fitval:
+                self.best_star = self.stars[i]
+        return self.best_star
     #Tính toán bán kính chân trời sự kiện (Điều kiện giữ hay loại bỏ cá thể)
     def calculate_radius_event_horizon(self):
         all_stars_fitval = 0
@@ -60,23 +61,23 @@ class ImprovedBlackHole:
     def crossover(self):
         # get two random stars
         mid = (len(self.stars) - 1) // 2
-        a = random.randint(0, mid)
-        b = random.randint(mid + 1, len(self.stars) - 1)
+        a = np.random.randint(0, mid)
+        b = np.random.randint(mid + 1, len(self.stars) - 1)
 
         star1 = self.stars[a]
         star2 = self.stars[b]
 
         # split points
-        cut_pointx = random.randint(1, self.pixel_max_x)
-        cut_pointy = random.randint(1, self.pixel_max_y)
-        star1_cut_point=star1[:cut_pointx,:cut_pointy]
-        star2_cut_point=star2[:cut_pointx,:cut_pointy]
+        cut_pointx = np.random.randint(1, self.pixel_max_x)
+        cut_pointy = np.random.randint(1, self.pixel_max_y)
+        star1_cut_point = star1.location[:cut_pointx,:cut_pointy]
+        star2_cut_point = star2.location[:cut_pointx,:cut_pointy]
 
         # do crossover
         child1 = star2
-        child1[:cut_pointx,:cut_pointy]=star1_cut_point
+        child1.location[:cut_pointx,:cut_pointy]=star1_cut_point
         child2= star1
-        child2[:cut_pointx,:cut_pointy]=star2_cut_point
+        child2.location[:cut_pointx,:cut_pointy]=star2_cut_point
 
         # return star with higher fitness value
         return child1 if child1.fitval > child2.fitval else child2
@@ -106,21 +107,21 @@ class ImprovedBlackHole:
                 star.fitval = new_star.fitval
 
         self.get_best_star()
-        return best_star
+        return self.best_star
 
     def run(self):
         self.generate_initial()
-        best_star=self.stars[0]
-        best_star = self.get_best_star()
+        self.best_star=self.stars[0]
+        self.best_star = self.get_best_star()
         print("Run IBH")
         for i in range(self.max_iter):
             R = self.calculate_radius_event_horizon()
             evolution_rate = self.get_evolution_rate(i + 1)
             # Inner Loop Thực hiện so sánh với chân trời sự kiện và cập nhật các ngôi sao mới
-            best_star = self.move_each_star(R, evolution_rate, best_star)
-            print("best_star + "+str(i)+" "+str(best_star.location))
-            print("best_value + "+str(i)+" "+ str(best_star.fitval))
-        return best_star
+            self.best_star = self.move_each_star(R, evolution_rate, self.best_star)
+            print("best_star + "+str(i)+" "+str(self.best_star.location))
+            print("best_value + "+str(i)+" "+ str(self.best_star.fitval))
+        return self.best_star
 
 
 # example uses 2 features (location) [Two Dimensional-Space example]

@@ -4,7 +4,6 @@ import cst
 import cst.interface
 import cst.results
 import numpy as np
-import scipy.stats
 import time
 import shutil
 import random
@@ -20,7 +19,7 @@ import BH
 # % *************************** %
 
 num_stars = 18 # size of population
-# n=4     # dimension of problem
+# n=4     # dimension of problem 
 max_iter = 25 # number of generations
 
 #---------Boundary-------
