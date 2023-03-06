@@ -1,5 +1,5 @@
 import sys
-sys.path.append(r"C:\Program Files (x86)\CST Studio Suite 2023\AMD64\python_cst_libraries")
+sys.path.append(r"C:\Program Files (x86)\CST Studio Suite 2020\AMD64\python_cst_libraries")
 import cst
 import cst.interface
 import cst.results
@@ -18,9 +18,9 @@ import BH
 # % ** ALGORITHM’S VARIABLES ** %
 # % *************************** %
 
-num_stars = 18 # size of population
+num_stars = 20 # size of population
 # n=4     # dimension of problem 
-max_iter = 25 # number of generations
+max_iter = 30 # number of generations
 
 #---------Boundary-------
 
@@ -36,4 +36,6 @@ print("Improved Black Hole Algorithm: Maximum Optimization")
 # print("Max Location: %s" % (max_values_loc))
 print("Best Star Location: " + str(best_star.location))
 print("Best Star Fitness Value:" + (str(best_star.fitval)))
+best_antenna=Anten_cross_pixel.Anten(best_star.location)
+best_antenna.run_antenna()
 # print(ObjValue)

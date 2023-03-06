@@ -1,6 +1,5 @@
 import sys
-sys.path.append(r"C:\Program Files (x86)\CST Studio Suite 2023\AMD64\python_cst_libraries")
-
+sys.path.append(r"C:\Program Files (x86)\CST Studio Suite 2020\AMD64\python_cst_libraries")
 import cst
 import cst.interface
 import cst.results
@@ -46,8 +45,9 @@ class Anten:
         par_change1 = 'Component.Delete \"Antenna\"'
         self.myproject.modeler.add_to_history( "delete component: Antenna", par_change1 , timeout = None )
     def run_antenna(self):
-        mycst = cst.interface.DesignEnvironment(mode=cst.interface.DesignEnvironment.StartMode.ExistingOrNew)
-        self.myproject = mycst.new_mws()
+        self.mycst = cst.interface.DesignEnvironment(mode=cst.interface.DesignEnvironment.StartMode.ExistingOrNew)
+        self.myproject = self.mycst.new_mws()
+        self.project_path=self.myproject.filename()
         anten_init=Anten_init.Anten_init(self.myproject)
         anten_init.run()
         size_antenna_x=len(self.PopX)
@@ -62,8 +62,7 @@ class Anten:
         # Anten_Pixel
         self.myproject.modeler.run_solver()    
     def get_result_antenna(self):
-        project_path=self.myproject.filename()    
-        project = cst.results.ProjectFile(project_path,allow_interactive=True)
+        project = cst.results.ProjectFile(self.project_path,allow_interactive=True)
         freq_range = [2,6]
         freq_point=[2.45,3.5,5.8]
         results = project.get_3d().get_result_item(r"1D Results\S-Parameters\S1,1")

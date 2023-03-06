@@ -1,6 +1,5 @@
 import sys
-sys.path.append(r"C:\Program Files (x86)\CST Studio Suite 2023\AMD64\python_cst_libraries")
-
+sys.path.append(r"C:\Program Files (x86)\CST Studio Suite 2020\AMD64\python_cst_libraries")
 import cst
 import cst.interface
 import cst.results
@@ -27,16 +26,16 @@ class Anten_init:
 
         par_change_units ='\'set the units\n'\
                             'With Units\n'\
-                            '\t.SetUnit \"Length\", \"' + Length + '\"\n'\
-                            '\t.SetUnit \"Frequency\", \"' + Frequency + '\"\n'\
-                            '\t.SetUnit \"Voltage\", \"' + Voltage + '\"\n'\
-                            '\t.SetUnit \"Resistance\", \"' + Resistance + '\"\n'\
-                            '\t.SetUnit \"Inductance\", \"' + Inductance + '\"\n'\
-                            '\t.SetUnit \"Temperature\",  \"' + TemperatureUnit + '\"\n'\
-                            '\t.SetUnit \"Time\", \"' + Time + '\"\n'\
-                            '\t.SetUnit \"Current\", \"' + Current + '\"\n'\
-                            '\t.SetUnit \"Conductance\", \"' + Conductance + '\"\n'\
-                            '\t.SetUnit \"Capacitance\", \"' + Capacitance + '\"\n'\
+                            '\t.Geometry  \"' + Length + '\"\n'\
+                            '\t.Frequency  \"' + Frequency + '\"\n'\
+                            '\t.Voltage  \"' + Voltage + '\"\n'\
+                            '\t.Resistance  \"' + Resistance + '\"\n'\
+                            '\t.Inductance  \"' + Inductance + '\"\n'\
+                            '\t.Temperature   \"' + TemperatureUnit + '\"\n'\
+                            '\t.Time  \"' + Time + '\"\n'\
+                            '\t.Current  \"' + Current + '\"\n'\
+                            '\t.Conductance  \"' + Conductance + '\"\n'\
+                            '\t.Capacitance  \"' + Capacitance + '\"\n'\
                             'End With\n\n'\
                             'ThermalSolver.AmbientTemperature \"0\"\n\n'\
                             '\'----------------------------------------------------------------------------'
@@ -421,8 +420,8 @@ class Anten_init:
     #Run
     def run(self):
         self.myproject
-        frequency_min=1
-        frequency_max=10
+        frequency_min=2
+        frequency_max=6
         self.CstDefineUnits(self.myproject)
         self.CstDefineFrequencyRange(self.myproject,frequency_min,frequency_max)
         self.CstDrawBox(self.myproject)

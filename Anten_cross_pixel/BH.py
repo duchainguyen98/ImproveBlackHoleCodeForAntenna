@@ -54,22 +54,36 @@ class ImprovedBlackHole:
         return R
     #Tỉ lệ thực hiện việc đột biến ngẫu nhiên
     def get_evolution_rate(self, iter):
-        if (round(iter / self.max_iter, 1) * 10) % 2 == 0:
-            return 0.75
-        return 0.25
-    #Thực hiện lai ghép các cá thể ngôi sao
-    def crossover(self):
-        # get two random stars
-        mid = (len(self.stars) - 1) // 2
-        a = np.random.randint(0, mid)
-        b = np.random.randint(mid + 1, len(self.stars) - 1)
+        # if (round(iter / self.max_iter, 1) * 10) % 2 == 0:
+        #     return 0.75
+        return 0.5
+    #Thực hiện  đột biến các cá thể ngôi sao
+    def mutation(self,star):
 
-        star1 = self.stars[a]
-        star2 = self.stars[b]
+        number_index_mutation= np.random.randint(1, self.pixel_max_x//2)
 
         # split points
-        cut_pointx = np.random.randint(1, self.pixel_max_x)
-        cut_pointy = np.random.randint(1, self.pixel_max_y)
+        cut_pointx = np.random.randint(self.pixel_max_x-1, size=(number_index_mutation))
+        cut_pointy = np.random.randint(self.pixel_max_y-1, size=(number_index_mutation))
+        new_star=star
+        for i in range(number_index_mutation):
+            new_star.location[cut_pointx[i],cut_pointy[i]]=1-new_star.location[cut_pointx[i],cut_pointy[i]]
+        # return star with higher fitness value
+        return new_star
+    
+    #Thực hiện lai ghép  các cá thể ngôi sao
+    def crossover(self):
+        # get two random stars
+        mid = (len(self.stars_not_is_absorbed) - 1) // 2
+        a = np.random.randint(0, mid)
+        b = np.random.randint(mid + 1, len(self.stars_not_is_absorbed) - 1)
+
+        star1 = self.stars_not_is_absorbed[a]
+        star2 = self.stars_not_is_absorbed[b]
+
+        # split points
+        cut_pointx = np.random.randint(1, self.pixel_max_x-2)
+        cut_pointy = np.random.randint(1, self.pixel_max_y-2)
         star1_cut_point = star1.location[:cut_pointx,:cut_pointy]
         star2_cut_point = star2.location[:cut_pointx,:cut_pointy]
 
@@ -89,23 +103,30 @@ class ImprovedBlackHole:
         return new_star
     #So sánh và Thực hiện di chuyển các ngôi sao theo một hàm cụ thể
     def move_each_star(self, R, E, best_star):
+        self.stars_not_is_absorbed = []
         for star in self.stars:
+            if not star.is_absorbed(R):
+                self.stars_not_is_absorbed.append(star)
 
+        for star in self.stars:
             # if the star is in event horizon's radius
             if star.is_absorbed(R):
                 new_star = None
 
                 # improvement: there's a chance to crossover
-                if random.random() <= E:
+                if random.random() <= E and (len(self.stars_not_is_absorbed) >= 4):
                     # crossover
                     new_star = self.crossover()
                 else:
                     # generate new random star
                     new_star = self.generate_random_star()
-
                 star.location = new_star.location
                 star.fitval = new_star.fitval
-
+            else:
+                new_star = None
+                new_star=self.mutation(star)
+                star.location = new_star.location
+                star.fitval = new_star.fitval
         self.get_best_star()
         return self.best_star
 
