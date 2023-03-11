@@ -5,20 +5,19 @@ Authors:
 import math, random
 import numpy as np
 
-import Anten_cross_pixel as Antenna
+import Antenna_cross_pixel as Antenna
 
 class Star:
 
     def __init__(self, location):
         self.location = location
-        self.fitval = self.get_fitval()
+        self.get_fitval()
 
     def get_fitval(self):
-        fitval_sum = 0
         antenna=Antenna.Anten(self.location)
         S11= antenna.run()
-        # S=[S11[0]]
-        return S11[0]
+        S=S11[0]
+        self.fitval = S
         # S11=np.random.randint (1, 10)
         # return S11
     def is_absorbed(self, R):
@@ -41,10 +40,11 @@ class ImprovedBlackHole:
             self.stars.append(Star(location))
     #Tim giá trị tốt nhất 
     def get_best_star(self):
+        best_star = self.stars[0]
         for i in range(1, len(self.stars)):
-            if self.stars[i].fitval < self.best_star.fitval:
-                self.best_star = self.stars[i]
-        return self.best_star
+            if self.stars[i].fitval < best_star.fitval:
+                best_star = self.stars[i]
+        return best_star
     #Tính toán bán kính chân trời sự kiện (Điều kiện giữ hay loại bỏ cá thể)
     def calculate_radius_event_horizon(self):
         all_stars_fitval = 0
@@ -65,10 +65,11 @@ class ImprovedBlackHole:
         # split points
         cut_pointx = np.random.randint(self.pixel_max_x-1, size=(number_index_mutation))
         cut_pointy = np.random.randint(self.pixel_max_y-1, size=(number_index_mutation))
-        new_star=star
+        new_star_location=star.location
         for i in range(number_index_mutation):
-            new_star.location[cut_pointx[i],cut_pointy[i]]=1-new_star.location[cut_pointx[i],cut_pointy[i]]
+            new_star_location[cut_pointx[i],cut_pointy[i]]=1-new_star_location[cut_pointx[i],cut_pointy[i]]
         # return star with higher fitness value
+        new_star=Star(new_star_location)
         return new_star
     
     #Thực hiện lai ghép  các cá thể ngôi sao
@@ -88,13 +89,14 @@ class ImprovedBlackHole:
         star2_cut_point = star2.location[:cut_pointx,:cut_pointy]
 
         # do crossover
-        child1 = star2
-        child1.location[:cut_pointx,:cut_pointy]=star1_cut_point
-        child2= star1
-        child2.location[:cut_pointx,:cut_pointy]=star2_cut_point
-
+        child1_location = star2.location
+        child1_location[:cut_pointx,:cut_pointy]=star1_cut_point
+        child2_location= star1.location
+        child2_location[:cut_pointx,:cut_pointy]=star2_cut_point
+        child1=Star(child1_location)
+        child2=Star(child2_location)
         # return star with higher fitness value
-        return child1 if child1.fitval > child2.fitval else child2
+        return child1 if child2.fitval > child1.fitval else child2
     #Thực hiện tạo ngôi sao ngẫu nhiên
     def generate_random_star(self):
         location = []
@@ -120,29 +122,30 @@ class ImprovedBlackHole:
                 else:
                     # generate new random star
                     new_star = self.generate_random_star()
-                star.location = new_star.location
-                star.fitval = new_star.fitval
+                star = new_star
             else:
                 new_star = None
                 new_star=self.mutation(star)
-                star.location = new_star.location
-                star.fitval = new_star.fitval
-        self.get_best_star()
-        return self.best_star
+                star = new_star
+
+            if star.fitval < best_star.fitval:
+                best_star = star
+        return best_star
 
     def run(self):
         self.generate_initial()
-        self.best_star=self.stars[0]
-        self.best_star = self.get_best_star()
+        best_star_value = self.get_best_star()
         print("Run IBH")
         for i in range(self.max_iter):
             R = self.calculate_radius_event_horizon()
             evolution_rate = self.get_evolution_rate(i + 1)
+            
             # Inner Loop Thực hiện so sánh với chân trời sự kiện và cập nhật các ngôi sao mới
-            self.best_star = self.move_each_star(R, evolution_rate, self.best_star)
-            print("best_star + "+str(i)+" "+str(self.best_star.location))
-            print("best_value + "+str(i)+" "+ str(self.best_star.fitval))
-        return self.best_star
+            best_star = self.move_each_star(R, evolution_rate, best_star_value)
+            best_star_value = best_star
+            print("best_star + "+str(i)+" "+str(best_star.location))
+            print("best_value + "+str(i)+" "+ str(best_star.fitval))
+        return best_star_value
 
 
 # example uses 2 features (location) [Two Dimensional-Space example]

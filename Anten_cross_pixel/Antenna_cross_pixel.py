@@ -47,7 +47,6 @@ class Anten:
     def run_antenna(self):
         self.mycst = cst.interface.DesignEnvironment(mode=cst.interface.DesignEnvironment.StartMode.ExistingOrNew)
         self.myproject = self.mycst.new_mws()
-        self.project_path=self.myproject.filename()
         anten_init=Anten_init.Anten_init(self.myproject)
         anten_init.run()
         size_antenna_x=len(self.PopX)
@@ -62,9 +61,11 @@ class Anten:
         # Anten_Pixel
         self.myproject.modeler.run_solver()    
     def get_result_antenna(self):
-        project = cst.results.ProjectFile(self.project_path,allow_interactive=True)
+        project_path=self.myproject.filename()
+        project = cst.results.ProjectFile(project_path,allow_interactive=True)
         freq_range = [2,6]
-        freq_point=[2.45,3.5,5.8]
+        # freq_point=[2.45,3.5,5.8]
+        freq_point=[2.45]
         results = project.get_3d().get_result_item(r"1D Results\S-Parameters\S1,1")
         # get frequencies
         freqs = results.get_xdata()
@@ -81,22 +82,13 @@ class Anten:
 
         # Get results for each freq. point of interest from CST
         for j in range(len(freq_range_pos)):
-            freq_pos_j = round(freq_range_pos[j])
-            freq_pos.append(freq_pos_j)
-
+            freq_pos_j = int(freq_range_pos[j])
             freq_value_j = freqs[freq_pos_j]
             freq.append(freq_value_j)
-
             S_real_j = S_Para[freq_pos_j].real
-            S_real.append(S_real_j)
-
             S_imag_j = S_Para[freq_pos_j].imag
-            S_imag.append(S_imag_j)
-
-            S_j = np.sqrt(S_real_j ** 2 + S_imag_j ** 2)
-            S.append(S_j)
-
-            S_dB_j = 20 * np.log10(S_j)
+            S_j = complex(S_real_j, S_imag_j)
+            S_dB_j = 20 * np.log10(abs(S_j))
             SdB.append(S_dB_j)
         return SdB
     def run(self):

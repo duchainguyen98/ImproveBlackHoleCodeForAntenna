@@ -7,7 +7,7 @@ import numpy as np
 import time
 import shutil
 import random
-import Anten_cross_pixel
+import Antenna_cross_pixel
 import BH 
 #
 # mycst = cst.interface.DesignEnvironment()
@@ -20,7 +20,7 @@ import BH
 
 num_stars = 20 # size of population
 # n=4     # dimension of problem 
-max_iter = 30 # number of generations
+max_iter = 20 # number of generations
 
 #---------Boundary-------
 
@@ -36,6 +36,6 @@ print("Improved Black Hole Algorithm: Maximum Optimization")
 # print("Max Location: %s" % (max_values_loc))
 print("Best Star Location: " + str(best_star.location))
 print("Best Star Fitness Value:" + (str(best_star.fitval)))
-best_antenna=Anten_cross_pixel.Anten(best_star.location)
+best_antenna=Antenna_cross_pixel.Anten(best_star.location)
 best_antenna.run_antenna()
 # print(ObjValue)
