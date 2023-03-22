@@ -44,7 +44,7 @@ class ImprovedBlackHole:
     def get_best_star(self):
         best_star = self.stars[0]
         for i in range(1, len(self.stars)):
-            if (self.stars[i].fitval[0] < best_star.fitval[0]) and (self.stars[i].fitval[1] < best_star.fitval[1]):
+            if np.all(np.less_equal(self.stars[i].fitval,best_star.fitval)):
                 best_star = self.stars[i]
         return best_star
     #Tính toán bán kính chân trời sự kiện (Điều kiện giữ hay loại bỏ cá thể)
@@ -129,15 +129,20 @@ class ImprovedBlackHole:
                 new_star = None
                 new_star=self.mutation(star)
                 star = new_star
-
-            if star.fitval < best_star.fitval:
+            if (np.all(np.less_equal(star.fitval,best_star.fitval))):
                 best_star = star
+            elif(np.all(np.less_equal(star.fitval,-10)) and (self.count==1)):
+                best_star = star
+                self.count=0
+                print("All less than -10")
         return best_star
 
     def run(self):
+        print("Run IBH")
         self.generate_initial()
         best_star_value = self.get_best_star()
-        print("Run IBH")
+        self.count=1
+        print("Run loop")
         for i in range(self.max_iter):
             R = self.calculate_radius_event_horizon()
             evolution_rate = self.get_evolution_rate(i + 1)
