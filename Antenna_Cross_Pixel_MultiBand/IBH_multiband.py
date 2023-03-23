@@ -17,6 +17,14 @@ class Star:
         antenna=Antenna.Anten(self.location)
         S11= antenna.run()
         self.fitval = S11
+        if np.any(np.less_equal(S11,-10)):
+            save_value=str(self.location)
+            file_save = open("C:\Value_S11.txt", "a")
+            # Ghi data vao cuoi file
+            Value_fitval="\n Value_fitval " + str(S11) + "\n---------------------------------------------------------\n"
+            file_save.write(save_value)
+            file_save.write(Value_fitval)
+            file_save.close()
         # S11=np.random.randint (1, 10)
         # return S11
     def is_absorbed(self, R):
