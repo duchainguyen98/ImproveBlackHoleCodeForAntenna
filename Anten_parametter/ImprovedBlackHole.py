@@ -8,37 +8,38 @@ import numpy as np
 import Antenna
 
 
-# import main
-def feval(funcName, *args):
-    return eval(funcName)(*args)
-def ObjFunction(Pop):
-# Ackley function
-    antenna=Antenna.Anten(Pop)
-    S11= antenna.run()
-    S=[S11[0],S11[2]]
-    return S
 class Star:
 
     def __init__(self, location):
         self.location = location
-        self.fitval = self.get_fitval()
+        self.get_fitval()
 
     def get_fitval(self):
-        fitval_sum = 0
         antenna=Antenna.Anten(self.location)
         S11= antenna.run()
-        return S11
-
-    def update_location(self, best_star):
+        self.fitval = S11
+        if (np.all(np.less_equal(S11,-12)) or np.any(np.less_equal(S11,-20))):
+            save_value=str(self.location)
+            file_save = open("C:\DATA\Master\Python_Code\ImproveBlackHoleCodeForAntenna\Anten_parametter\Value_S11.txt", "a")
+            # Ghi data vao cuoi file
+            Value_fitval="\n Value_fitval " + str(S11) + "\n---------------------------------------------------------\n"
+            file_save.write(save_value)
+            file_save.write(Value_fitval)
+            file_save.close()
+    def update_location(self, best_star):                                                                        
         for i in range(len(self.location)):
-            # improvement: use different random value for each attribute (random vector)
-            R = random.random()
-            self.location[i] = self.location[i] + R * (best_star.location[i] - self.location[i])
+            Random = random.random()
+            # self.location[i] = self.location[i] + Random * (best_star.location[i] - self.location[i])
+            self.location[i]=round((self.location[i] + Random * (best_star.location[i] - self.location[i])),3)
 
+        self.get_fitval()
+        
     def is_absorbed(self, R, best_star):
         distance = self.fitval
-        return True if (distance[0] > R[0] and distance[1] > R[1] and distance[2] > R[2])else False
-
+        for i in range(len(distance)):
+            if (distance[i] > R[i]):
+                return True
+        return False
 
 class ImprovedBlackHole:
 
@@ -55,25 +56,36 @@ class ImprovedBlackHole:
             for j in range(len(self.min_values_location)):
                 R = random.random()
                 change=float(self.min_values_location[j] + R * (self.max_values_location[j] - self.min_values_location[j]))
-                location.append(change)
+                if(j==2):
+                    self.max_values_location[len(self.min_values_location) - 1]=change
+                round_change=round(change,3)
+                location.append(round_change)
             self.stars.append(Star(location))
     def get_best_star(self):
         best_star = self.stars[0]
         for i in range(1, len(self.stars)):
-            if self.stars[i].fitval < best_star.fitval:
+            if np.all(np.less_equal(self.stars[i].fitval,best_star.fitval)):
                 best_star = self.stars[i]
+            elif(np.all(np.less_equal(self.stars[i].fitval,-15)) and (self.count==1)):
+                best_star = self.stars[i]
+                self.count=0
+                print("All less than -10")
         return best_star
 
     def move_each_star(self, best_star):
         for star in self.stars:
             star.update_location(best_star)
 
-            if star.fitval < best_star.fitval:
+            if (np.all(np.less_equal(star.fitval,best_star.fitval))):
                 best_star = star
+            elif(np.all(np.less_equal(star.fitval,-15)) and (self.count==1)):
+                best_star = star
+                self.count=0
+                print("All less than -15")
         return best_star
 
-    def calculate_radius_event_horizon(self, best_star):
-        all_stars_fitval = 0
+    def calculate_radius_event_horizon(self):
+        all_stars_fitval =[0,0,0]
         for i in range(len(self.stars)):
             all_stars_fitval =np.add(all_stars_fitval,self.stars[i].fitval)
         R = np.divide(all_stars_fitval,len(self.stars))
@@ -81,8 +93,8 @@ class ImprovedBlackHole:
 
     def get_evolution_rate(self, iter):
         if (round(iter / self.max_iter, 1) * 10) % 2 == 0:
-            return 0.75
-        return 0.25
+            return 0.5
+        return 0.5
 
     def crossover(self):
         # get two random stars
@@ -94,8 +106,8 @@ class ImprovedBlackHole:
         star2 = self.stars[b]
 
         # split points
-        s1 = random.randint(0, len(self.min_values_location) - 1)
-        s2 = random.randint(0, len(self.min_values_location) - 1)
+        s1 = random.randint(0, len(self.min_values_location) - 2)
+        s2 = random.randint(0, len(self.min_values_location) - 2)
 
         if s1 > s2:
             s1, s2 = s2, s1
@@ -103,16 +115,23 @@ class ImprovedBlackHole:
         # do crossover
         for i in range(s1, s2 + 1):
             star1.location[i], star2.location[i] = star2.location[i], star1.location[i]
-
+            if(i==2):
+                star1.location[len(self.min_values_location) - 1], star2.location[len(self.min_values_location) - 1] \
+                    = star2.location[len(self.min_values_location) - 1], star1.location[len(self.min_values_location) - 1]
+        child1=Star(star1.location)
+        child2=Star(star2.location)
         # return star with higher fitness value
-        return star1 if star1.fitval > star2.fitval else star2
+        return child1 if child1.fitval > child2.fitval else child2
 
     def generate_random_star(self):
         location = []
         for j in range(len(self.min_values_location)):
-            R = random.random()
-            location.append(
-                self.min_values_location[j] + R * (self.max_values_location[j] - self.min_values_location[j]))
+            Rand = random.random()
+            change_random_star=float(self.min_values_location[j] + Rand * (self.max_values_location[j] - self.min_values_location[j]))
+            if(j==2):
+                    self.max_values_location[len(self.min_values_location) - 1]=change_random_star
+            round_random_star = round(change_random_star,3)
+            location.append(round_random_star)
         new_star = Star(location)
         return new_star
 
@@ -131,29 +150,37 @@ class ImprovedBlackHole:
                     # generate new random star
                     new_star = self.generate_random_star()
 
-                star.location = new_star.location
-                star.fitval = new_star.fitval
+                star = new_star
 
-            if star.fitval < best_star.fitval:
+            if (np.all(np.less_equal(star.fitval,best_star.fitval))):
                 best_star = star
+            elif(np.all(np.less_equal(star.fitval,-15)) and (self.count==1)):
+                best_star = star
+                self.count=0
+                print("All less than -10")
         return best_star
 
     def run(self):
-        self.generate_initial()
-        best_star = self.get_best_star()
-        print("best_star",best_star.location)
-        print("best_starxxx",best_star.fitval)
         print("Run IBH")
-        for i in range(self.max_iter):
-            # Inner Loop 1
-            best_star = self.move_each_star(best_star)
 
-            R = self.calculate_radius_event_horizon(best_star)
+        self.generate_initial()
+        self.count=1
+
+        best_star_value = self.get_best_star()
+        print("best_star0",best_star_value.location)
+        print("best_star0",best_star_value.fitval)
+        for i in range(self.max_iter):
+            best_star1 = self.move_each_star(best_star_value)
+
+            R = self.calculate_radius_event_horizon()
             evolution_rate = self.get_evolution_rate(i + 1)
 
             # Inner Loop 2
-            best_star = self.absorb_and_update(R, evolution_rate, best_star)
-        return best_star
+            best_star2 = self.absorb_and_update(R, evolution_rate, best_star1)
+            best_star_value = best_star2
+            print("best_star + "+str(i)+" "+str(best_star_value.location))
+            print("best_value + "+str(i)+" "+ str(best_star_value.fitval))
+        return best_star_value
 
 
 # example uses 2 features (location) [Two Dimensional-Space example]

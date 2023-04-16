@@ -51,7 +51,9 @@ class Anten:
         anten_init.run()
         size_antenna_x=len(self.PopX)
         size_antenna_y=len(self.PopX[1])
+        
         pixel_size=1
+        
         self.PopX[size_antenna_x//2][size_antenna_y//2]=1
         for i in range(len(self.PopX)):
             for j in range(len(self.PopX[i])):

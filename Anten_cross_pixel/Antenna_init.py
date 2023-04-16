@@ -6,7 +6,7 @@ import cst.results
 import numpy as np
 import shutil
 
-class Anten_init:
+class Antenna_init:
     def __init__(self, myproject):
         self.myproject = myproject
 
@@ -431,8 +431,8 @@ class Anten_init:
         self.CstSolverType(self.myproject)
         self.CstMaterialeFR4(self.myproject)
         self.CstMaterialeCopper(self.myproject)
-        widthsub=50
-        lengthsub=50
+        widthsub= 160
+        lengthsub= 75
         self.CstParameterList(self.myproject,widthsub,lengthsub)
         self.CstSubstrate(self.myproject)
         self.CstCoax(self.myproject)

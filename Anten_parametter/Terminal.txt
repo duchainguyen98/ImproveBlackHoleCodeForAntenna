@@ -1,0 +1,1016 @@
+You are working in interactive mode.
+Antenna Result[-16.384170803822492, -17.115934425107675, -18.84062312454486]
+You are working in interactive mode.
+Antenna Result[-12.322648882788963, -13.80985957793144, -7.575594209000219]
+You are working in interactive mode.
+Antenna Result[-20.179685351346084, -8.119840470291187, -29.357811748153516]
+You are working in interactive mode.
+Antenna Result[-22.213492797362488, -13.289422453381876, -28.262628893110772]
+You are working in interactive mode.
+Antenna Result[-18.86800524324101, -16.631257704371464, -18.62485992576738]
+You are working in interactive mode.
+Antenna Result[-17.44114941235617, -11.765127259249084, -18.42898245577577]
+You are working in interactive mode.
+Antenna Result[-19.94421785418298, -15.805033621465807, -34.493990491629916]
+You are working in interactive mode.
+Antenna Result[-20.179694658174903, -8.119839810768916, -29.357848228202283]
+You are working in interactive mode.
+Antenna Result[-14.493518373091865, -17.667161902985317, -31.081586816201593]
+You are working in interactive mode.
+Antenna Result[-28.917924744332446, -3.645184075223573, -13.356248540578113]
+You are working in interactive mode.
+Antenna Result[-17.98386533127114, -8.13443067679383, -21.406338361954347]
+You are working in interactive mode.
+Antenna Result[-15.170347872886072, -12.019674822852837, -32.489800580882296]
+You are working in interactive mode.
+Antenna Result[-19.50868544752772, -15.953245627346394, -36.86109028400872]
+You are working in interactive mode.
+Antenna Result[-20.735179606096693, -13.864372180701087, -16.398863387530437]
+You are working in interactive mode.
+Antenna Result[-24.907343112922486, -6.259886309630236, -12.471105919121225]
+You are working in interactive mode.
+Antenna Result[-23.722774261562527, -5.870076112410273, -8.415776930253138]
+You are working in interactive mode.
+Antenna Result[-17.411419240908113, -4.298065724402304, -10.337911229016072]
+You are working in interactive mode.
+Antenna Result[-10.432463308190625, -6.612678834598372, -6.161160223943067]
+You are working in interactive mode.
+Antenna Result[-18.676466156491244, -13.817515635873036, -27.1096251563618]
+You are working in interactive mode.
+Antenna Result[-20.11908669094181, -14.79254038416955, -18.28890901121686]
+You are working in interactive mode.
+Antenna Result[-19.995488228417994, -14.820854631964295, -45.61700792458386]
+You are working in interactive mode.
+Antenna Result[-18.955726856697382, -7.519553994206665, -28.74749377531955]
+You are working in interactive mode.
+Antenna Result[-19.68778097206385, -12.12278847172604, -20.380566604915593]
+You are working in interactive mode.
+Antenna Result[-17.372134221299987, -13.798029406182927, -27.797570168347615]
+best_star + 2 [2.74, 11.112, 4.918, 5.792, 6.05, 1.262]
+best_value + 2 [-16.174523146755057, -13.860564671109078, -36.975996073429236]
+You are working in interactive mode.
+Antenna Result[-17.679826979981357, -15.574377997016365, -37.47353849646249]
+You are working in interactive mode.
+Antenna Result[-19.348298775151292, -12.512708236423036, -24.777630155472963]
+You are working in interactive mode.
+Antenna Result[-17.105396262412953, -11.913302486443007, -19.43614591222564]
+You are working in interactive mode.
+Antenna Result[-19.975679406431265, -15.317514958535963, -21.968002005796173]
+You are working in interactive mode.
+Antenna Result[-17.889794474541564, -15.74867566570372, -36.60233389184143]
+You are working in interactive mode.
+Antenna Result[-17.6234140117768, -8.079005698482206, -25.141619377815832]
+You are working in interactive mode.
+Antenna Result[-19.98284321397674, -16.080807035540406, -28.23908938901047]
+You are working in interactive mode.
+Antenna Result[-21.401489740394403, -9.905044884817318, -35.560038280779295]
+You are working in interactive mode.
+Antenna Result[-20.97512176642715, -13.077184054152116, -31.45291419133423]
+You are working in interactive mode.
+Antenna Result[-19.821040428795946, -13.866399703669236, -30.239341039864893]
+You are working in interactive mode.
+Antenna Result[-16.37277823176175, -5.357417259042981, -21.504105432543597]
+You are working in interactive mode.
+Antenna Result[-21.77844451404772, -8.831699352180177, -23.561492676045603]
+You are working in interactive mode.
+Antenna Result[-15.98414663534206, -14.378534517949834, -30.249066633512637]
+You are working in interactive mode.
+Antenna Result[-19.3617851401045, -14.061514715294848, -7.71019566272655]
+You are working in interactive mode.
+Antenna Result[-19.152895981300105, -15.787910319492598, -36.704405713642664]
+You are working in interactive mode.
+Antenna Result[-20.6789765103275, -13.96374069209529, -36.635118718152135]
+You are working in interactive mode.
+Antenna Result[-18.224266706197177, -8.860275919339978, -26.71627305691289]
+You are working in interactive mode.
+Antenna Result[-17.53969807371472, -9.319110312468384, -28.61744794160893]
+You are working in interactive mode.
+Antenna Result[-19.087702246009172, -15.047430676407966, -35.38428541623255]
+You are working in interactive mode.
+Antenna Result[-18.285585266998694, -15.872955355064573, -34.23181216862381]
+You are working in interactive mode.
+Antenna Result[-15.925748921970555, -17.08498361578937, -46.85411296447921]
+You are working in interactive mode.
+Antenna Result[-18.249321064612833, -16.10339401703935, -21.544262595481452]
+You are working in interactive mode.
+Antenna Result[-22.415652363397523, -5.694842725339571, -17.369067542585334]
+You are working in interactive mode.
+Antenna Result[-14.808271417806363, -15.455073211520249, -47.91944649795057]
+You are working in interactive mode.
+Antenna Result[-18.29545576964748, -13.937472202651806, -23.499202382890928]
+You are working in interactive mode.
+Antenna Result[-12.353980531625892, -16.195010961516203, -44.121272166001695]
+You are working in interactive mode.
+Antenna Result[-21.244185177339755, -15.468491410047152, -36.69281268749693]
+You are working in interactive mode.
+Antenna Result[-22.234750997884866, -14.787003165973793, -18.654490264879648]
+You are working in interactive mode.
+Antenna Result[-15.268197267347045, -14.870320073394076, -23.333024917159303]
+You are working in interactive mode.
+Antenna Result[-21.32786752704257, -15.268014636016197, -22.32562427930427]
+You are working in interactive mode.
+Antenna Result[-7.487617052917299, -6.506774095716658, -9.049341818142192]
+You are working in interactive mode.
+Antenna Result[-14.646539260247618, -3.1049329130876773, -7.828602900432205]
+You are working in interactive mode.
+Antenna Result[-19.230233878023228, -15.844442128004484, -36.06543885299576]
+You are working in interactive mode.
+Antenna Result[-16.13473946933327, -13.786977294917552, -29.77940393854255]
+You are working in interactive mode.
+Antenna Result[-16.620864715739113, -15.669892251205553, -37.25821898650187]
+You are working in interactive mode.
+Antenna Result[-21.102709846335657, -6.013061100314443, -16.78802930658933]
+You are working in interactive mode.
+Antenna Result[-10.893935400214154, -0.45414260506217097, -9.80997373836576]
+You are working in interactive mode.
+Antenna Result[-19.499477146523848, -15.863222462110794, -22.14731376932036]
+You are working in interactive mode.
+Antenna Result[-18.67848185400178, -15.420642001599239, -20.610098954341414]
+You are working in interactive mode.
+Antenna Result[-15.046859418643393, -6.864661114658101, -21.441367848479803]
+You are working in interactive mode.
+Antenna Result[-15.864402425292427, -0.8815480124407784, -13.83759190966569]
+You are working in interactive mode.
+Antenna Result[-8.048420438063715, -0.7224147696639303, -14.325458505437489]
+You are working in interactive mode.
+Antenna Result[-18.782830361774828, -16.21239865846165, -33.36855376491657]
+You are working in interactive mode.
+Antenna Result[-15.839226803373181, -16.42295534675262, -37.93738019737469]
+You are working in interactive mode.
+Antenna Result[-21.197371203749288, -14.946522480550355, -19.271629148985692]
+You are working in interactive mode.
+Antenna Result[-19.384984284313667, -15.514653261163962, -21.724798498630843]
+You are working in interactive mode.
+Antenna Result[-19.53746643627315, -19.355326918954606, -10.865863592584105]
+You are working in interactive mode.
+Antenna Result[-21.40977127855726, -13.249373261780171, -34.76168201260619]
+You are working in interactive mode.
+Antenna Result[-20.905416183877954, -15.190926183105587, -34.37762734432364]
+You are working in interactive mode.
+Antenna Result[-19.21909077974548, -5.165160540862406, -9.645666950282543]
+You are working in interactive mode.
+Antenna Result[-19.262291647756133, -15.952640030536758, -32.53720256064773]
+You are working in interactive mode.
+Antenna Result[-16.123689664975753, -12.474702948626405, -27.283682073511354]
+You are working in interactive mode.
+Antenna Result[-18.366618341889883, -15.728923033366753, -34.54825845957353]
+You are working in interactive mode.
+Antenna Result[-17.84245564211943, -15.750054734730439, -34.84580400762389]
+You are working in interactive mode.
+Antenna Result[-20.489992650309436, -14.423349858334724, -40.06934461618834]
+You are working in interactive mode.
+Antenna Result[-16.50030202716271, -10.099983203564868, -30.866920450006013]
+You are working in interactive mode.
+Antenna Result[-9.861409984326903, -20.22138323941924, -13.436394093456798]
+You are working in interactive mode.
+Antenna Result[-15.512247905334862, -14.707915138162189, -34.961262896760694]
+You are working in interactive mode.
+Antenna Result[-16.33866333691207, -15.814829655543821, -23.59036341980509]
+You are working in interactive mode.
+Antenna Result[-19.048658932580302, -16.006466183720175, -37.17866644093324]
+You are working in interactive mode.
+Antenna Result[-22.847367200938862, -8.661723684604782, -16.18302896582722]
+You are working in interactive mode.
+Antenna Result[-15.20651663056637, -9.404641679067513, -29.940484765710195]
+You are working in interactive mode.
+Antenna Result[-18.278556728443146, -14.438416022851332, -32.31210721327248]
+You are working in interactive mode.
+Antenna Result[-20.137561020410427, -7.509932281434127, -6.480918624227728]
+You are working in interactive mode.
+Antenna Result[-7.997003654857252, -5.020859440165545, -4.491625740971929]
+You are working in interactive mode.
+Antenna Result[-19.348417266239874, -14.972443263388461, -7.713318554132464]
+You are working in interactive mode.
+Antenna Result[-21.07467638975781, -14.075223041802712, -32.74398141292457]
+You are working in interactive mode.
+Antenna Result[-20.019473838468546, -14.721149373679577, -28.348212138182603]
+You are working in interactive mode.
+Antenna Result[-21.392205637444217, -15.187249862591942, -34.06536023544323]
+best_star + 3 [2.687, 11.039, 4.576, 5.405, 6.024, 1.045]
+best_value + 3 [-17.679826979981357, -15.574377997016365, -37.47353849646249]
+You are working in interactive mode.
+Antenna Result[-18.36663337365327, -15.728923741518566, -34.548173629911425]
+You are working in interactive mode.
+Antenna Result[-18.687443766441046, -15.55334537319798, -32.77785195142004]
+You are working in interactive mode.
+Antenna Result[-17.376700327703603, -14.06568599889906, -23.887339008956012]
+You are working in interactive mode.
+Antenna Result[-19.432267806140924, -15.680927040352719, -39.289891835386925]
+You are working in interactive mode.
+Antenna Result[-18.58625368464851, -15.555913495882269, -36.04501718704888]
+You are working in interactive mode.
+Antenna Result[-15.722017490630352, -11.842396668271242, -25.969804052393194]
+You are working in interactive mode.
+Antenna Result[-19.000624560994183, -14.933034592399753, -30.948777562871207]
+You are working in interactive mode.
+Antenna Result[-20.51052359960807, -15.090494366641638, -37.97809386966451]
+You are working in interactive mode.
+Antenna Result[-18.862850404355452, -14.646094809175349, -39.16745607656031]
+You are working in interactive mode.
+Antenna Result[-18.4066486205263, -14.112925298122017, -34.305006092586986]
+You are working in interactive mode.
+Antenna Result[-17.135683542304566, -9.799545402801202, -33.218583412909325]
+You are working in interactive mode.
+Antenna Result[-19.30401613998442, -11.484530138881352, -30.1948369831257]
+You are working in interactive mode.
+Antenna Result[-18.29460590932239, -16.340722289936206, -44.09047623231518]
+You are working in interactive mode.
+Antenna Result[-19.475337470683378, -16.371699073102263, -17.949338659613915]
+You are working in interactive mode.
+Antenna Result[-18.909278550077946, -15.708442151779716, -35.433144817376764]
+You are working in interactive mode.
+Antenna Result[-21.352253742776064, -14.971835486964686, -34.35999831079117]
+You are working in interactive mode.
+Antenna Result[-22.02651909542938, -9.300025662113645, -23.930019559826093]
+You are working in interactive mode.
+Antenna Result[-18.59134715537031, -14.60893676072033, -33.04260127217804]
+You are working in interactive mode.
+Antenna Result[-17.640800766152495, -13.884287612942101, -32.705613544980146]
+You are working in interactive mode.
+Antenna Result[-17.485814323946002, -10.646945311219705, -29.899047665437312]
+You are working in interactive mode.
+Antenna Result[-16.920746242237986, -13.322305888686062, -28.950677632567864]
+You are working in interactive mode.
+Antenna Result[-19.346772304964695, -15.366543071438636, -29.62801515024694]
+You are working in interactive mode.
+Antenna Result[-22.4758477617628, -6.177896455297001, -19.394541688099967]
+You are working in interactive mode.
+Antenna Result[-15.98038957417305, -15.71722225224942, -48.50552104176104]
+You are working in interactive mode.
+Antenna Result[-19.216192236427645, -6.0662105567932825, -20.14222391042825]
+You are working in interactive mode.
+Antenna Result[-12.992796117594311, -16.183269302290647, -38.387248343989114]
+You are working in interactive mode.
+Antenna Result[-20.11320062084828, -15.677906993766044, -36.87295808396479]
+You are working in interactive mode.
+Antenna Result[-18.721414541440925, -15.613882425941764, -33.94732776388708]
+You are working in interactive mode.
+Antenna Result[-17.599159634838784, -15.519325495605898, -24.49208219763249]
+You are working in interactive mode.
+Antenna Result[-21.329323938837273, -15.097711720045751, -40.73519789075799]
+You are working in interactive mode.
+Antenna Result[-7.230538662737266, -3.136107805582022, -9.901879641173382]
+You are working in interactive mode.
+Antenna Result[-9.764358881758593, -0.4725783104762768, -9.347494704048124]
+You are working in interactive mode.
+Antenna Result[-13.571014508250503, -4.422051225558034, -6.114250883727514]
+You are working in interactive mode.
+Antenna Result[-18.913731213905624, -15.601510686439655, -35.19944647171363]
+You are working in interactive mode.
+Antenna Result[-13.008006583703697, -16.317583593212255, -38.12416104355621]
+You are working in interactive mode.
+Antenna Result[-0.9632710278805513, -10.709849660430315, -9.363680427445468]
+You are working in interactive mode.
+Antenna Result[-18.056980207011733, -6.742214614148892, -6.892879914789144]
+You are working in interactive mode.
+Antenna Result[-7.852511598134496, -4.00122480302486, -28.836114275691884]
+You are working in interactive mode.
+Antenna Result[-8.246487218510838, -1.4320282615068411, -9.41642945438564]
+You are working in interactive mode.
+Antenna Result[-8.859079029618645, -0.3768188325510552, -11.454189853143891]
+You are working in interactive mode.
+Antenna Result[-7.82442942897454, -1.6561929664429365, -9.939701965037006]
+You are working in interactive mode.
+Antenna Result[-18.679254718173727, -15.542285775824203, -44.84993943178816]
+You are working in interactive mode.
+Antenna Result[-20.947998830722796, -15.259846297738818, -33.222416677522304]
+You are working in interactive mode.
+Antenna Result[-7.141799946995821, -2.6286526859980115, -16.223077935948385]
+You are working in interactive mode.
+Antenna Result[-20.922759308423377, -7.256495347782693, -9.827419251614465]
+You are working in interactive mode.
+Antenna Result[-4.327030885098899, -7.376297005609208, -6.617614567252808]
+You are working in interactive mode.
+Antenna Result[-18.44914505419441, -13.390869624906884, -27.18279819292208]
+You are working in interactive mode.
+Antenna Result[-16.962845109285738, -15.77516025699744, -38.60829768328901]
+You are working in interactive mode.
+Antenna Result[-17.317000058710057, -13.914741516680184, -44.90871477077731]
+You are working in interactive mode.
+Antenna Result[-18.417809861363054, -15.533272112550733, -35.68077455089912]
+You are working in interactive mode.
+Antenna Result[-17.658335401536792, -16.110489167657406, -44.41228945459838]
+You are working in interactive mode.
+Antenna Result[-19.293735662226222, -9.772094207066171, -31.219582070102923]
+You are working in interactive mode.
+Antenna Result[-17.851325948333137, -10.6710382062968, -18.44560168791852]
+You are working in interactive mode.
+Antenna Result[-18.794480167530065, -16.397048747972516, -34.349436925444344]
+You are working in interactive mode.
+Antenna Result[-18.549783176185077, -10.96737564512496, -35.724188440979106]
+You are working in interactive mode.
+Antenna Result[-21.271762737499238, -14.346261247961134, -25.369458311214885]
+You are working in interactive mode.
+Antenna Result[-14.907630298717214, -2.538221627963275, -8.681629497259339]
+You are working in interactive mode.
+Antenna Result[-21.368225748984614, -14.99922617862504, -35.00343332698799]
+You are working in interactive mode.
+Antenna Result[-18.57259976738116, -15.590922156380259, -36.019926935338056]
+best_star + 4 [2.687, 11.039, 4.576, 5.405, 6.024, 1.045]
+best_value + 4 [-18.36663337365327, -15.728923741518566, -34.548173629911425]
+You are working in interactive mode.
+Antenna Result[-18.366634156923574, -15.728917298831108, -34.548227828981]
+You are working in interactive mode.
+Antenna Result[-18.27416610032802, -13.9835470091562, -29.01414637820993]
+You are working in interactive mode.
+Antenna Result[-20.015870020680048, -15.413301527296849, -29.437212906911352]
+You are working in interactive mode.
+Antenna Result[-18.82725957768541, -15.749880324579028, -35.71115889929228]
+You are working in interactive mode.
+Antenna Result[-20.7848438702664, -15.227571536058438, -34.589772919980135]
+You are working in interactive mode.
+Antenna Result[-18.407997455441226, -13.379526409021354, -40.933417622420734]
+You are working in interactive mode.
+Antenna Result[-18.708694988494116, -15.439817899274486, -33.114544436088245]
+You are working in interactive mode.
+Antenna Result[-19.425448114497886, -14.222563539239577, -36.46164393971506]
+You are working in interactive mode.
+Antenna Result[-19.019140617372273, -14.76385644105511, -36.01110260931898]
+You are working in interactive mode.
+Antenna Result[-18.683732464254327, -14.350808145510719, -33.621191597047584]
+You are working in interactive mode.
+Antenna Result[-18.37911145177049, -15.962589442784406, -38.75166241680431]
+You are working in interactive mode.
+Antenna Result[-19.753527732224384, -13.316187447852606, -32.878421724488355]
+You are working in interactive mode.
+Antenna Result[-18.86961367454836, -13.394320226034298, -40.589567946739805]
+You are working in interactive mode.
+Antenna Result[-18.08109648054578, -14.253908647600909, -32.273963856381144]
+You are working in interactive mode.
+Antenna Result[-19.082888886307877, -15.681831990391169, -36.81773217043955]
+You are working in interactive mode.
+Antenna Result[-18.372231579413622, -15.642215377083469, -36.59552115518937]
+You are working in interactive mode.
+Antenna Result[-19.06607208389714, -14.831329125375897, -27.65145244339246]
+You are working in interactive mode.
+Antenna Result[-18.70894076225873, -14.986947379224391, -33.827485970275895]
+You are working in interactive mode.
+Antenna Result[-18.705593418561786, -15.655675143964672, -36.453048045352816]
+You are working in interactive mode.
+Antenna Result[-18.622692837332416, -15.85132061817456, -34.158971849353755]
+You are working in interactive mode.
+Antenna Result[-17.40720341947503, -15.787013536197602, -39.70445555281715]
+You are working in interactive mode.
+Antenna Result[-18.879785869946993, -15.594550336946732, -32.85931515416874]
+You are working in interactive mode.
+Antenna Result[-21.510326360465438, -7.796470023897129, -26.2747524092874]
+You are working in interactive mode.
+Antenna Result[-17.880548394229585, -15.619733978429469, -52.25852790206623]
+You are working in interactive mode.
+Antenna Result[-18.408600527463, -6.060848126848289, -21.24540054595866]
+You are working in interactive mode.
+Antenna Result[-13.124132014211556, -16.390213156600105, -39.53450304408028]
+You are working in interactive mode.
+Antenna Result[-19.721866731415837, -10.788158938444033, -31.429793759507845]
+You are working in interactive mode.
+Antenna Result[-20.159240517633616, -15.554586752550021, -34.671371445310875]
+You are working in interactive mode.
+Antenna Result[-17.887247624485028, -15.543512604990388, -30.081627940606698]
+You are working in interactive mode.
+Antenna Result[-19.71388416335345, -15.766551061432274, -42.354527911091786]
+You are working in interactive mode.
+Antenna Result[-17.76809462372652, -15.750427176898505, -37.02445687998921]
+You are working in interactive mode.
+Antenna Result[-20.23276652829916, -15.213686741406718, -38.18124488404516]
+You are working in interactive mode.
+Antenna Result[-18.276480191650148, -14.262435754013028, -42.87949694190936]
+You are working in interactive mode.
+Antenna Result[-17.936035888056427, -15.610923827429579, -33.064281387016]
+You are working in interactive mode.
+Antenna Result[-9.652638939861976, -1.1190371508074524, -10.702759641880979]
+You are working in interactive mode.
+Antenna Result[-18.766888685043163, -15.57944991301282, -35.918558436832924]
+You are working in interactive mode.
+Antenna Result[-17.725132812196442, -15.837300872682063, -37.57310340299219]
+You are working in interactive mode.
+Antenna Result[-20.017845202392962, -15.319948809469894, -34.52718661311701]
+You are working in interactive mode.
+Antenna Result[-18.979284162654686, -13.480652600157255, -31.308670002004618]
+You are working in interactive mode.
+Antenna Result[-8.181128150644565, -18.677182717543225, -8.777818972230468]
+You are working in interactive mode.
+Antenna Result[-7.896684869564364, -6.156442570979124, -7.396960725634047]
+You are working in interactive mode.
+Antenna Result[-11.232790702734265, -4.584954864401477, -12.024312357244915]
+You are working in interactive mode.
+Antenna Result[-19.96543247975406, -13.250341516923946, -43.00114525339622]
+You are working in interactive mode.
+Antenna Result[-18.741260142916126, -15.775282471893528, -33.54977089121991]
+You are working in interactive mode.
+Antenna Result[-18.56708577745149, -14.80324599254915, -33.88880757453924]
+You are working in interactive mode.
+Antenna Result[-19.04912793949613, -14.933266227189755, -36.06377735545993]
+You are working in interactive mode.
+Antenna Result[-18.649454541813753, -14.350516851453072, -33.524410807673064]
+You are working in interactive mode.
+Antenna Result[-17.902817425762795, -15.538476809432131, -30.06253846983781]
+You are working in interactive mode.
+Antenna Result[-11.731428272234268, -0.4988697657416178, -14.21112142969962]
+You are working in interactive mode.
+Antenna Result[-19.049133155208878, -14.933260985384084, -36.06335890475091]
+You are working in interactive mode.
+Antenna Result[-19.425446716618275, -14.222565498043592, -36.46176590164518]
+You are working in interactive mode.
+Antenna Result[-17.739601282139787, -15.827019875500653, -40.145500068797034]
+You are working in interactive mode.
+Antenna Result[-18.396033647968213, -15.982309762151534, -36.729917778810474]
+You are working in interactive mode.
+Antenna Result[-17.60772261767497, -15.83168023956944, -30.781576254210332]
+You are working in interactive mode.
+Antenna Result[-19.00190353886854, -15.242126629950848, -32.104780995733094]
+You are working in interactive mode.
+Antenna Result[-2.6337880992953124, -6.92046566622788, -10.987470852967897]
+You are working in interactive mode.
+Antenna Result[-17.740304045304015, -13.615681959049406, -31.812069750239583]
+You are working in interactive mode.
+Antenna Result[-18.900604392010553, -15.54170524448342, -32.990757841685394]
+You are working in interactive mode.
+Antenna Result[-19.721838392246795, -10.788160240725361, -31.429761633658867]
+You are working in interactive mode.
+Antenna Result[-18.27644420418644, -14.262436534042935, -42.87969968148503]
+You are working in interactive mode.
+Antenna Result[-17.238708401500915, -15.893799345384746, -31.444596306490528]
+You are working in interactive mode.
+Antenna Result[-20.002540710850056, -13.20490720038334, -32.450258794744414]
+You are working in interactive mode.
+Antenna Result[-17.970523785925252, -15.498648669079888, -39.542252343881934]
+You are working in interactive mode.
+Antenna Result[-18.944975224159847, -14.96581686588973, -28.52830270894481]
+You are working in interactive mode.
+Antenna Result[-18.373318601226266, -16.015319966220453, -37.264553395944795]
+You are working in interactive mode.
+Antenna Result[-18.733874814776577, -14.311026812077206, -32.53415757930715]
+You are working in interactive mode.
+Antenna Result[-19.874241508790753, -13.245743202223625, -33.36378634499046]
+You are working in interactive mode.
+Antenna Result[-19.069072177496672, -15.245071810718647, -44.37657114071398]
+You are working in interactive mode.
+Antenna Result[-18.66591466008407, -15.78637705273464, -33.65858949996869]
+You are working in interactive mode.
+Antenna Result[-18.962731462817274, -15.685682908043525, -38.83016992959881]
+You are working in interactive mode.
+Antenna Result[-22.11775229644173, -5.775824908698239, -4.066820079922545]
+You are working in interactive mode.
+Antenna Result[-11.667396911354682, -3.8130017363141877, -4.248734808204704]
+You are working in interactive mode.
+Antenna Result[-17.188103912221287, -2.7234119828255148, -6.562146310834017]
+best_star + 5 [2.688, 11.068, 4.493, 5.522, 6.083, 1.137]
+best_value + 5 [-19.71388416335345, -15.766551061432274, -42.354527911091786]
+You are working in interactive mode.
+Antenna Result[-19.17948422693275, -15.681335493582269, -44.134641199088016]
+You are working in interactive mode.
+Antenna Result[-19.412119816529035, -15.485759691871547, -46.25156519425586]
+You are working in interactive mode.
+Antenna Result[-19.738571011403828, -15.569945533527477, -30.231033041848722]
+You are working in interactive mode.
+Antenna Result[-18.65398260980191, -15.830780180538227, -46.217531172891874]
+You are working in interactive mode.
+Antenna Result[-18.658890102338262, -15.829001779193003, -38.86859349443271]
+You are working in interactive mode.
+Antenna Result[-19.33493459049043, -15.082285463872761, -43.88262451723542]
+You are working in interactive mode.
+Antenna Result[-18.95808015594715, -15.778142517371855, -36.090791729669036]
+You are working in interactive mode.
+Antenna Result[-18.279191716291166, -15.937680920397417, -47.44538507942426]
+You are working in interactive mode.
+Antenna Result[-18.98763936611188, -15.401568726370341, -40.02407526767419]
+You are working in interactive mode.
+Antenna Result[-18.74325110092608, -15.887822284402471, -49.6628518416278]
+You are working in interactive mode.
+Antenna Result[-18.768619672708066, -15.9350346779485, -41.82013177014664]
+You are working in interactive mode.
+Antenna Result[-20.173123663115152, -15.530219206633554, -37.93881872858054]
+You are working in interactive mode.
+Antenna Result[-19.85753658508031, -14.369406828201559, -42.84797548624228]
+You are working in interactive mode.
+Antenna Result[-19.50879872483099, -11.843289448258842, -32.40810001433438]
+You are working in interactive mode.
+Antenna Result[-19.604776055355423, -15.5840464021325, -55.48240688972571]
+You are working in interactive mode.
+Antenna Result[-19.61352931952241, -15.739830751642828, -44.66258447768234]
+You are working in interactive mode.
+Antenna Result[-19.860127297881505, -15.30042528084094, -50.055029446473505]
+You are working in interactive mode.
+Antenna Result[-21.439926631362983, -14.673113707325223, -41.351934964385265]
+You are working in interactive mode.
+Antenna Result[-19.111843998307975, -15.023522778668841, -48.13434265997707]
+You are working in interactive mode.
+Antenna Result[-18.922584906222312, -15.728019390078366, -38.09439502596065]
+You are working in interactive mode.
+Antenna Result[-20.204788880681193, -13.685419651083617, -38.92344154354418]
+You are working in interactive mode.
+Antenna Result[-19.85731129868336, -15.689105369336078, -42.08872046723713]
+You are working in interactive mode.
+Antenna Result[-21.281783717936882, -12.699235298300291, -35.57811429738936]
+You are working in interactive mode.
+Antenna Result[-19.377337420040575, -15.629065793932282, -47.4788953564712]
+You are working in interactive mode.
+Antenna Result[-18.413260611868722, -6.992644647706774, -28.14553194797838]
+You are working in interactive mode.
+Antenna Result[-13.306628840301034, -16.578286006832585, -43.57108782851946]
+You are working in interactive mode.
+Antenna Result[-18.577798470211487, -14.91736402638409, -44.36478994638768]
+You are working in interactive mode.
+Antenna Result[-19.82689044663919, -15.696544522414591, -45.836194820984765]
+You are working in interactive mode.
+Antenna Result[-18.709808977079533, -15.330016503290512, -28.93053043311856]
+You are working in interactive mode.
+Antenna Result[-19.713919073797356, -15.766551103858404, -42.354141806624845]
+You are working in interactive mode.
+Antenna Result[-8.915819658067011, -1.1139341916557395, -8.069864765007743]
+You are working in interactive mode.
+Antenna Result[-18.918257456335013, -15.733674545098651, -45.36210824914025]
+You are working in interactive mode.
+Antenna Result[-18.655659368785944, -15.823254970408762, -38.866562780299446]
+You are working in interactive mode.
+Antenna Result[-19.856157914884733, -15.69127791581315, -42.03558694899323]
+You are working in interactive mode.
+Antenna Result[-19.509356954984046, -11.8401540735478, -32.40060811872922]
+You are working in interactive mode.
+Antenna Result[-4.326751209326456, -7.52484625549717, -14.769145066089756]
+You are working in interactive mode.
+Antenna Result[-21.276334110047483, -15.326562739579472, -36.4877513743024]
+You are working in interactive mode.
+Antenna Result[-18.752725301542156, -12.972156602093223, -40.08465099874026]
+You are working in interactive mode.
+Antenna Result[-20.251145591548394, -15.117113632229612, -36.06784424807514]
+You are working in interactive mode.
+Antenna Result[-18.94512127523184, -15.879998335466247, -29.846214194998026]
+You are working in interactive mode.
+Antenna Result[-18.814151861401452, -15.812648883296195, -50.08957299701776]
+You are working in interactive mode.
+Antenna Result[-17.908432072155215, -15.935360941885957, -30.5581418439659]
+You are working in interactive mode.
+Antenna Result[-18.95280061607434, -15.784972369374682, -36.006754650244034]
+You are working in interactive mode.
+Antenna Result[-19.616499857872622, -15.733069297445164, -44.876765832342514]
+You are working in interactive mode.
+Antenna Result[-18.302662670258535, -15.230943029423498, -44.81582248652202]
+You are working in interactive mode.
+Antenna Result[-19.319318750150057, -15.717156329901892, -29.806087110717158]
+You are working in interactive mode.
+Antenna Result[-12.912068588777668, -3.903870961297246, -8.018442595047121]
+You are working in interactive mode.
+Antenna Result[-21.30312922390077, -4.98518989374061, -9.400845867483648]
+You are working in interactive mode.
+Antenna Result[-7.432295525360518, -3.532027052509248, -6.268397063975928]
+You are working in interactive mode.
+Antenna Result[-18.58229223852158, -15.812895349711265, -38.535161987333275]
+You are working in interactive mode.
+Antenna Result[-18.730294040041766, -15.837839516064502, -39.340802012563856]
+You are working in interactive mode.
+Antenna Result[-12.403508638950182, -7.369590563260618, -9.192769806449359]
+You are working in interactive mode.
+Antenna Result[-13.325788271622853, -16.682576591940975, -42.719248781168986]
+You are working in interactive mode.
+Antenna Result[-21.303532959290305, -15.25465702638945, -36.79637244620854]
+You are working in interactive mode.
+Antenna Result[-6.511800734099754, -10.77443433490345, -9.573788343269488]
+You are working in interactive mode.
+Antenna Result[-19.266359368239804, -15.7410965575418, -65.6681467526098]
+You are working in interactive mode.
+Antenna Result[-19.816590752761808, -14.88683801451031, -29.216802771122317]
+You are working in interactive mode.
+Antenna Result[-7.338038284246371, -0.6917271016476498, -4.083490057417888]
+You are working in interactive mode.
+Antenna Result[-10.764475099861055, -0.7126332500620922, -12.426382983591125]
+You are working in interactive mode.
+Antenna Result[-12.845654300491976, -34.5727517524497, -13.067403522644895]
+You are working in interactive mode.
+Antenna Result[-18.67561928955937, -15.870906250463436, -47.2799437754376]
+You are working in interactive mode.
+Antenna Result[-18.66442200182753, -12.982618642935169, -36.95048378299526]
+best_star + 6 [2.688, 11.068, 4.493, 5.522, 6.083, 1.137]
+best_value + 6 [-19.713919073797356, -15.766551103858404, -42.354141806624845]
+You are working in interactive mode.
+Antenna Result[-19.57858174587509, -15.734289842370446, -46.54024495782406]
+You are working in interactive mode.
+Antenna Result[-19.525006242014655, -15.644230741894345, -47.70399828391823]
+You are working in interactive mode.
+Antenna Result[-19.178191652629557, -15.85886066714269, -68.12450547169705]
+You are working in interactive mode.
+Antenna Result[-18.972870043278053, -15.79936133550138, -49.91070316708094]
+You are working in interactive mode.
+Antenna Result[-18.71839239293479, -15.784898235346317, -44.52420062696266]
+You are working in interactive mode.
+Antenna Result[-18.60938346931929, -15.265158785441884, -57.88271685464237]
+You are working in interactive mode.
+Antenna Result[-19.584074952540792, -15.740831633061758, -36.68707023977359]
+You are working in interactive mode.
+Antenna Result[-19.514341635716736, -15.717113846761258, -46.028869848017436]
+You are working in interactive mode.
+Antenna Result[-19.614053259640563, -15.53179570978682, -54.28287375131334]
+You are working in interactive mode.
+Antenna Result[-14.091446131811402, -16.65654898888306, -40.53589935067591]
+You are working in interactive mode.
+Antenna Result[-19.483057216719047, -15.732082116074466, -45.559968457783484]
+You are working in interactive mode.
+Antenna Result[-19.84219258538672, -15.230459438035428, -53.26951614020196]
+You are working in interactive mode.
+Antenna Result[-19.717254491247694, -14.702555962493527, -52.3246968260204]
+You are working in interactive mode.
+Antenna Result[-19.813316602421704, -15.708176471618625, -42.210716446417216]
+You are working in interactive mode.
+Antenna Result[-19.624150947006424, -15.661042556176458, -48.390887031094174]
+You are working in interactive mode.
+Antenna Result[-19.64202696785213, -15.736352735123766, -43.712045940171876]
+You are working in interactive mode.
+Antenna Result[-19.803772167360304, -15.554630250348305, -51.58312604168703]
+You are working in interactive mode.
+Antenna Result[-21.44636339199842, -15.164373645614056, -43.89344646148758]
+You are working in interactive mode.
+Antenna Result[-19.790306149048636, -14.995333788124936, -43.244614343301045]
+You are working in interactive mode.
+Antenna Result[-19.04082694784382, -15.748481674688758, -40.92698405289697]
+You are working in interactive mode.
+Antenna Result[-20.26781703330608, -15.336668123474066, -43.87581589601893]
+You are working in interactive mode.
+Antenna Result[-19.43998672360979, -12.949260917476273, -39.2102255651066]
+You are working in interactive mode.
+Antenna Result[-18.858465121693605, -15.036307755589016, -42.1069586260543]
+You are working in interactive mode.
+Antenna Result[-19.580773534187674, -15.71966129391569, -43.16191973093477]
+You are working in interactive mode.
+Antenna Result[-19.51539072759269, -13.188449264285143, -41.92065527359034]
+You are working in interactive mode.
+Antenna Result[-21.22476368829098, -15.307008846197338, -43.80978278524264]
+You are working in interactive mode.
+Antenna Result[-19.331698527849873, -15.284750963619933, -51.46629089181501]
+You are working in interactive mode.
+Antenna Result[-19.73820220788039, -15.74595079189181, -45.82372119762467]
+You are working in interactive mode.
+Antenna Result[-19.473625268903508, -15.766280204989354, -36.65585559841387]
+You are working in interactive mode.
+Antenna Result[-19.713916640072707, -15.766549722750101, -42.35394981063044]
+You are working in interactive mode.
+Antenna Result[-8.879647223078798, -14.672244704647422, -15.455961185370983]
+You are working in interactive mode.
+Antenna Result[-19.194210907758418, -15.8541263521742, -45.94012557755651]
+You are working in interactive mode.
+Antenna Result[-19.69248528389447, -15.771121875486092, -45.66336428070268]
+You are working in interactive mode.
+Antenna Result[-19.491804113804832, -15.723934452413609, -47.2307595907251]
+You are working in interactive mode.
+Antenna Result[-19.794950597907373, -15.735116043821684, -45.8778030293888]
+You are working in interactive mode.
+Antenna Result[-15.997061036928894, -15.966726389027135, -7.004072373114278]
+You are working in interactive mode.
+Antenna Result[-12.922202540966197, -3.481692657680745, -10.626671478562352]
+You are working in interactive mode.
+Antenna Result[-19.424455791890097, -15.365225633290457, -43.854162376699676]
+You are working in interactive mode.
+Antenna Result[-19.97244861164031, -13.13637129294741, -41.598668320284645]
+You are working in interactive mode.
+Antenna Result[-19.040828345897168, -15.748481312269238, -40.92654036565807]
+You are working in interactive mode.
+Antenna Result[-14.091456688685716, -16.656556155321724, -40.53534865861845]
+You are working in interactive mode.
+Antenna Result[-18.769054828143055, -15.772375019735033, -45.13468152738796]
+You are working in interactive mode.
+Antenna Result[-19.370258914117255, -12.95452751756164, -38.886591603052786]
+You are working in interactive mode.
+Antenna Result[-19.610240890102425, -15.55001987059577, -45.14172291556296]
+You are working in interactive mode.
+Antenna Result[-19.76779458386521, -15.02852896047175, -42.508076219687936]
+You are working in interactive mode.
+Antenna Result[-19.040869953011367, -15.748482513658729, -40.926837476102776]
+You are working in interactive mode.
+Antenna Result[-14.091440962184194, -16.65655507122157, -40.5361711274752]
+You are working in interactive mode.
+Antenna Result[-18.372299746004686, -15.987746086201026, -48.23106614472154]
+You are working in interactive mode.
+Antenna Result[-14.13592910805757, -15.746705341076595, -40.8519260282144]
+You are working in interactive mode.
+Antenna Result[-8.15283216218686, -4.886244228132684, -19.345325592148225]
+You are working in interactive mode.
+Antenna Result[-19.638961497515027, -15.727027294879703, -36.38465358989889]
+You are working in interactive mode.
+Antenna Result[-19.273103560343895, -15.295721074862534, -53.471180987132946]
+You are working in interactive mode.
+Antenna Result[-8.687901813519463, -1.4034624824624864, -10.568982549674327]
+You are working in interactive mode.
+Antenna Result[-9.6014074866309, -1.0307092280928163, -10.474988600196074]
+You are working in interactive mode.
+Antenna Result[-11.472220681660506, -29.03578725999841, -48.41014624218588]
+You are working in interactive mode.
+Antenna Result[-9.782793180975746, -1.0483379936661106, -8.081516805376124]
+You are working in interactive mode.
+Antenna Result[-1.8266217007562178, -9.140172189720628, -6.4187001227520435]
+You are working in interactive mode.
+Antenna Result[-19.491559028618504, -15.70774247170656, -47.303638889694774]
+You are working in interactive mode.
+Antenna Result[-21.2143173732923, -15.322856033382342, -43.91655977401587]
+You are working in interactive mode.
+Antenna Result[-14.135920348292546, -15.7467091969899, -40.852011558349716]
+You are working in interactive mode.
+Antenna Result[-19.524999850756114, -15.644232293230312, -47.70249497811902]
+You are working in interactive mode.
+Antenna Result[-14.163474635190239, -16.683698581507574, -40.472831666837166]
+You are working in interactive mode.
+Antenna Result[-21.49646227437448, -14.63703635078485, -47.301772297881016]
+You are working in interactive mode.
+Antenna Result[-20.513142340892564, -5.780452435083846, -3.2842006492608107]
+You are working in interactive mode.
+Antenna Result[-9.840594199450258, -3.848388835356895, -10.136574398781732]
+You are working in interactive mode.
+Antenna Result[-19.7193503132941, -15.771490438621301, -43.51144682787756]
+You are working in interactive mode.
+Antenna Result[-18.514942033837855, -15.198317101762981, -44.726435359615124]
+You are working in interactive mode.
+Antenna Result[-19.63593156683406, -15.21716838300577, -37.2639072750411]
+You are working in interactive mode.
+Antenna Result[-18.988438108992526, -15.777834642379618, -50.79299785567383]
+best_star + 7 [2.688, 11.068, 4.493, 5.522, 6.066, 1.137]
+best_value + 7 [-19.713916640072707, -15.766549722750101, -42.35394981063044]
+You are working in interactive mode.
+Antenna Result[-19.680450382255263, -15.765451922133884, -44.781609112319856]
+You are working in interactive mode.
+Antenna Result[-14.670884422359268, -16.6515026480112, -44.30513267864597]
+You are working in interactive mode.
+Antenna Result[-19.20116556908199, -15.853662708647194, -62.528341054843786]
+You are working in interactive mode.
+Antenna Result[-19.604793790266406, -15.806378047134151, -44.616590629772965]
+You are working in interactive mode.
+Antenna Result[-19.468387229740884, -15.796619250550963, -46.554366584418865]
+You are working in interactive mode.
+Antenna Result[-19.722835808337948, -15.76285697599233, -44.399565413006485]
+You are working in interactive mode.
+Antenna Result[-19.696693977293272, -15.512825132573376, -37.5406152155688]
+You are working in interactive mode.
+Antenna Result[-19.609537226097018, -15.736555526512072, -53.16623184032943]
+You are working in interactive mode.
+Antenna Result[-19.61480577891108, -15.648141216738171, -57.862215415166325]
+You are working in interactive mode.
+Antenna Result[-19.173562876210795, -15.706983683158338, -43.00090205828813]
+You are working in interactive mode.
+Antenna Result[-19.703611674327288, -15.764747195300796, -44.312619322266116]
+You are working in interactive mode.
+Antenna Result[-19.51503962204348, -15.56853573583062, -60.08913500191203]
+You are working in interactive mode.
+Antenna Result[-19.66575143992484, -15.137236923413962, -44.99591679513675]
+You are working in interactive mode.
+Antenna Result[-19.710716550708927, -15.761291984654406, -45.15479006054232]
+You are working in interactive mode.
+Antenna Result[-19.674189125746157, -15.724481758873461, -43.96511581386372]
+You are working in interactive mode.
+Antenna Result[-19.661947340327117, -15.726605523907038, -44.0868642964955]
+You are working in interactive mode.
+Antenna Result[-19.761607461048115, -15.625112132465356, -48.5487974325909]
+You are working in interactive mode.
+Antenna Result[-20.432787340883646, -15.475872427710662, -43.928028263389294]
+You are working in interactive mode.
+Antenna Result[-19.476659637324165, -15.825913636447968, -46.29574023606922]
+You are working in interactive mode.
+Antenna Result[-19.62346584168252, -15.750695896224663, -45.274469898447876]
+You are working in interactive mode.
+Antenna Result[-19.694477739800732, -15.530093355731928, -45.25306201595606]
+You are working in interactive mode.
+Antenna Result[-19.38986045772396, -12.976098656738033, -43.114812074761886]
+You are working in interactive mode.
+Antenna Result[-18.840082386287172, -15.669395990795321, -45.12097337602128]
+You are working in interactive mode.
+Antenna Result[-19.637239569767424, -15.755335566805588, -45.641871988473845]
+You are working in interactive mode.
+Antenna Result[-19.906893378068723, -14.986420496574658, -44.354438133677654]
+You are working in interactive mode.
+Antenna Result[-21.08611544364965, -15.377531137313394, -43.38409351059951]
+You are working in interactive mode.
+Antenna Result[-19.4160132420568, -15.834160566000348, -44.26005712993371]
+You are working in interactive mode.
+Antenna Result[-19.735134842196306, -15.763027811832869, -45.811094729541885]
+You are working in interactive mode.
+Antenna Result[-19.60322117488065, -15.782635493367705, -40.761974588329736]
+You are working in interactive mode.
+Antenna Result[-19.692483899148826, -15.771128841838397, -45.66365826313526]
+You are working in interactive mode.
+Antenna Result[-9.328624850430451, -1.242185246569629, -3.481389063767778]
+You are working in interactive mode.
+Antenna Result[-19.66192520355875, -15.726604761974027, -44.086012727657874]
+You are working in interactive mode.
+Antenna Result[-19.674198823530368, -15.724484556332584, -43.96532870506212]
+You are working in interactive mode.
+Antenna Result[-19.605566426612434, -15.733355601216545, -52.14969720350554]
+You are working in interactive mode.
+Antenna Result[-19.701159438752306, -15.733663634462136, -45.29718122005444]
+You are working in interactive mode.
+Antenna Result[-19.410654133528006, -15.835099070408988, -45.29799472043143]
+You are working in interactive mode.
+Antenna Result[-19.61285544128403, -15.735258415580393, -49.353296322470015]
+You are working in interactive mode.
+Antenna Result[-19.703661714835533, -15.733167837813681, -44.95527652434643]
+You are working in interactive mode.
+Antenna Result[-19.701216080683494, -15.765244903892203, -44.717401357206235]
+You are working in interactive mode.
+Antenna Result[-8.491858971084955, -20.90869356945562, -16.164851464646585]
+You are working in interactive mode.
+Antenna Result[-19.67106298195748, -15.793075514868784, -43.43970645069338]
+You are working in interactive mode.
+Antenna Result[-19.61174177684938, -15.687587249602899, -59.092209300617796]
+You are working in interactive mode.
+Antenna Result[-22.663120345798866, -5.105555309947486, -7.374702179003032]
+You are working in interactive mode.
+Antenna Result[-22.29812573607529, -4.837463497977289, -9.85412556898228]
+You are working in interactive mode.
+Antenna Result[-21.086058866078254, -15.377528918081943, -43.38324909585532]
+You are working in interactive mode.
+Antenna Result[-19.201145104493474, -15.85365843283884, -62.528991334974855]
+You are working in interactive mode.
+Antenna Result[-10.640628068265697, -0.8744791103533543, -7.781841434647064]
+You are working in interactive mode.
+Antenna Result[-10.65792299414036, -4.74794346829038, -3.8869871869305985]
+You are working in interactive mode.
+Antenna Result[-8.971686689040194, -1.3685286514829398, -5.533789619363443]
+You are working in interactive mode.
+Antenna Result[-15.62596433364609, -4.589224124523674, -8.873772333601673]
+You are working in interactive mode.
+Antenna Result[-10.212719128946233, -1.105724640373091, -8.137970148329906]
+You are working in interactive mode.
+Antenna Result[-19.719863581733065, -15.728712188217148, -45.24022254120527]
+You are working in interactive mode.
+Antenna Result[-19.68098293540318, -15.769341237790538, -44.23519823892086]
+You are working in interactive mode.
+Antenna Result[-19.495774737659087, -15.645976719439927, -53.97948141369035]
+You are working in interactive mode.
+Antenna Result[-20.256984914140798, -15.333519106770497, -52.966364554660444]
+You are working in interactive mode.
+Antenna Result[-19.186381904609448, -15.840986545172486, -48.42216303022282]
+You are working in interactive mode.
+Antenna Result[-19.52066037443139, -15.817074402221392, -45.69177189813817]
+You are working in interactive mode.
+Antenna Result[-8.266223662042885, -0.3276879501282223, -7.917833310816213]
+You are working in interactive mode.
+Antenna Result[-9.825650793917424, -0.900141046127987, -12.080502631424137]
+You are working in interactive mode.
+Antenna Result[-5.706928754044856, -3.4260961872960465, -16.102655004608202]
+You are working in interactive mode.
+Antenna Result[-10.09119570097633, -5.052327296251782, -12.300108703406972]
+You are working in interactive mode.
+Antenna Result[-19.713116609794795, -15.766394808454017, -45.64627741860789]
+You are working in interactive mode.
+Antenna Result[-19.06818334379752, -13.003565405360467, -44.59222711602406]
+You are working in interactive mode.
+Antenna Result[-19.70834805290219, -15.717480573410453, -45.58731614250987]
+You are working in interactive mode.
+Antenna Result[-19.613077723241073, -15.786679456633248, -45.229166867773046]
+You are working in interactive mode.
+Antenna Result[-19.697446447160488, -15.770054907045697, -45.2642352592913]
+You are working in interactive mode.
+Antenna Result[-21.085114223176863, -15.37884514644646, -42.91271377031039]
+You are working in interactive mode.
+Antenna Result[-19.604242616128158, -15.780400053237571, -40.757207490940075]
+You are working in interactive mode.
+Antenna Result[-19.494354286977767, -15.648363843503413, -53.78060352036354]
+You are working in interactive mode.
+Antenna Result[-18.846105253755944, -15.788763118560825, -45.998244654983765]
+You are working in interactive mode.
+Antenna Result[-19.63765338239066, -15.617441024067354, -43.46769240744606]
+best_star + 8 [2.688, 11.067, 4.503, 5.64, 6.066, 1.13]
+best_value + 8 [-19.692483899148826, -15.771128841838397, -45.66365826313526]
+You are working in interactive mode.
+Antenna Result[-21.07161376096286, -15.385554428105632, -43.5393479564605]
+You are working in interactive mode.
+Antenna Result[-16.46501997345483, -16.39979707743237, -47.478894409187326]
+You are working in interactive mode.
+Antenna Result[-19.853029727725254, -15.657154779587415, -55.02042396239528]
+You are working in interactive mode.
+Antenna Result[-20.436749676235394, -15.453976484838538, -46.78493806343283]
+You are working in interactive mode.
+Antenna Result[-20.41501939640018, -15.451963871787221, -49.83398260813922]
+You are working in interactive mode.
+Antenna Result[-19.807046323450436, -15.668298044924828, -48.87907505948627]
+You are working in interactive mode.
+Antenna Result[-20.922579928724158, -15.401535784495444, -42.51149365046963]
+You are working in interactive mode.
+Antenna Result[-20.31784225908334, -15.488846459203687, -50.34664294129097]
+You are working in interactive mode.
+Antenna Result[-19.886040429228323, -15.577435950194996, -59.696243430205215]
+You are working in interactive mode.
+Antenna Result[-19.876669979129424, -15.643512833138658, -60.16104078935189]
+You are working in interactive mode.
+Antenna Result[-20.28147260969326, -15.49835380046967, -50.08756426350105]
+You are working in interactive mode.
+Antenna Result[-20.648724436921512, -15.357550000403391, -47.88472287717739]
+You are working in interactive mode.
+Antenna Result[-20.123010197887265, -15.357071537302625, -53.04177597761615]
+You are working in interactive mode.
+Antenna Result[-19.878544263265887, -15.642475543383476, -55.1390148526594]
+You are working in interactive mode.
+Antenna Result[-20.602902825287405, -15.372992447344753, -48.79314625837794]
+You are working in interactive mode.
+Antenna Result[-20.5571162678989, -15.407394653894208, -48.05803354842674]
+You are working in interactive mode.
+Antenna Result[-20.315953295185672, -15.449542144945852, -63.567741706638245]
+You are working in interactive mode.
+Antenna Result[-20.745410753388942, -15.412387232031355, -43.56981157069229]
+You are working in interactive mode.
+Antenna Result[-19.63614587077491, -15.724016702077888, -63.357846267545746]
+You are working in interactive mode.
+Antenna Result[-19.838789908857553, -15.656642871453561, -57.2750019509619]
+You are working in interactive mode.
+Antenna Result[-20.547433635127085, -15.264739533137101, -49.68007985220726]
+You are working in interactive mode.
+Antenna Result[-20.406632880078696, -15.3050786900015, -48.74505055360753]
+You are working in interactive mode.
+Antenna Result[-20.440941088743074, -15.402057266258314, -46.83008524767917]
+You are working in interactive mode.
+Antenna Result[-20.22732514206091, -15.525214570449105, -48.88524549375718]
+You are working in interactive mode.
+Antenna Result[-19.95057425514623, -15.140266821379583, -59.70909608156803]
+You are working in interactive mode.
+Antenna Result[-20.61268287768212, -15.383078880890913, -46.27037817488173]
+You are working in interactive mode.
+Antenna Result[-20.201350950592932, -15.533789101812914, -45.02492121497528]
+You are working in interactive mode.
+Antenna Result[-20.30012995955609, -15.509465131262292, -50.23939944557555]
+You are working in interactive mode.
+Antenna Result[-20.46026754985201, -15.47668697559632, -43.76738677909094]
+You are working in interactive mode.
+Antenna Result[-21.085142004967622, -15.378848590646651, -42.91386459465932]
+You are working in interactive mode.
+Antenna Result[-9.231123494353298, -23.08496271669563, -10.92012553344227]
+You are working in interactive mode.
+Antenna Result[-10.01890710000345, -3.0145389887664287, -6.438455651593115]
+You are working in interactive mode.
+Antenna Result[-21.11772966680011, -15.369681847217011, -42.49772846237679]
+You are working in interactive mode.
+Antenna Result[-20.259802781773473, -15.50843393485615, -48.65053047717047]
+You are working in interactive mode.
+Antenna Result[-20.316003455458528, -15.449539946552465, -63.55734651891603]
+You are working in interactive mode.
+Antenna Result[-19.886028444795407, -15.577428918823554, -59.698900226735304]
+You are working in interactive mode.
+Antenna Result[-8.949335091148377, -8.6992348710056, -8.459230178841512]
+You are working in interactive mode.
+Antenna Result[-11.276408434731504, -1.0973057513501518, -11.452323053061988]
+You are working in interactive mode.
+Antenna Result[-11.090573459692024, -30.10356167733335, -16.76872738451134]
+You are working in interactive mode.
+Antenna Result[-10.18374307467484, -20.85797025174276, -14.070225169630087]
+You are working in interactive mode.
+Antenna Result[-8.220753780368026, -3.1550065248946364, -16.29656126629648]
+You are working in interactive mode.
+Antenna Result[-10.255917658951233, -6.887920124207666, -13.7556676327812]
+You are working in interactive mode.
+Antenna Result[-13.700024959023038, -1.3042350594236822, -7.43842454282432]
+You are working in interactive mode.
+Antenna Result[-10.643009917069282, -0.36686550465904216, -11.802183481676726]
+You are working in interactive mode.
+Antenna Result[-20.6474300609967, -15.358131542727687, -47.91830684326294]
+You are working in interactive mode.
+Antenna Result[-20.203047560424537, -15.533227242264445, -44.969757630315144]
+You are working in interactive mode.
+Antenna Result[-20.839149081098384, -15.44302836743864, -48.59578831910476]
+You are working in interactive mode.
+Antenna Result[-20.23170856029154, -15.52542032500559, -50.1302296661281]
+You are working in interactive mode.
+Antenna Result[-20.49506904200106, -15.387321978920099, -42.27875695124549]
+You are working in interactive mode.
+Antenna Result[-20.925873044973265, -15.3602892578051, -43.60899750047993]
+You are working in interactive mode.
+Antenna Result[-10.72085991593225, -0.5154886082721745, -4.123162157726013]
+You are working in interactive mode.
+Antenna Result[-20.225306902307388, -15.527196484165966, -48.74509432527805]
+You are working in interactive mode.
+Antenna Result[-16.465897450385675, -16.396332856114245, -47.55061024354731]
+You are working in interactive mode.
+Antenna Result[-10.64783052446632, -4.447588474411318, -5.825814573318231]
+You are working in interactive mode.
+Antenna Result[-10.224181740829298, -0.9428913752055657, -6.88349242016848]
+You are working in interactive mode.
+Antenna Result[-22.31065785396882, -8.422683858960799, -7.495100245611182]
+You are working in interactive mode.
+Antenna Result[-20.526156232227855, -15.274990642923157, -47.11390383303025]
+You are working in interactive mode.
+Antenna Result[-21.101670534446125, -15.377690249971003, -42.832078216553654]
+You are working in interactive mode.
+Antenna Result[-12.691448667894639, -18.040775786745826, -14.772717023712085]
+You are working in interactive mode.
+Antenna Result[-20.557119269158125, -15.406979326310932, -47.60710777057153]
+You are working in interactive mode.
+Antenna Result[-19.877900220668486, -15.64282312739044, -56.61697022075327]
+You are working in interactive mode.
+Antenna Result[-16.144552365894015, -5.825003485896236, -7.492413539162537]
+You are working in interactive mode.
+Antenna Result[-20.460303389414683, -15.476685645198337, -43.76796067238103]
+You are working in interactive mode.
+Antenna Result[-20.317807703786627, -15.488837296295584, -50.34501908641345]
+You are working in interactive mode.
+Antenna Result[-20.20336849103571, -15.526747270523773, -51.424239922077916]
+You are working in interactive mode.
+Antenna Result[-20.413107677861785, -15.45800009062881, -44.470144869913156]
+You are working in interactive mode.
+Antenna Result[-8.241389443888771, -0.45365618115431877, -4.9517876371472065]
+You are working in interactive mode.
+Antenna Result[-19.920924703161443, -15.631174671238755, -59.42195945079402]
+You are working in interactive mode.
+Antenna Result[-19.901027618216734, -15.150969998666424, -61.24726878469724]
+You are working in interactive mode.
+Antenna Result[-10.401473581252183, -1.1957159826920762, -11.738677285577428]
+You are working in interactive mode.
+Antenna Result[-10.927796044232018, -8.009831365436002, -10.02873502836585]
+best_star + 9 [2.688, 11.066, 4.503, 5.572, 6.069, 1.138]
+best_value + 9 [-21.085142004967622, -15.378848590646651, -42.91386459465932]
+Improved Black Hole Algorithm: Maximum Optimization
+Improved Black Hole Algorithm: Maximum Optimization
+Best Star Location: [2.688, 11.066, 4.503, 5.572, 6.069, 1.138]
+Best Star Fitness Value:[-21.085142004967622, -15.378848590646651, -42.91386459465932]

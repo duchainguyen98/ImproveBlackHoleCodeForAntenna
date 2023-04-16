@@ -5,7 +5,7 @@ import cst.interface
 import cst.results
 import numpy as np
 import shutil
-import Anten_init
+import Antenna_init
 
 class Anten:
     def __init__(self, PopX):
@@ -47,11 +47,11 @@ class Anten:
     def run_antenna(self):
         self.mycst = cst.interface.DesignEnvironment(mode=cst.interface.DesignEnvironment.StartMode.ExistingOrNew)
         self.myproject = self.mycst.new_mws()
-        anten_init=Anten_init.Anten_init(self.myproject)
+        anten_init=Antenna_init.Antenna_init(self.myproject)
         anten_init.run()
         size_antenna_x=len(self.PopX)
         size_antenna_y=len(self.PopX[1])
-        pixel_size=1
+        pixel_size=2
         self.PopX[size_antenna_x//2][size_antenna_y//2]=1
         for i in range(len(self.PopX)):
             for j in range(len(self.PopX[i])):

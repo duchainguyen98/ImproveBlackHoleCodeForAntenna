@@ -19,7 +19,7 @@ class Star:
         self.fitval = S11
         if np.any(np.less_equal(S11,-10)):
             save_value=str(self.location)
-            file_save = open("C:\Value_S11.txt", "a")
+            file_save = open("C:\DATA\Master\Python_Code\ImproveBlackHoleCodeForAntenna\Antenna_Cross_Pixel_MultiBand\Value_S11.txt", "a")
             # Ghi data vao cuoi file
             Value_fitval="\n Value_fitval " + str(S11) + "\n---------------------------------------------------------\n"
             file_save.write(save_value)
@@ -92,17 +92,22 @@ class ImprovedBlackHole:
         star1 = self.stars_not_is_absorbed[a]
         star2 = self.stars_not_is_absorbed[b]
 
-        # split points
-        cut_pointx = np.random.randint(1, self.pixel_max_x-2)
-        cut_pointy = np.random.randint(1, self.pixel_max_y-2)
-        star1_cut_point = star1.location[:cut_pointx,:cut_pointy]
-        star2_cut_point = star2.location[:cut_pointx,:cut_pointy]
+        # # split points
+        # cut_pointx = np.random.randint(1, self.pixel_max_x-2)
+        # cut_pointy = np.random.randint(1, self.pixel_max_y-2)
+        # star1_cut_point = star1.location[:cut_pointx,:cut_pointy]
+        # star2_cut_point = star2.location[:cut_pointx,:cut_pointy]
+        # # do crossover
+        # child1_location = star2.location
+        # child1_location[:cut_pointx,:cut_pointy]=star1_cut_point
+        # child2_location= star1.location
+        # child2_location[:cut_pointx,:cut_pointy]=star2_cut_point
+        child1_boolean=np.logical_and(star1.location, star2.location)
+        child2_boolean=np.logical_or(star1.location, star2.location)
 
-        # do crossover
-        child1_location = star2.location
-        child1_location[:cut_pointx,:cut_pointy]=star1_cut_point
-        child2_location= star1.location
-        child2_location[:cut_pointx,:cut_pointy]=star2_cut_point
+        child1_location=child1_boolean.astype(int)
+        child2_location=child2_boolean.astype(int)
+
         child1=Star(child1_location)
         child2=Star(child2_location)
         # return star with higher fitness value
@@ -158,21 +163,6 @@ class ImprovedBlackHole:
             # Inner Loop Thực hiện so sánh với chân trời sự kiện và cập nhật các ngôi sao mới
             best_star = self.move_each_star(R, evolution_rate, best_star_value)
             best_star_value = best_star
-            print("best_star + "+str(i)+" "+str(best_star.location))
-            print("best_value + "+str(i)+" "+ str(best_star.fitval))
+            print("best_star + "+str(i)+" "+str(best_star_value.location))
+            print("best_value + "+str(i)+" "+ str(best_star_value.fitval))
         return best_star_value
-
-
-# example uses 2 features (location) [Two Dimensional-Space example]
-# the space's dimension is defined by the length of min_values_loc and max_values_loc array
-
-
-# Result
-# print("Improved Black Hole Algorithm: Maximum Optimization")
-# print("Max Location: %s" % (max_values_loc))
-# print("Best Star Location: %s" % (best_star.location))
-# print("Best Star Fitness Value: %.2f" % (best_star.get_fitval()))
-
-# Error
-# error = [(max_values_loc[i] - best_star.location[i]) for i in range(len(best_star.location))]
-# print("Error Distance per Feature: %s" % (error))

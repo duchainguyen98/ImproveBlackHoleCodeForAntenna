@@ -422,6 +422,8 @@ class Anten_init:
         self.myproject
         frequency_min=2
         frequency_max=6
+        widthsub = 160
+        lengthsub = 75
         self.CstDefineUnits(self.myproject)
         self.CstDefineFrequencyRange(self.myproject,frequency_min,frequency_max)
         self.CstDrawBox(self.myproject)
@@ -431,8 +433,6 @@ class Anten_init:
         self.CstSolverType(self.myproject)
         self.CstMaterialeFR4(self.myproject)
         self.CstMaterialeCopper(self.myproject)
-        widthsub=50
-        lengthsub=50
         self.CstParameterList(self.myproject,widthsub,lengthsub)
         self.CstSubstrate(self.myproject)
         self.CstCoax(self.myproject)
