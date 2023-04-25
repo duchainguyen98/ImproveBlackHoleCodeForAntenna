@@ -19,9 +19,9 @@ import IBH_multiband
 # % *************************** %
 np.set_printoptions(threshold=np.inf)
 
-num_stars = 20 # size of population
+num_stars = 30 # size of population
 # n=4     # dimension of problem 
-max_iter = 20 # number of generations
+max_iter = 15 # number of generations
 
 #---------Boundary-------
 

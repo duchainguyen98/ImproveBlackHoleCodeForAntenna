@@ -57,7 +57,7 @@ class ImprovedBlackHole:
         return best_star
     #Tính toán bán kính chân trời sự kiện (Điều kiện giữ hay loại bỏ cá thể)
     def calculate_radius_event_horizon(self):
-        all_stars_fitval = [0,0]
+        all_stars_fitval = [0,0,0]
         for i in range(len(self.stars)):
             all_stars_fitval =np.add(all_stars_fitval,self.stars[i].fitval)
         R = np.divide(all_stars_fitval,len(self.stars))
