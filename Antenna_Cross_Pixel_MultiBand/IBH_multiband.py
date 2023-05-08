@@ -165,4 +165,8 @@ class ImprovedBlackHole:
             best_star_value = best_star
             print("best_star + "+str(i)+" "+str(best_star_value.location))
             print("best_value + "+str(i)+" "+ str(best_star_value.fitval))
+
+        best_last_star = Star(best_star_value.location)
+        best_last_star.run_antenna()
+
         return best_star_value
