@@ -17,7 +17,7 @@ class Star:
         antenna=Antenna.Anten(self.location)
         S11= antenna.run()
         self.fitval = S11
-        if np.any(np.less_equal(S11,-10)):
+        if (np.any(np.less_equal(S11,-15)) or np.all(np.less_equal(S11,-10))):
             save_value=str(self.location)
             file_save = open("C:\DATA\Master\Python_Code\ImproveBlackHoleCodeForAntenna\Antenna_Cross_Pixel_MultiBand\Value_S11.txt", "a")
             # Ghi data vao cuoi file
@@ -166,7 +166,14 @@ class ImprovedBlackHole:
             print("best_star + "+str(i)+" "+str(best_star_value.location))
             print("best_value + "+str(i)+" "+ str(best_star_value.fitval))
 
-        best_last_star = Star(best_star_value.location)
+            file_save = open("C:\DATA\Master\Python_Code\ImproveBlackHoleCodeForAntenna\Antenna_Cross_Pixel_MultiBand\IBH_value.txt", "a")
+            # Ghi data vao cuoi file
+            Value_fitval="\n Value_fitval " + str(best_star_value.fitval) + "\n---------------------------------------------------------\n"
+            file_save.write(str(best_star_value.location))
+            file_save.write(Value_fitval)
+            file_save.close()
+        best_last_star_location = Star(best_star_value.location)
+        best_last_star=Antenna.Anten(best_last_star_location)
         best_last_star.run_antenna()
 
         return best_star_value

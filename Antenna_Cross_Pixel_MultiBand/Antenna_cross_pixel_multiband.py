@@ -65,8 +65,8 @@ class Anten:
     def get_result_antenna(self):
         project_path=self.myproject.filename()
         project = cst.results.ProjectFile(project_path,allow_interactive=True)
-        freq_range = [2,6]
-        freq_point=[2.45,3.5,5.8]
+        freq_range = [2,8]
+        freq_point=[2.55,3.75,6.6]
         # freq_point=[2.45,5.8]
         results = project.get_3d().get_result_item(r"1D Results\S-Parameters\S1,1")
         # get frequencies

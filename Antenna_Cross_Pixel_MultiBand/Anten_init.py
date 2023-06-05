@@ -421,7 +421,7 @@ class Anten_init:
     def run(self):
         self.myproject
         frequency_min=2
-        frequency_max=6
+        frequency_max=8
         widthsub = 160
         lengthsub = 75
         self.CstDefineUnits(self.myproject)

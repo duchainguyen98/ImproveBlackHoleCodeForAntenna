@@ -12,12 +12,13 @@ class Anten:
         self.PopX = PopX
     def run_antenna(self):
         self.mycst = cst.interface.DesignEnvironment(mode=cst.interface.DesignEnvironment.StartMode.ExistingOrNew)
-        self.myproject = self.mycst.open_project(r'C:\DATA\Master\Antenna\Best_2_45_and_5.8GHz_parametter.cst')
+        self.myproject = self.mycst.open_project(r'C:\DATA\Master\Antenna\Best_2_55_3_75_and_6_6GHz_parametter_Test.cst')
         par_change = 'Sub Main () \n StoreParameter("W0", '+str(self.PopX[0])+')'+\
                         '\n StoreParameter("W1", '+str(self.PopX[1])+')' +\
                         '\n StoreParameter("W2", '+str(self.PopX[2])+')' +\
                         '\n StoreParameter("W3", '+str(self.PopX[3])+')' +\
                         '\n StoreParameter("W4", '+str(self.PopX[4])+')' +\
+                        '\n StoreParameter("W5", '+str(self.PopX[5])+')' +\
                         '\nRebuildOnParametricChange (bfullRebuild, bShowErrorMsgBox)\nEnd Sub' 
         resolve_parametter = self.myproject.schematic.execute_vba_code(par_change, timeout=5000)
         if(not resolve_parametter):
@@ -29,8 +30,8 @@ class Anten:
     def get_result_antenna(self):
         project_path=self.myproject.filename()
         project = cst.results.ProjectFile(project_path,allow_interactive=True)        
-        freq_range = [2,6]
-        freq_point=[2.45,3.5,5.8]
+        freq_range = [2,8]
+        freq_point=[2.55,3.75,6.6]
         results = project.get_3d().get_result_item(r"1D Results\S-Parameters\S1,1")
         # get frequencies
         freqs = results.get_xdata()

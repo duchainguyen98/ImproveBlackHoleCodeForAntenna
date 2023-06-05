@@ -26,18 +26,18 @@ max_iter = 10 # number of generations
 WL=np.zeros((n,1))
 WH = np.zeros((n,1))
 
-WL[0] = 0.200
-WH[0] = 3.000
+WL[0] = 0.5
+WH[0] = 4.00
 WL[1] = 2.000
-WH[1] = 13.120
-WL[2] = 1.000
-WH[2] = 6.800
+WH[1] = 21.600
+WL[2] = 2.000
+WH[2] = 11.000
 WL[3] = 2.000
-WH[3] = 7.500
+WH[3] = 13.000
 WL[4] = 1.000
-WH[4] = 9.760
+WH[4] = 16.000
 WL[5] = 0.000
-WH[5] = 5.000
+WH[5] = 10.000
 
 min_values_loc = WL
 max_values_loc = WH

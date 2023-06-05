@@ -18,7 +18,8 @@ class Star:
         antenna=Antenna.Anten(self.location)
         S11= antenna.run()
         self.fitval = S11
-        if (np.all(np.less_equal(S11,-12)) or np.any(np.less_equal(S11,-20))):
+        # if (np.all(np.less_equal(S11,-15)) or np.any(np.less_equal(S11,-20))):
+        if (np.all(np.less_equal(S11,-12))):
             save_value=str(self.location)
             file_save = open("C:\DATA\Master\Python_Code\ImproveBlackHoleCodeForAntenna\Anten_parametter\Value_S11.txt", "a")
             # Ghi data vao cuoi file
@@ -32,6 +33,9 @@ class Star:
             # self.location[i] = self.location[i] + Random * (best_star.location[i] - self.location[i])
             self.location[i]=round((self.location[i] + Random * (best_star.location[i] - self.location[i])),3)
 
+            while((i==(len(self.location)-1)) and (self.location[i]>=self.location[2])):
+                Rand=np.random.rand()
+                self.location[i]=round((self.location[2] - Rand * (self.location[i] - self.location[2])),3)
         self.get_fitval()
         
     def is_absorbed(self, R, best_star):
@@ -43,10 +47,10 @@ class Star:
 
 class ImprovedBlackHole:
 
-    def __init__(self, num_stars, min_values_location, max_values_location, max_iter):
+    def __init__(self, num_stars, min_values_loc, max_values_loc, max_iter):
         self.num_stars = num_stars
-        self.min_values_location = min_values_location
-        self.max_values_location = max_values_location
+        self.min_values_location = min_values_loc
+        self.max_values_location = max_values_loc
         self.max_iter = max_iter
 
     def generate_initial(self):
@@ -57,7 +61,7 @@ class ImprovedBlackHole:
                 R = random.random()
                 change=float(self.min_values_location[j] + R * (self.max_values_location[j] - self.min_values_location[j]))
                 if(j==2):
-                    self.max_values_location[len(self.min_values_location) - 1]=change
+                    self.max_values_location[len(self.min_values_location)-1]=change
                 round_change=round(change,3)
                 location.append(round_change)
             self.stars.append(Star(location))
@@ -66,7 +70,7 @@ class ImprovedBlackHole:
         for i in range(1, len(self.stars)):
             if np.all(np.less_equal(self.stars[i].fitval,best_star.fitval)):
                 best_star = self.stars[i]
-            elif(np.all(np.less_equal(self.stars[i].fitval,-15)) and (self.count==1)):
+            elif(np.all(np.less_equal(self.stars[i].fitval,-12)) and (self.count==1)):
                 best_star = self.stars[i]
                 self.count=0
                 print("All less than -10")
@@ -78,7 +82,7 @@ class ImprovedBlackHole:
 
             if (np.all(np.less_equal(star.fitval,best_star.fitval))):
                 best_star = star
-            elif(np.all(np.less_equal(star.fitval,-15)) and (self.count==1)):
+            elif(np.all(np.less_equal(star.fitval,-12)) and (self.count==1)):
                 best_star = star
                 self.count=0
                 print("All less than -15")
@@ -92,9 +96,12 @@ class ImprovedBlackHole:
         return R
 
     def get_evolution_rate(self, iter):
-        if (round(iter / self.max_iter, 1) * 10) % 2 == 0:
-            return 0.5
-        return 0.5
+        # if (round(iter / self.max_iter, 1) * 10) % 2 == 0:
+        #     return 0.2
+        # else:
+        #     return 0.8
+        return 0.2
+
 
     def crossover(self):
         # get two random stars
@@ -114,10 +121,14 @@ class ImprovedBlackHole:
 
         # do crossover
         for i in range(s1, s2 + 1):
-            star1.location[i], star2.location[i] = star2.location[i], star1.location[i]
             if(i==2):
                 star1.location[len(self.min_values_location) - 1], star2.location[len(self.min_values_location) - 1] \
                     = star2.location[len(self.min_values_location) - 1], star1.location[len(self.min_values_location) - 1]
+            elif(i==(len(self.min_values_location) - 1)):
+                star1.location[2], star2.location[2] \
+                    = star2.location[2], star1.location[2]
+            star1.location[i], star2.location[i] = star2.location[i], star1.location[i]
+
         child1=Star(star1.location)
         child2=Star(star2.location)
         # return star with higher fitness value
@@ -180,6 +191,13 @@ class ImprovedBlackHole:
             best_star_value = best_star2
             print("best_star + "+str(i)+" "+str(best_star_value.location))
             print("best_value + "+str(i)+" "+ str(best_star_value.fitval))
+            
+            file_save = open("C:\DATA\Master\Python_Code\ImproveBlackHoleCodeForAntenna\Anten_parametter\IBH_value.txt", "a")
+            # Ghi data vao cuoi file
+            Value_fitval="\n Value_fitval " + str(best_star_value.fitval) + "\n---------------------------------------------------------\n"
+            file_save.write(str(best_star_value.location))
+            file_save.write(Value_fitval)
+            file_save.close()
         return best_star_value
 
 
