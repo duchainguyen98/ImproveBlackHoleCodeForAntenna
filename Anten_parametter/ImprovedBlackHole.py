@@ -66,27 +66,25 @@ class ImprovedBlackHole:
                 location.append(round_change)
             self.stars.append(Star(location))
     def get_best_star(self):
-        best_star = self.stars[0]
+        self.best_star = self.stars[0]
         for i in range(1, len(self.stars)):
-            if np.all(np.less_equal(self.stars[i].fitval,best_star.fitval)):
-                best_star = self.stars[i]
+            if np.all(np.less_equal(self.stars[i].fitval,self.best_star.fitval)):
+                self.best_star = self.stars[i]
             elif(np.all(np.less_equal(self.stars[i].fitval,-12)) and (self.count==1)):
-                best_star = self.stars[i]
+                self.best_star = self.stars[i]
                 self.count=0
                 print("All less than -10")
-        return best_star
 
-    def move_each_star(self, best_star):
+    def move_each_star(self):
         for star in self.stars:
-            star.update_location(best_star)
+            star.update_location(self.best_star)
 
-            if (np.all(np.less_equal(star.fitval,best_star.fitval))):
-                best_star = star
+            if (np.all(np.less_equal(star.fitval,self.best_star.fitval))):
+                self.best_star = star
             elif(np.all(np.less_equal(star.fitval,-12)) and (self.count==1)):
-                best_star = star
+                self.best_star  = star
                 self.count=0
                 print("All less than -15")
-        return best_star
 
     def calculate_radius_event_horizon(self):
         all_stars_fitval =[0,0,0]
@@ -146,11 +144,11 @@ class ImprovedBlackHole:
         new_star = Star(location)
         return new_star
 
-    def absorb_and_update(self, R, E, best_star):
+    def absorb_and_update(self, R, E):
         for star in self.stars:
 
             # if the star is in event horizon's radius
-            if star.is_absorbed(R, best_star):
+            if star.is_absorbed(R, self.best_star):
                 new_star = None
 
                 # improvement: there's a chance to crossover
@@ -163,13 +161,12 @@ class ImprovedBlackHole:
 
                 star = new_star
 
-            if (np.all(np.less_equal(star.fitval,best_star.fitval))):
-                best_star = star
-            elif(np.all(np.less_equal(star.fitval,-15)) and (self.count==1)):
-                best_star = star
+            if (np.all(np.less_equal(star.fitval,self.best_star.fitval))):
+                self.best_star = star
+            elif(np.all(np.less_equal(star.fitval,-12)) and (self.count==1)):
+                self.best_star = star
                 self.count=0
-                print("All less than -10")
-        return best_star
+                print("All less than -12")
 
     def run(self):
         print("Run IBH")
@@ -177,28 +174,27 @@ class ImprovedBlackHole:
         self.generate_initial()
         self.count=1
 
-        best_star_value = self.get_best_star()
-        print("best_star0",best_star_value.location)
-        print("best_star0",best_star_value.fitval)
+        self.get_best_star()
+        print("best_star0",self.best_star.location)
+        print("best_star0",self.best_star.fitval)
         for i in range(self.max_iter):
-            best_star1 = self.move_each_star(best_star_value)
+            self.move_each_star()
 
             R = self.calculate_radius_event_horizon()
             evolution_rate = self.get_evolution_rate(i + 1)
 
             # Inner Loop 2
-            best_star2 = self.absorb_and_update(R, evolution_rate, best_star1)
-            best_star_value = best_star2
-            print("best_star + "+str(i)+" "+str(best_star_value.location))
-            print("best_value + "+str(i)+" "+ str(best_star_value.fitval))
+            self.absorb_and_update(R, evolution_rate)
+            print("best_star + "+str(i)+" "+str(self.best_star.location))
+            print("best_value + "+str(i)+" "+ str(self.best_star.fitval))
             
             file_save = open("C:\DATA\Master\Python_Code\ImproveBlackHoleCodeForAntenna\Anten_parametter\IBH_value.txt", "a")
             # Ghi data vao cuoi file
-            Value_fitval="\n Value_fitval " + str(best_star_value.fitval) + "\n---------------------------------------------------------\n"
-            file_save.write(str(best_star_value.location))
+            Value_fitval="\n Value_fitval " + str(self.best_star.fitval) + "\n---------------------------------------------------------\n"
+            file_save.write(str(self.best_star.location))
             file_save.write(Value_fitval)
             file_save.close()
-        return best_star_value
+        return self.best_star
 
 
 # example uses 2 features (location) [Two Dimensional-Space example]
