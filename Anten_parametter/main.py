@@ -18,26 +18,26 @@ import ImprovedBlackHole
 # % ** ALGORITHM’S VARIABLES ** %
 # % *************************** %
 
-num_stars = 30 # size of population
+num_stars = 15 # size of population
 n=6     # dimension of problem
-max_iter = 10 # number of generations
+max_iter = 40 # number of generations
 
 #---------Boundary-------
 WL=np.zeros((n,1))
 WH = np.zeros((n,1))
 
-WL[0] = 0.5
-WH[0] = 4.00
+WL[0] = 0.2
+WH[0] = 3.00
 WL[1] = 2.000
-WH[1] = 21.600
-WL[2] = 2.000
-WH[2] = 11.000
+WH[1] = 13.120
+WL[2] = 1.00
+WH[2] = 6.800
 WL[3] = 2.000
-WH[3] = 13.000
+WH[3] = 7.500
 WL[4] = 1.000
-WH[4] = 16.000
+WH[4] = 9.760
 WL[5] = 0.000
-WH[5] = 10.000
+WH[5] = 6.8
 
 min_values_loc = WL
 max_values_loc = WH

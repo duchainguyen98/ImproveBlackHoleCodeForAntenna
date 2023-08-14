@@ -1,0 +1,887 @@
+r\ImprovedBlackHole.py", line 73, in generate_initial
+PS C:\DATA\Master\Python_Code> & C:/Users/dhai9/AppData/Local/Programs/Python/Python36/python.exe c:/DATA/Master/Python_Code/ImproveBlackHoleCodeForAntenna/Anten_parametter/main.py
+Run IBH
+You are working in interactive mode.
+Antenna Result[-15.600716690719, -5.977341042369932, -10.520945771266403]
+You are working in interactive mode.
+Antenna Result[-1.593094320497953, -11.207967953597759, -18.213331461172025]
+You are working in interactive mode.
+Antenna Result[-5.271238649375107, -20.576449069485058, -10.057489023205875]
+You are working in interactive mode.
+Antenna Result[-4.754763841211862, -4.63852628971135, -8.865151613855586]
+You are working in interactive mode.
+Antenna Result[-12.278085175467478, -0.5649031343090954, -13.283854839541693]
+You are working in interactive mode.
+Antenna Result[-15.154373647231127, -3.6126419010537236, -16.668538714738716]
+You are working in interactive mode.
+Antenna Result[-5.891215724838025, -16.295308866787305, -13.796623329643722]
+You are working in interactive mode.
+Antenna Result[-13.978305823107585, -13.449512887791368, -13.880076736886561]
+You are working in interactive mode.
+Antenna Result[-11.374045459258888, -1.505814423569123, -5.304696414844799]
+You are working in interactive mode.
+Antenna Result[-22.57676164374603, -9.488748271872678, -8.662338965288814]
+You are working in interactive mode.
+Antenna Result[-4.860559453733509, -19.649807805574714, -11.81934703642657]
+You are working in interactive mode.
+Antenna Result[-16.86072756228231, -6.818941498712201, -12.207901827816467]
+You are working in interactive mode.
+Antenna Result[-12.471995929323846, -1.3036781919754825, -12.570229515138873]
+You are working in interactive mode.
+Antenna Result[-1.157027888714843, -14.37873278438786, -11.3635347344745]
+You are working in interactive mode.
+Antenna Result[-2.6166438427751726, -6.328297595357746, -9.39718421722114]
+All less than -10
+best_star0 [2.929, 12.668, 5.217, 2.484, 2.352, 0.661]
+best_star0 [-13.978305823107585, -13.449512887791368, -13.880076736886561]       
+You are working in interactive mode.
+Antenna Result[-13.746983945424185, -16.29004754240239, -16.38377421253683]
+You are working in interactive mode.
+Antenna Result[-15.043138199838326, -10.1019531418443, -18.422085346024936]
+You are working in interactive mode.
+Antenna Result[-16.323120582954292, -10.370756038251258, -20.79683771157033]
+You are working in interactive mode.
+Antenna Result[-0.8627192880921539, -5.991839860050797, -7.90005706700828]
+You are working in interactive mode.
+Antenna Result[-15.513987965406415, -20.42373045179218, -9.889603155811487]
+You are working in interactive mode.
+Antenna Result[-18.15983387476966, -6.876650448174452, -14.270118932598713]
+You are working in interactive mode.
+Antenna Result[-14.996159606153757, -9.588895942059114, -18.301993417791937]
+You are working in interactive mode.
+Antenna Result[-13.978306160419159, -13.449510572052201, -13.880081087321868]
+np.less_equal new best_star 2 [-13.978306160419159, -13.449510572052201, -13.880081087321868]
+------ old best_star [-13.978306160419159, -13.449510572052201, -13.880081087321868]
+You are working in interactive mode.
+Antenna Result[-13.978300052613887, -13.44951882746292, -13.88006758774274]
+You are working in interactive mode.
+Antenna Result[-13.015787117231108, -12.9751569128953, -9.475395406844257]
+You are working in interactive mode.
+Antenna Result[-16.935595785166708, -2.399171756038104, -11.782881272296583]
+You are working in interactive mode.
+Antenna Result[-9.282781164955079, -31.806428827135864, -15.946614635857589]
+You are working in interactive mode.
+Antenna Result[-19.870784124304805, -3.168567865922011, -13.920062895468039]
+You are working in interactive mode.
+Antenna Result[-11.051456505934866, -17.313327003212375, -15.991341208045963]
+You are working in interactive mode.
+Antenna Result[-13.84940830924865, -6.041070966645401, -11.20628158435437]
+You are working in interactive mode.
+Antenna Result[-2.4066455966363938, -9.250995869224814, -13.038146675152909]
+calculate_radius_event_horizon    [0.21501029 0.22919052 0.19715513]
+You are working in interactive mode.
+Antenna Result[-9.606642849612182, -2.22644914760131, -6.187128005522497]
+You are working in interactive mode.
+Antenna Result[-20.87052817796671, -7.902332643176627, -15.609120078567912]
+You are working in interactive mode.
+Antenna Result[-17.537758605769266, -3.7654841587451777, -10.513789959759727]
+You are working in interactive mode.
+Antenna Result[-9.486937855417915, -33.81720852253515, -13.724805379075939]
+You are working in interactive mode.
+Antenna Result[-13.382984742571518, -16.159814595832113, -16.982596452697553]
+You are working in interactive mode.
+Antenna Result[-1.5941530414644036, -9.974113508371738, -6.408820788705619]
+You are working in interactive mode.
+Antenna Result[-19.870771617035842, -3.16856945240535, -13.920065742715348]
+You are working in interactive mode.
+Antenna Result[-16.323139766112934, -10.370762055543166, -20.796837125080643]
+You are working in interactive mode.
+Antenna Result[-7.918396780331319, -10.644050354931998, -15.103470176041755]
+You are working in interactive mode.
+Antenna Result[-20.161170514158666, -5.516936486166016, -10.53378436630549]
+You are working in interactive mode.
+Antenna Result[-15.678960912083166, -1.1535621852818938, -12.132402723915067]
+You are working in interactive mode.
+Antenna Result[-19.63219107568615, -6.197713614830925, -4.025416460277093]
+You are working in interactive mode.
+Antenna Result[-21.449700521290325, -3.3625336853599697, -17.88247829623588]
+You are working in interactive mode.
+Antenna Result[-13.572215579618954, -7.6011485618828365, -10.630121689637349]
+You are working in interactive mode.
+Antenna Result[-5.70816501719333, -19.13734280569196, -13.342491522270413]
+best_star + 0 [2.929, 12.668, 5.217, 2.484, 2.352, 0.661]
+best_value + 0 [-13.978300052613887, -13.44951882746292, -13.88006758774274]     
+You are working in interactive mode.
+Antenna Result[-19.237734518805972, -3.888046765178613, -13.428311156291453]
+You are working in interactive mode.
+Antenna Result[-16.013522588456365, -8.853610452887251, -15.582395596194969]
+You are working in interactive mode.
+Antenna Result[-28.02159737691174, -3.0765610692999994, -16.195677545262505]
+You are working in interactive mode.
+Antenna Result[-14.252636266644183, -7.059617469403429, -15.410650571218923]
+You are working in interactive mode.
+Antenna Result[-14.375443781867826, -17.816323295507228, -16.46625971496204]
+np.less_equal new best_star 2 [-14.375443781867826, -17.816323295507228, -16.46625971496204]
+------ old best_star [-13.978300052613887, -13.44951882746292, -13.88006758774274]
+You are working in interactive mode.
+Antenna Result[-14.37544106345931, -17.81632128135602, -16.466266012087306]
+You are working in interactive mode.
+Antenna Result[-16.160178058413003, -13.336842921847076, -15.704938332345863]
+You are working in interactive mode.
+Antenna Result[-14.30131532675955, -15.838432224172115, -17.334462151165766]
+You are working in interactive mode.
+Antenna Result[-14.01629438824334, -17.173199853571003, -15.818402265791324]
+You are working in interactive mode.
+Antenna Result[-19.305175396878052, -10.133872421184462, -19.624058160535508]
+You are working in interactive mode.
+Antenna Result[-15.641132352532669, -12.525492907617458, -15.004895399922288]
+You are working in interactive mode.
+Antenna Result[-13.751341657061236, -16.496205587486273, -17.097257103919553]
+You are working in interactive mode.
+Antenna Result[-15.01296195809812, -12.901958617492538, -19.952986448166055]
+You are working in interactive mode.
+Antenna Result[-11.613608690141346, -17.893324542432673, -16.086000469789862]
+You are working in interactive mode.
+Antenna Result[-13.393466007254489, -14.65977249780553, -9.980471662805467]
+You are working in interactive mode.
+Antenna Result[-12.590910794610863, -4.9858389969442465, -15.295718236026694]
+calculate_radius_event_horizon    [0.18144141 0.30258852 0.20670468]
+You are working in interactive mode.
+Antenna Result[-6.591644579125217, -9.31577659193098, -8.352844188361692]
+You are working in interactive mode.
+Antenna Result[-14.593414682816652, -13.17080011692581, -15.938450209988595]
+You are working in interactive mode.
+Antenna Result[-14.388198627908562, -11.793889157716901, -16.760773974514684]
+You are working in interactive mode.
+Antenna Result[-18.277797788096304, -6.737479877084491, -8.010041210412934]
+You are working in interactive mode.
+Antenna Result[-12.04846843872885, -5.1322179199734865, -14.815728552664451]
+You are working in interactive mode.
+Antenna Result[-14.697786887844273, -13.598171007618706, -16.38577339888136]
+You are working in interactive mode.
+Antenna Result[-19.364901266572236, -9.934052994654973, -19.97080532112608]
+You are working in interactive mode.
+Antenna Result[-14.879468394136957, -7.100743159857851, -14.63916315845376]
+You are working in interactive mode.
+Antenna Result[-1.855101417531747, -20.412030166641667, -14.197708419069679]
+You are working in interactive mode.
+Antenna Result[-13.616839391012652, -15.247499747890775, -10.726191362252022]
+You are working in interactive mode.
+Antenna Result[-13.885279752935062, -14.916957103177621, -14.843803275634732]
+best_star + 1 [2.214, 11.456, 4.987, 2.652, 2.447, 0.764]
+best_value + 1 [-14.37544106345931, -17.81632128135602, -16.466266012087306]     
+You are working in interactive mode.
+Antenna Result[-15.455207682822623, -12.031808117999745, -15.087532705985678]
+You are working in interactive mode.
+Antenna Result[-21.42792122194976, -5.474348101100762, -16.463044919957024]
+You are working in interactive mode.
+Antenna Result[-23.83469227108654, -6.585953608902605, -17.56070881971401]
+You are working in interactive mode.
+Antenna Result[-18.072589236837786, -11.618034262998851, -19.64410156018162]
+You are working in interactive mode.
+Antenna Result[-14.375457367447153, -17.816319267205284, -16.46625780673947]
+You are working in interactive mode.
+Antenna Result[-14.81504319882421, -15.52148974356616, -15.677007512886291]
+You are working in interactive mode.
+Antenna Result[-14.0198552841211, -17.709551919151615, -17.522652925965282]
+You are working in interactive mode.
+Antenna Result[-14.138184116724641, -17.58495602002222, -16.23369218288162]
+You are working in interactive mode.
+Antenna Result[-15.515862928199695, -11.288561927744523, -14.341520929479996]
+You are working in interactive mode.
+Antenna Result[-14.680748625754358, -17.53677914198769, -15.762989304055354]
+You are working in interactive mode.
+Antenna Result[-14.608387773755254, -13.170022347556529, -17.38072110121046]
+You are working in interactive mode.
+Antenna Result[-14.646809655603882, -18.667058845852868, -17.218415077494583]
+np.less_equal new best_star 2 [-14.646809655603882, -18.667058845852868, -17.218415077494583]
+------ old best_star [-14.37544106345931, -17.81632128135602, -16.466266012087306]
+You are working in interactive mode.
+Antenna Result[-14.646812590271914, -18.66706217639181, -17.21842006416874]
+You are working in interactive mode.
+Antenna Result[-11.763295718146905, -21.71358993221189, -17.998310666215662]
+You are working in interactive mode.
+Antenna Result[-14.538715642657547, -16.355931095273853, -16.76662023703561]
+You are working in interactive mode.
+Antenna Result[-14.379068461791014, -16.15923995912461, -16.786036502307606]
+calculate_radius_event_horizon    [0.18597408 0.25544066 0.20587199]
+You are working in interactive mode.
+Antenna Result[-1.1946556735664173, -14.657462705513364, -11.737891763074867]
+You are working in interactive mode.
+Antenna Result[-14.884874491709425, -16.9429389115137, -14.935881366916473]
+You are working in interactive mode.
+Antenna Result[-14.86453750851264, -17.802660481955186, -16.69215478451049]
+You are working in interactive mode.
+Antenna Result[-4.766737509478505, -9.27825735038612, -6.101834746107986]
+best_star + 2 [1.914, 11.47, 5.134, 2.74, 2.916, 0.668]
+best_value + 2 [-14.646812590271914, -18.66706217639181, -17.21842006416874]     
+You are working in interactive mode.
+Antenna Result[-14.600421570596126, -15.462913265912706, -16.887073405991593]
+You are working in interactive mode.
+Antenna Result[-16.505269958069807, -14.52155699904078, -16.72258908068338]
+You are working in interactive mode.
+Antenna Result[-14.689598250805657, -17.08770643381242, -17.68004106526628]
+You are working in interactive mode.
+Antenna Result[-17.576672023554426, -12.615883175777043, -17.781118643128238]
+You are working in interactive mode.
+Antenna Result[-14.540750646855392, -18.315205640528887, -16.982031631464217]
+You are working in interactive mode.
+Antenna Result[-14.618724211557506, -18.688099537789395, -16.137601990494236]
+You are working in interactive mode.
+Antenna Result[-14.299114890950094, -18.48928921315489, -17.642768789341]
+You are working in interactive mode.
+Antenna Result[-14.315253051236859, -17.753003123739916, -16.79627071104459]
+You are working in interactive mode.
+Antenna Result[-15.003422591476312, -16.828942707488682, -16.879788523561672]
+You are working in interactive mode.
+Antenna Result[-14.743136212809711, -17.924679505642885, -16.894820958094442]
+You are working in interactive mode.
+Antenna Result[-14.785824449602114, -15.487799336014785, -17.711124206110707]
+You are working in interactive mode.
+Antenna Result[-14.646812192083377, -18.667061573298582, -17.21843054688366]
+You are working in interactive mode.
+Antenna Result[-13.562956295347956, -20.034022846643, -17.54137917137678]
+You are working in interactive mode.
+Antenna Result[-14.454842595601606, -17.60169969369224, -17.2612867582909]
+You are working in interactive mode.
+Antenna Result[-14.405698917629442, -16.68296900640842, -16.998473981397492]
+calculate_radius_event_horizon    [0.1972648  0.21861729 0.20088786]
+You are working in interactive mode.
+Antenna Result[-14.67772847063401, -18.65415503526926, -17.014833649207212]
+You are working in interactive mode.
+Antenna Result[-14.51247134331513, -18.331747042965457, -17.177343336219426]
+best_star + 3 [2.003, 11.467, 5.134, 2.74, 2.916, 0.668]
+best_value + 3 [-14.646812590271914, -18.66706217639181, -17.21842006416874]     
+You are working in interactive mode.
+Antenna Result[-14.544933502804787, -17.448348919462827, -16.7860809949872]
+You are working in interactive mode.
+Antenna Result[-14.778100384453726, -17.003640894418435, -16.942319186986524]
+You are working in interactive mode.
+Antenna Result[-15.211505042228552, -16.254998868114605, -17.348250305605923]
+You are working in interactive mode.
+Antenna Result[-14.34604774115556, -17.451818930947574, -17.440340183549207]
+You are working in interactive mode.
+Antenna Result[-14.569608513964889, -18.37347328512274, -17.07570867596163]
+You are working in interactive mode.
+Antenna Result[-14.389683262692149, -19.49322501500172, -16.424263719788797]
+You are working in interactive mode.
+Antenna Result[-14.324981840892743, -18.38637252706642, -17.443222965786]
+You are working in interactive mode.
+Antenna Result[-14.401129895990412, -17.90538916449723, -16.992464191734385]
+You are working in interactive mode.
+Antenna Result[-14.679353474066414, -17.35317508505957, -16.94997456639124]
+You are working in interactive mode.
+Antenna Result[-14.881774234806738, -18.098382982337288, -16.85368825319028]
+You are working in interactive mode.
+Antenna Result[-14.658189306444402, -17.787952960498348, -17.113867697613692]
+You are working in interactive mode.
+Antenna Result[-14.512472797878102, -18.33175128448276, -17.177357007434512]
+You are working in interactive mode.
+Antenna Result[-14.073183756645076, -19.334577515496125, -17.42391291705691]
+You are working in interactive mode.
+Antenna Result[-14.403218037204796, -18.171827419697763, -17.321217871826878]
+You are working in interactive mode.
+Antenna Result[-14.394747772831485, -17.53543907001988, -17.229028238012113]
+calculate_radius_event_horizon    [0.20140557 0.20823675 0.201368  ]
+best_star + 4 [2.003, 11.467, 5.134, 2.74, 2.916, 0.668]
+best_value + 4 [-14.646812590271914, -18.66706217639181, -17.21842006416874]     
+You are working in interactive mode.
+Antenna Result[-14.348482644352279, -17.676074934839733, -16.995503793552828]
+You are working in interactive mode.
+Antenna Result[-14.670316691106894, -17.414354056582443, -17.03128792945885]
+You are working in interactive mode.
+Antenna Result[-14.910868086341093, -16.928014372087155, -17.054616628211797]
+You are working in interactive mode.
+Antenna Result[-14.532231233874391, -17.919924078850332, -17.502211714904288]
+You are working in interactive mode.
+Antenna Result[-14.572078082634015, -18.34139625320599, -17.107979352444666]
+You are working in interactive mode.
+Antenna Result[-14.459647479841227, -19.601007907304197, -16.49581833737599]
+You are working in interactive mode.
+Antenna Result[-14.3760856899411, -18.494287687641457, -17.317148310467154]
+You are working in interactive mode.
+Antenna Result[-14.42863486945929, -18.137233303860654, -17.0887963547143]
+You are working in interactive mode.
+Antenna Result[-14.465204878659094, -18.1050547827314, -17.029846869412037]
+You are working in interactive mode.
+Antenna Result[-14.719034979479845, -18.366203897793696, -16.997209150765485]
+You are working in interactive mode.
+Antenna Result[-14.504462256436339, -18.053493365107286, -17.160862095837516]
+You are working in interactive mode.
+Antenna Result[-14.51247846342409, -18.331743242476396, -17.177342191548824]
+You are working in interactive mode.
+Antenna Result[-14.252909426609694, -19.017578347310845, -17.38531732283015]
+You are working in interactive mode.
+Antenna Result[-14.435842275169703, -18.243590067332292, -17.2329791327784]
+You are working in interactive mode.
+Antenna Result[-14.467334757170608, -18.0327978821733, -17.19227405689212]
+calculate_radius_event_horizon    [0.20188056 0.20538627 0.2011739 ]
+best_star + 5 [2.003, 11.467, 5.134, 2.74, 2.916, 0.668]
+best_value + 5 [-14.646812590271914, -18.66706217639181, -17.21842006416874]     
+You are working in interactive mode.
+Antenna Result[-14.356875985707303, -17.768048070823518, -17.018632228458475]
+You are working in interactive mode.
+Antenna Result[-14.558197808406955, -17.787738932069068, -17.06012393750749]
+You are working in interactive mode.
+Antenna Result[-14.567685568344011, -18.091380933118067, -17.20514751960763]
+You are working in interactive mode.
+Antenna Result[-14.54575895221311, -18.04132234358925, -17.41174444118074]
+You are working in interactive mode.
+Antenna Result[-14.530119234854666, -18.31694180058547, -17.131118960616416]
+You are working in interactive mode.
+Antenna Result[-14.364015478977342, -19.44703893665919, -16.66220742464032]
+You are working in interactive mode.
+Antenna Result[-14.417047780518894, -18.441179741482518, -17.252058783963424]
+You are working in interactive mode.
+Antenna Result[-14.507735297506592, -18.278225553300356, -17.12167191488044]
+You are working in interactive mode.
+Antenna Result[-14.441290675487314, -18.202240355988028, -17.036849738316548]
+You are working in interactive mode.
+Antenna Result[-14.66363511775062, -17.83784803427588, -17.024907959418027]
+You are working in interactive mode.
+Antenna Result[-14.47020815179565, -18.09894181519049, -17.220747009049887]
+You are working in interactive mode.
+Antenna Result[-14.51246366423884, -18.331739550540323, -17.17736425596178]
+You are working in interactive mode.
+Antenna Result[-14.251667844739487, -18.735343280228864, -17.369195031657355]
+You are working in interactive mode.
+Antenna Result[-14.459051005466133, -18.26206753589, -17.221814222368575]
+You are working in interactive mode.
+Antenna Result[-14.485688256093274, -18.141827026458213, -17.180609792084958]
+calculate_radius_event_horizon    [0.20236792 0.20454672 0.20091959]
+best_star + 6 [2.003, 11.467, 5.134, 2.74, 2.916, 0.668]
+best_value + 6 [-14.646812590271914, -18.66706217639181, -17.21842006416874]     
+You are working in interactive mode.
+Antenna Result[-14.42972052810237, -18.056539923067685, -17.10271925879536]
+You are working in interactive mode.
+Antenna Result[-14.538032260037282, -18.248805231739176, -17.166952644813037]
+You are working in interactive mode.
+Antenna Result[-14.521528330469259, -18.207745231486236, -17.2064663167952]
+You are working in interactive mode.
+Antenna Result[-14.53339016533313, -18.220783830696803, -17.235647925753256]
+You are working in interactive mode.
+Antenna Result[-14.526037805413996, -18.322112031120888, -17.137546552748674]
+You are working in interactive mode.
+Antenna Result[-14.510194885243665, -19.12496299321778, -16.848893354486695]
+You are working in interactive mode.
+Antenna Result[-14.467845088657834, -18.38499651146253, -17.21766431234965]
+You are working in interactive mode.
+Antenna Result[-14.511666193066679, -18.307915664672326, -17.14673587036744]
+You are working in interactive mode.
+Antenna Result[-14.568278221858195, -18.07019068811932, -17.152092459719647]
+You are working in interactive mode.
+Antenna Result[-14.581325362276008, -18.14072415597687, -17.105099902081097]
+You are working in interactive mode.
+Antenna Result[-14.498788545733978, -18.241652256614408, -17.196341926579993]
+You are working in interactive mode.
+Antenna Result[-14.512472006698882, -18.331739016474607, -17.17734208909001]
+You are working in interactive mode.
+Antenna Result[-14.449939685857947, -18.388749914890447, -17.20685685065223]
+You are working in interactive mode.
+Antenna Result[-14.484828942955794, -18.340044705086182, -17.234967173834228]
+You are working in interactive mode.
+Antenna Result[-14.506879856747425, -18.27846342632535, -17.17694941044059]
+calculate_radius_event_horizon    [0.20189419 0.20388874 0.2007493 ]
+best_star + 7 [2.003, 11.467, 5.134, 2.74, 2.916, 0.668]
+best_value + 7 [-14.646812590271914, -18.66706217639181, -17.21842006416874]     
+You are working in interactive mode.
+Antenna Result[-14.49826442967385, -18.264987109144645, -17.163905560510706]
+You are working in interactive mode.
+Antenna Result[-14.526900112208443, -18.285841286061142, -17.168130279613244]
+You are working in interactive mode.
+Antenna Result[-14.46195180014324, -18.385946451904967, -17.21141942721573]
+You are working in interactive mode.
+Antenna Result[-14.509028686686632, -18.30175919794263, -17.2301087643391]
+You are working in interactive mode.
+Antenna Result[-14.516934151450302, -18.331845928866443, -17.162742199497163]
+You are working in interactive mode.
+Antenna Result[-14.432320106051, -18.87403318750851, -16.90778279036762]
+You are working in interactive mode.
+Antenna Result[-14.472776917671977, -18.380861181997513, -17.195448957598703]
+You are working in interactive mode.
+Antenna Result[-14.514337554556885, -18.32347300962817, -17.168119617705923]
+You are working in interactive mode.
+Antenna Result[-14.51517587388648, -18.307566887589974, -17.170108636582373]
+You are working in interactive mode.
+Antenna Result[-14.541155550837994, -18.228653237651514, -17.15178725464622]
+You are working in interactive mode.
+Antenna Result[-14.505328853223185, -18.278881897619105, -17.188809315173295]
+You are working in interactive mode.
+Antenna Result[-14.51247639689746, -18.33174431060837, -17.17734813860036]
+You are working in interactive mode.
+Antenna Result[-14.492121307754784, -18.360534860596623, -17.189529232641227]
+You are working in interactive mode.
+Antenna Result[-14.505591464680398, -18.338132998430666, -17.198035638910355]
+You are working in interactive mode.
+Antenna Result[-14.507300660936512, -18.302265328721084, -17.175781698427066]
+calculate_radius_event_horizon    [0.20201417 0.20342133 0.20063485]
+best_star + 8 [2.003, 11.467, 5.134, 2.74, 2.916, 0.668]
+best_value + 8 [-14.646812590271914, -18.66706217639181, -17.21842006416874]     
+You are working in interactive mode.
+Antenna Result[-14.516187417831127, -18.314495537263905, -17.173239424741464]
+You are working in interactive mode.
+Antenna Result[-14.52552431010589, -18.296703131247327, -17.171474971595686]
+You are working in interactive mode.
+Antenna Result[-14.460338044316591, -18.377241172099108, -17.206708225295415]
+You are working in interactive mode.
+Antenna Result[-14.507827944623548, -18.316929343090283, -17.220133004084328]
+You are working in interactive mode.
+Antenna Result[-14.51795465816323, -18.328271977109264, -17.16315791522598]
+You are working in interactive mode.
+Antenna Result[-14.540692541587239, -18.34414973760542, -17.104368794947888]
+You are working in interactive mode.
+Antenna Result[-14.480238617359465, -18.371422486691287, -17.192179151299513]
+You are working in interactive mode.
+Antenna Result[-14.512344861023722, -18.326552550550524, -17.1725537900895]
+You are working in interactive mode.
+Antenna Result[-14.514614837575623, -18.325581900065433, -17.175000011875394]
+You are working in interactive mode.
+Antenna Result[-14.537021694109127, -18.237604147759928, -17.158659968022967]
+You are working in interactive mode.
+Antenna Result[-14.513025844194994, -18.32279875447991, -17.179365012794314]
+You are working in interactive mode.
+Antenna Result[-14.5124756654582, -18.33173848240893, -17.177350629682167]
+You are working in interactive mode.
+Antenna Result[-14.494984264451748, -18.349291012085796, -17.18625255773518]
+You are working in interactive mode.
+Antenna Result[-14.508830213467736, -18.33862551714239, -17.191502081734154]
+You are working in interactive mode.
+Antenna Result[-14.514395524966881, -18.293209373446672, -17.177644368519648]
+calculate_radius_event_horizon    [0.20187978 0.20373357 0.20048648]
+best_star + 9 [2.003, 11.467, 5.134, 2.74, 2.916, 0.668]
+best_value + 9 [-14.646812590271914, -18.66706217639181, -17.21842006416874]     
+You are working in interactive mode.
+Antenna Result[-14.514746418920359, -18.325909004667853, -17.175927269776864]
+You are working in interactive mode.
+Antenna Result[-14.522607438881163, -18.304272539397836, -17.17340793032462]
+You are working in interactive mode.
+Antenna Result[-14.479986740104243, -18.36277281760011, -17.193530850428807]
+You are working in interactive mode.
+Antenna Result[-14.510182743192777, -18.320920164190035, -17.203179415664902]
+You are working in interactive mode.
+Antenna Result[-14.516633229663277, -18.33050789532811, -17.16517302995247]
+You are working in interactive mode.
+Antenna Result[-14.52432283697913, -18.373342780105798, -17.155101623705033]
+You are working in interactive mode.
+Antenna Result[-14.492653128929689, -18.36215265022337, -17.18766331902649]
+You are working in interactive mode.
+Antenna Result[-14.512063450106394, -18.326841409640192, -17.17336864047841]
+You are working in interactive mode.
+Antenna Result[-14.513448444675427, -18.337139853102716, -17.176131355596056]
+You are working in interactive mode.
+Antenna Result[-14.521644122805919, -18.297023148690535, -17.169530845401667]
+You are working in interactive mode.
+Antenna Result[-14.513751835365243, -18.328473466902032, -17.178913631056833]
+You are working in interactive mode.
+Antenna Result[-14.512487356552228, -18.33173950401552, -17.177335192865755]
+You are working in interactive mode.
+Antenna Result[-14.508029967616125, -18.339505124315078, -17.179351389860113]
+You are working in interactive mode.
+Antenna Result[-14.50961823160447, -18.337827851383672, -17.189002862076105]
+You are working in interactive mode.
+Antenna Result[-14.510453251632999, -18.309804431983505, -17.176407155768565]
+calculate_radius_event_horizon    [0.20187406 0.20364939 0.20046747]
+best_star + 10 [2.003, 11.467, 5.134, 2.74, 2.916, 0.668]
+best_value + 10 [-14.646812590271914, -18.66706217639181, -17.21842006416874]    
+You are working in interactive mode.
+Antenna Result[-14.513887880536814, -18.32787805770343, -17.177174581380545]
+You are working in interactive mode.
+Antenna Result[-14.520510184460658, -18.30987344662402, -17.17404208201068]
+You are working in interactive mode.
+Antenna Result[-14.497992557261075, -18.34525275247895, -17.185389259695548]
+You are working in interactive mode.
+Antenna Result[-14.512725606042704, -18.32897807950054, -17.18038103110366]
+You are working in interactive mode.
+Antenna Result[-14.516776025460953, -18.327701353258668, -17.16529417808068]
+You are working in interactive mode.
+Antenna Result[-14.521174114510504, -18.36727829832982, -17.16322360935039]
+You are working in interactive mode.
+Antenna Result[-14.511122699705572, -18.335648093536694, -17.177570518662584]
+You are working in interactive mode.
+Antenna Result[-14.513314215123437, -18.330961267976008, -17.17495435662974]
+You are working in interactive mode.
+Antenna Result[-14.513443614629235, -18.337135577940572, -17.176130889112923]
+You are working in interactive mode.
+Antenna Result[-14.518138039391545, -18.322117279769813, -17.17433734312457]
+You are working in interactive mode.
+Antenna Result[-14.512168222440438, -18.324656377028617, -17.17814668478848]
+You are working in interactive mode.
+Antenna Result[-14.51247271164021, -18.331751253461604, -17.177354051155458]
+You are working in interactive mode.
+Antenna Result[-14.512912820308706, -18.335725617609477, -17.178142526690117]
+You are working in interactive mode.
+Antenna Result[-14.51288703370978, -18.335722962292987, -17.178131369494142]
+You are working in interactive mode.
+Antenna Result[-14.515609986518609, -18.312925007544145, -17.17480553369775]
+calculate_radius_event_horizon    [0.20183464 0.20366023 0.20049778]
+best_star + 11 [2.003, 11.467, 5.134, 2.74, 2.916, 0.668]
+best_value + 11 [-14.646812590271914, -18.66706217639181, -17.21842006416874]    
+You are working in interactive mode.
+Antenna Result[-14.513867636437169, -18.3278801930092, -17.177163718243285]
+You are working in interactive mode.
+Antenna Result[-14.516552609643211, -18.32059694827541, -17.176055432858014]
+You are working in interactive mode.
+Antenna Result[-14.50326948649744, -18.327372573615072, -17.182906148890854]
+You are working in interactive mode.
+Antenna Result[-14.513562277435653, -18.328123886182503, -17.177982792510758]
+You are working in interactive mode.
+Antenna Result[-14.512480486831926, -18.331741686803497, -17.177343596514827]
+You are working in interactive mode.
+Antenna Result[-14.514929729840464, -18.341988714143522, -17.173235962965098]
+You are working in interactive mode.
+Antenna Result[-14.511084498493963, -18.33565563505075, -17.177564661301933]
+You are working in interactive mode.
+Antenna Result[-14.512780397757762, -18.331503232362415, -17.17654383631872]
+You are working in interactive mode.
+Antenna Result[-14.512476715342915, -18.331741152737653, -17.177368084066803]
+You are working in interactive mode.
+Antenna Result[-14.513529071219793, -18.334004263294666, -17.17764477015321]
+You are working in interactive mode.
+Antenna Result[-14.513140160536755, -18.330053772485027, -17.176885647213428]
+You are working in interactive mode.
+Antenna Result[-14.51246231253213, -18.331739535036633, -17.17734502446264]
+You are working in interactive mode.
+Antenna Result[-14.51291225892895, -18.335721343123485, -17.178123710319106]
+You are working in interactive mode.
+Antenna Result[-14.51247198020653, -18.331745990340703, -17.177349757859385]
+You are working in interactive mode.
+Antenna Result[-14.510361579982575, -18.32651100331767, -17.178546800950418]
+calculate_radius_event_horizon    [0.20185249 0.20366558 0.20047678]
+best_star + 12 [2.003, 11.467, 5.134, 2.74, 2.916, 0.668]
+best_value + 12 [-14.646812590271914, -18.66706217639181, -17.21842006416874]    
+You are working in interactive mode.
+Antenna Result[-14.513862444203706, -18.327874320905757, -17.177160695112892]
+You are working in interactive mode.
+Antenna Result[-14.515863870188507, -18.322323458543973, -17.176535246020126]
+You are working in interactive mode.
+Antenna Result[-14.508017365764248, -18.339496557408093, -17.179354927858455]
+You are working in interactive mode.
+Antenna Result[-14.512474106468483, -18.331750216349928, -17.17735686003859]
+You are working in interactive mode.
+Antenna Result[-14.512471265387497, -18.331745959331418, -17.177348036151546]
+You are working in interactive mode.
+Antenna Result[-14.514009587526184, -18.33661086978067, -17.17445286509745]
+You are working in interactive mode.
+Antenna Result[-14.512478334070826, -18.331744829164787, -17.17733971195654]
+You are working in interactive mode.
+Antenna Result[-14.512466737532751, -18.331739535036633, -17.177352340945745]
+You are working in interactive mode.
+Antenna Result[-14.512474330368976, -18.331751818549225, -17.177354390897595]
+You are working in interactive mode.
+Antenna Result[-14.51314386277424, -18.330043642848118, -17.176876642934232]
+You are working in interactive mode.
+Antenna Result[-14.512468545351876, -18.331734194381003, -17.177336404445068]
+You are working in interactive mode.
+Antenna Result[-14.512482397509787, -18.33174269290084, -17.17734537569954]
+You are working in interactive mode.
+Antenna Result[-14.512906147681443, -18.33571925459602, -17.17812674829546]
+You are working in interactive mode.
+Antenna Result[-14.512474020230348, -18.331739016474607, -17.17735346261256]
+You are working in interactive mode.
+Antenna Result[-14.511923710756525, -18.330332952884433, -17.17937373557476]
+calculate_radius_event_horizon    [0.20184912 0.20365819 0.20047786]
+best_star + 13 [2.003, 11.467, 5.134, 2.74, 2.916, 0.668]
+best_value + 13 [-14.646812590271914, -18.66706217639181, -17.21842006416874]    
+You are working in interactive mode.
+Antenna Result[-14.512479410452013, -18.331742220869373, -17.177348670687667]
+You are working in interactive mode.
+Antenna Result[-14.513861505511281, -18.3278807268377, -17.177168736894714]
+You are working in interactive mode.
+Antenna Result[-14.512897097882488, -18.33571389525924, -17.17814643519337]
+You are working in interactive mode.
+Antenna Result[-14.512469225361706, -18.331741686803497, -17.177334613741994]
+You are working in interactive mode.
+Antenna Result[-14.51244628115976, -18.331757159215687, -17.17733417154037]
+You are working in interactive mode.
+Antenna Result[-14.51343212239606, -18.337140377298176, -17.176125370212155]
+You are working in interactive mode.
+Antenna Result[-14.512458808072658, -18.33174388507785, -17.177345770858818]
+You are working in interactive mode.
+Antenna Result[-14.512458929107693, -18.33173848240893, -17.177331907319417]
+You are working in interactive mode.
+Antenna Result[-14.51247155890131, -18.331741671299802, -17.177352657689664]
+You are working in interactive mode.
+Antenna Result[-14.513139711783138, -18.330052704560917, -17.176886428716003]
+You are working in interactive mode.
+Antenna Result[-14.512457181037279, -18.331737414285485, -17.177331239334283]
+You are working in interactive mode.
+Antenna Result[-14.51245929067165, -18.331735796577348, -17.177337695465102]
+You are working in interactive mode.
+Antenna Result[-14.51289533330611, -18.335719270827596, -17.178137282611488]
+You are working in interactive mode.
+Antenna Result[-14.512479772016178, -18.331741671299802, -17.17734744761788]
+You are working in interactive mode.
+Antenna Result[-14.512455373219614, -18.33173474395791, -17.17733958651697]
+calculate_radius_event_horizon    [0.20184787 0.20365259 0.20047849]
+best_star + 14 [2.003, 11.467, 5.134, 2.74, 2.916, 0.668]
+best_value + 14 [-14.646812590271914, -18.66706217639181, -17.21842006416874]    
+You are working in interactive mode.
+Antenna Result[-14.512480030718669, -18.331742174344555, -17.177339700460582]
+You are working in interactive mode.
+Antenna Result[-14.513879760562356, -18.32787220129756, -17.177167083172144]
+You are working in interactive mode.
+Antenna Result[-14.512479410452013, -18.33174489119924, -17.177345182324324]
+You are working in interactive mode.
+Antenna Result[-14.512474769860278, -18.331745943827716, -17.17735317827146]
+You are working in interactive mode.
+Antenna Result[-14.512469165617306, -18.331737948343285, -17.177341693959445]
+You are working in interactive mode.
+Antenna Result[-14.513419405060862, -18.33714199068715, -17.17611806765933]
+You are working in interactive mode.
+Antenna Result[-14.512479626037436, -18.331739488505903, -17.17734852432851]
+You are working in interactive mode.
+Antenna Result[-14.512459091709712, -18.331743807563498, -17.177356485793844]
+You are working in interactive mode.
+Antenna Result[-14.5124731428226, -18.331743776542368, -17.177342191548824]
+You are working in interactive mode.
+Antenna Result[-14.513145093729698, -18.330048951204496, -17.17688204549578]
+You are working in interactive mode.
+Antenna Result[-14.512483593347907, -18.33174589729696, -17.177351117872096]
+You are working in interactive mode.
+Antenna Result[-14.51247760263082, -18.331742220869373, -17.17734552206614]
+You are working in interactive mode.
+Antenna Result[-14.512894799024064, -18.335725132013394, -17.17814789834343]
+You are working in interactive mode.
+Antenna Result[-14.512456363361647, -18.331735796577348, -17.177338623741882]
+You are working in interactive mode.
+Antenna Result[-14.512477800033764, -18.331739535036633, -17.177337786406618]
+calculate_radius_event_horizon    [0.20184816 0.20365553 0.20047907]
+best_star + 15 [2.003, 11.467, 5.134, 2.74, 2.916, 0.668]
+best_value + 15 [-14.646812590271914, -18.66706217639181, -17.21842006416874]    
+You are working in interactive mode.
+Antenna Result[-14.512459471453623, -18.331736880219903, -17.177338374948576]
+You are working in interactive mode.
+Antenna Result[-14.51386466563003, -18.327882328323405, -17.177168556035497]
+You are working in interactive mode.
+Antenna Result[-14.51247071473402, -18.33175129998647, -17.177339417169875]
+You are working in interactive mode.
+Antenna Result[-14.51247170487887, -18.331742174344555, -17.17734229399764]
+You are working in interactive mode.
+Antenna Result[-14.512474915832804, -18.331746980938885, -17.17736931969918]
+You are working in interactive mode.
+Antenna Result[-14.512469940177175, -18.331738954440198, -17.177353292224076]
+You are working in interactive mode.
+Antenna Result[-14.512462966049709, -18.331746477886043, -17.177340640240345]
+You are working in interactive mode.
+Antenna Result[-14.512472970351764, -18.33174487569554, -17.17732789732686]
+You are working in interactive mode.
+Antenna Result[-14.512471059671592, -18.331745425265314, -17.177348059152987]
+You are working in interactive mode.
+Antenna Result[-14.513151017110077, -18.330043611588227, -17.176888342835916]
+You are working in interactive mode.
+Antenna Result[-14.512470456023419, -18.331752306084926, -17.177348421892134]
+You are working in interactive mode.
+Antenna Result[-14.512480762161783, -18.331741671299802, -17.17734648484196]
+You are working in interactive mode.
+Antenna Result[-14.512895789268779, -18.335719205881272, -17.178127686812367]
+You are working in interactive mode.
+Antenna Result[-14.512463775412446, -18.33174544076704, -17.177353903759606]
+You are working in interactive mode.
+Antenna Result[-14.512473744905172, -18.331751818549225, -17.1773579702116]
+calculate_radius_event_horizon    [0.20184909 0.2036595  0.20047811]
+best_star + 16 [2.003, 11.467, 5.134, 2.74, 2.916, 0.668]
+best_value + 16 [-14.646812590271914, -18.66706217639181, -17.21842006416874]    
+You are working in interactive mode.
+Antenna Result[-14.51248330141921, -18.33174696542145, -17.17734756155254]
+You are working in interactive mode.
+Antenna Result[-14.513863529129797, -18.32786950074795, -17.177169381881864]
+You are working in interactive mode.
+Antenna Result[-14.512471265387497, -18.331747011952217, -17.177335044434958]
+You are working in interactive mode.
+Antenna Result[-14.51247881667488, -18.33174537874048, -17.177362274998565]
+You are working in interactive mode.
+Antenna Result[-14.51247198020653, -18.331745990340703, -17.177349757859385]
+You are working in interactive mode.
+Antenna Result[-14.51247998760203, -18.331743776542368, -17.177346236043167]
+You are working in interactive mode.
+Antenna Result[-14.512492711971115, -18.33174537874048, -17.177362184058943]
+You are working in interactive mode.
+Antenna Result[-14.51246848560491, -18.33173848240893, -17.177365909724735]
+You are working in interactive mode.
+Antenna Result[-14.51247507168012, -18.331742158834935, -17.177360756094476]
+You are working in interactive mode.
+Antenna Result[-14.51246973289716, -18.331747546018416, -17.177363135339434]
+You are working in interactive mode.
+Antenna Result[-14.512469940177175, -18.33173581208884, -17.17733777491063]
+You are working in interactive mode.
+Antenna Result[-14.512471111103348, -18.33173950401552, -17.177353099876782]
+You are working in interactive mode.
+Antenna Result[-14.51291876983486, -18.33571120746516, -17.178158364693356]
+You are working in interactive mode.
+Antenna Result[-14.512458937423869, -18.331744357133203, -17.17734845534219]
+You are working in interactive mode.
+Antenna Result[-14.512472635278295, -18.331745363230855, -17.177364686654965]
+calculate_radius_event_horizon    [0.20184965 0.20365827 0.20047766]
+best_star + 17 [2.003, 11.467, 5.134, 2.74, 2.916, 0.668]
+best_value + 17 [-14.646812590271914, -18.66706217639181, -17.21842006416874]    
+You are working in interactive mode.
+Antenna Result[-14.512453522285153, -18.33173527802336, -17.1773395980175]
+You are working in interactive mode.
+Antenna Result[-14.51247679326796, -18.331742220869373, -17.177346133601088]
+You are working in interactive mode.
+Antenna Result[-14.51247998760203, -18.331743776542368, -17.177346236043167]
+You are working in interactive mode.
+Antenna Result[-14.512461055374429, -18.331736880219903, -17.177355376669937]
+You are working in interactive mode.
+Antenna Result[-14.512456811157925, -18.33173848240893, -17.177330616301937]
+You are working in interactive mode.
+Antenna Result[-14.512480813590575, -18.331745912806582, -17.1773579702116]
+You are working in interactive mode.
+Antenna Result[-14.512472635278295, -18.331745363230855, -17.177364686654965]
+You are working in interactive mode.
+Antenna Result[-14.512472573977636, -18.331750216349928, -17.177353360172493]
+You are working in interactive mode.
+Antenna Result[-14.51246079667078, -18.331755588020865, -17.17735588576144]
+You are working in interactive mode.
+Antenna Result[-14.512467460660474, -18.331747515005087, -17.17735346261256]
+You are working in interactive mode.
+Antenna Result[-14.51247998760203, -18.331743776542368, -17.177346236043167]
+You are working in interactive mode.
+Antenna Result[-14.512454555542822, -18.331737963852806, -17.177335758417293]
+You are working in interactive mode.
+Antenna Result[-14.512473952185214, -18.331736880219903, -17.17734092353215]
+You are working in interactive mode.
+Antenna Result[-14.512476310660858, -18.331746446872717, -17.177369127350673]
+You are working in interactive mode.
+Antenna Result[-14.512455278670426, -18.331737948343285, -17.177338635242428]
+calculate_radius_event_horizon    [0.20185143 0.20365835 0.2004782 ]
+best_star + 18 [2.003, 11.467, 5.134, 2.74, 2.916, 0.668]
+best_value + 18 [-14.646812590271914, -18.66706217639181, -17.21842006416874]    
+You are working in interactive mode.
+Antenna Result[-14.51246402580292, -18.331739550540323, -17.177349984705312]
+You are working in interactive mode.
+Antenna Result[-14.51246686688285, -18.331741152737653, -17.177330865097545]
+You are working in interactive mode.
+Antenna Result[-14.51245836027443, -18.331752917695514, -17.177348998927684]
+You are working in interactive mode.
+Antenna Result[-14.512453522285153, -18.33173527802336, -17.1773395980175]
+You are working in interactive mode.
+Antenna Result[-14.512466548434954, -18.33173848240893, -17.177344298994978]
+You are working in interactive mode.
+Antenna Result[-14.512479720586011, -18.331735796577348, -17.177353043424993]
+You are working in interactive mode.
+Antenna Result[-14.512457982081756, -18.33173527802336, -17.17733437645402]
+You are working in interactive mode.
+Antenna Result[-14.512463775412446, -18.33174544076704, -17.177353903759606]
+You are working in interactive mode.
+Antenna Result[-14.512456957138545, -18.331736864708407, -17.177337672467466]
+You are working in interactive mode.
+Antenna Result[-14.512471429550132, -18.331743776542368, -17.17734279157838]
+You are working in interactive mode.
+Antenna Result[-14.512466254928022, -18.33174858313759, -17.177342214550297]
+You are working in interactive mode.
+Antenna Result[-14.512458972223659, -18.331735262511867, -17.17733670969261]
+You are working in interactive mode.
+Antenna Result[-14.512478239524476, -18.331742220869373, -17.177346405394264]
+You are working in interactive mode.
+Antenna Result[-14.512462363964325, -18.33174060316815, -17.177349792358967]
+You are working in interactive mode.
+Antenna Result[-14.512477103401224, -18.331747546018416, -17.177335044434958]
+calculate_radius_event_horizon    [0.20185147 0.20365836 0.20047827]
+best_star + 19 [2.003, 11.467, 5.134, 2.74, 2.916, 0.668]
+best_value + 19 [-14.646812590271914, -18.66706217639181, -17.21842006416874]    
+You are working in interactive mode.
+Antenna Result[-14.512465729195782, -18.33173896994981, -17.177362172561786]
+You are working in interactive mode.
+Antenna Result[-14.512478325759371, -18.331742754935277, -17.177344140101326]
+You are working in interactive mode.
+Antenna Result[-14.512483654675108, -18.331741075191633, -17.17736228649231]
+You are working in interactive mode.
+Antenna Result[-14.512472635278295, -18.331745363230855, -17.177364686654965]
+You are working in interactive mode.
+Antenna Result[-14.512485799122905, -18.331741090703225, -17.177346598776673]
+You are working in interactive mode.
+Antenna Result[-14.51248089982631, -18.33174164027868, -17.17734354006471]
+You are working in interactive mode.
+Antenna Result[-14.512479858251048, -18.33174061867184, -17.177347368170192]
+You are working in interactive mode.
+Antenna Result[-14.512481132036338, -18.33174427957934, -17.177353043424993]
+You are working in interactive mode.
+Antenna Result[-14.512490232447954, -18.331736818177692, -17.177349294751828]
+You are working in interactive mode.
+Antenna Result[-14.512477645747829, -18.331742754935277, -17.17734475163574]
+You are working in interactive mode.
+Antenna Result[-14.5124756389596, -18.331749651270222, -17.177357279228318]
+You are working in interactive mode.
+Antenna Result[-14.512467762476092, -18.33173900097092, -17.17736364442745]
+You are working in interactive mode.
+Antenna Result[-14.51247881667488, -18.331736346154354, -17.177358162557603]
+You are working in interactive mode.
+Antenna Result[-14.51247539844144, -18.331746477886043, -17.177358604743883]
+You are working in interactive mode.
+Antenna Result[-14.512469983294247, -18.33174861415092, -17.177360767595815]
+calculate_radius_event_horizon    [0.2018513  0.20365835 0.20047814]
+best_star + 20 [2.003, 11.467, 5.134, 2.74, 2.916, 0.668]
+best_value + 20 [-14.646812590271914, -18.66706217639181, -17.21842006416874]    
+You are working in interactive mode.
+Antenna Result[-14.51246501594574, -18.331736330642862, -17.177351831843424]
+You are working in interactive mode.
+Antenna Result[-14.512471265387497, -18.331745959331418, -17.177348036151546]
+You are working in interactive mode.
+Antenna Result[-14.512464757245452, -18.331734209892495, -17.177335758417293]
+You are working in interactive mode.
+Antenna Result[-14.512462733840515, -18.331736864708407, -17.17734124027477]
+You are working in interactive mode.
+Antenna Result[-14.512479151743673, -18.331740038081257, -17.17734587330651]
+You are working in interactive mode.
+Antenna Result[-14.51246570427191, -18.331745943827716, -17.177361118838018]
+You are working in interactive mode.
+Antenna Result[-14.512466108952868, -18.33173581208884, -17.17733652884516]
+You are working in interactive mode.
+Antenna Result[-14.51245932391589, -18.331745943827716, -17.177357279228318]
+You are working in interactive mode.
+Antenna Result[-14.512472635278295, -18.331745363230855, -17.177364686654965]
+You are working in interactive mode.
+Antenna Result[-14.512461287586873, -18.331738466905247, -17.177331476630712]
+You are working in interactive mode.
+Antenna Result[-14.512480986061338, -18.33174113723396, -17.17734578235974]
+You are working in interactive mode.
+Antenna Result[-14.512455451133523, -18.331751253461604, -17.17735554601988]
+You are working in interactive mode.
+Antenna Result[-14.51247500206987, -18.331745959331418, -17.177342814583657]
+You are working in interactive mode.
+Antenna Result[-14.512472970351764, -18.331745425265314, -17.177349361670682]
+You are working in interactive mode.
+Antenna Result[-14.512455278670426, -18.33173474395791, -17.17733968896346]
+calculate_radius_event_horizon    [0.20185145 0.20365836 0.20047822]
+best_star + 21 [2.003, 11.467, 5.134, 2.74, 2.916, 0.668]
+best_value + 21 [-14.646812590271914, -18.66706217639181, -17.21842006416874]    
+You are working in interactive mode.
+Antenna Result[-14.512473073203328, -18.331751237951966, -17.177347255270746]
+You are working in interactive mode.
+Antenna Result[-14.512467994691766, -18.331749148217224, -17.177344637677393]
+You are working in interactive mode.
+Antenna Result[-14.51246368086667, -18.331745425265314, -17.177346236043167]
+You are working in interactive mode.
+Antenna Result[-14.512474038419205, -18.331746477886043, -17.17735126422114]
+You are working in interactive mode.
+Antenna Result[-14.512479005770293, -18.33173472844642, -17.177358932988792]
+You are working in interactive mode.
+Antenna Result[-14.512465893364709, -18.33175023186144, -17.177347878304296]
+You are working in interactive mode.
+Antenna Result[-14.512459522886111, -18.331737398773985, -17.177331782921097]
+You are working in interactive mode.
+Antenna Result[-14.512457534285574, -18.331737414285485, -17.177335486624155]
+You are working in interactive mode.
+Antenna Result[-14.512457129605473, -18.33173527802336, -17.177336290503224]
+You are working in interactive mode.
+Antenna Result[-14.512474812977928, -18.331750765920034, -17.177351603961863]
+You are working in interactive mode.
+Antenna Result[-14.512479453569451, -18.33174061867184, -17.177340368447055]
+You are working in interactive mode.
+Antenna Result[-14.512473617102813, -18.33175290218597, -17.17736257919076]
+You are working in interactive mode.
+Antenna Result[-14.51247198020653, -18.331745990340703, -17.177349757859385]
+You are working in interactive mode.
+Antenna Result[-14.512476483133351, -18.331745409761616, -17.177339677465177]
+You are working in interactive mode.
+Antenna Result[-14.512455821016063, -18.331736346154354, -17.1773392582763]
+calculate_radius_event_horizon    [0.20185143 0.20365833 0.20047824]
+best_star + 22 [2.003, 11.467, 5.134, 2.74, 2.916, 0.668]
+best_value + 22 [-14.646812590271914, -18.66706217639181, -17.21842006416874]    
+You are working in interactive mode.
+Antenna Result[-14.512467382736142, -18.331752855661094, -17.17735538816596]
+You are working in interactive mode.
+Antenna Result[-14.512477222875182, -18.331739535036633, -17.177345419616238]
+You are working in interactive mode.
+Antenna Result[-14.512468528720891, -18.33173790181849, -17.1773477319279]
+You are working in interactive mode.
+Antenna Result[-14.512464972829465, -18.33173736776069, -17.1773542445313]
+You are working in interactive mode.
+Antenna Result[-14.512474003614823, -18.331742739431583, -17.177340809582727]
+You are working in interactive mode.
+Antenna Result[-14.512481717500485, -18.331743761032747, -17.177349532062383]
+You are working in interactive mode.
+Antenna Result[-14.512459109889676, -18.331735796577348, -17.177333062438713]
+You are working in interactive mode.
+Antenna Result[-14.512468261706601, -18.33173896994981, -17.17735251133093]

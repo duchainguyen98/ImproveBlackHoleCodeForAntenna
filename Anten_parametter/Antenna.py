@@ -12,7 +12,7 @@ class Anten:
         self.PopX = PopX
     def run_antenna(self):
         self.mycst = cst.interface.DesignEnvironment(mode=cst.interface.DesignEnvironment.StartMode.ExistingOrNew)
-        self.myproject = self.mycst.open_project(r'C:\DATA\Master\Antenna\Best_2_55_3_75_and_6_6GHz_parametter_Test.cst')
+        self.myproject = self.mycst.open_project(r'C:\DATA\Master\Antenna\Best_2_45_and_5.8GHz_parametter_2_74mm.cst')
         par_change = 'Sub Main () \n StoreParameter("W0", '+str(self.PopX[0])+')'+\
                         '\n StoreParameter("W1", '+str(self.PopX[1])+')' +\
                         '\n StoreParameter("W2", '+str(self.PopX[2])+')' +\
@@ -30,8 +30,8 @@ class Anten:
     def get_result_antenna(self):
         project_path=self.myproject.filename()
         project = cst.results.ProjectFile(project_path,allow_interactive=True)        
-        freq_range = [2,8]
-        freq_point=[2.55,3.75,6.6]
+        freq_range = [1.00,8.00]
+        freq_point=[2.55,3.75,6.60]
         results = project.get_3d().get_result_item(r"1D Results\S-Parameters\S1,1")
         # get frequencies
         freqs = results.get_xdata()
@@ -40,10 +40,10 @@ class Anten:
         # Initialize value list for one MC sample point over all frequency points
         freq = []
         SdB = []
-        freq_range_pos = (np.array(freq_point)-freq_range[0])*1000/(freq_range[1]-freq_range[0])
+        freq_range_pos = np.round((np.array(freq_point)-freq_range[0])*1000/(freq_range[1]-freq_range[0]))
 
         # Get results for each freq. point of interest from CST
-        for j in range(len(freq_range_pos)):
+        for j in range(len(freq_point)):
             freq_pos_j = int(freq_range_pos[j])
             freq_value_j = freqs[freq_pos_j]
             freq.append(freq_value_j)
@@ -56,7 +56,7 @@ class Anten:
     def run(self):
         self.run_antenna()
         Sdb=self.get_result_antenna()
-        print("Antenna Result"+str(Sdb))
+        self.myproject.save()        
         self.myproject.close()
         return Sdb
 

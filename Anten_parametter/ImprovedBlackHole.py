@@ -18,6 +18,8 @@ class Star:
         antenna=Antenna.Anten(self.location)
         S11= antenna.run()
         self.fitval = S11
+        print("Antenna Result"+str(self.fitval))
+
         # if (np.all(np.less_equal(S11,-15)) or np.any(np.less_equal(S11,-20))):
         if (np.all(np.less_equal(S11,-12))):
             save_value=str(self.location)
@@ -39,11 +41,15 @@ class Star:
         self.get_fitval()
         
     def is_absorbed(self, R, best_star):
-        distance = self.fitval
-        for i in range(len(distance)):
-            if (distance[i] > R[i]):
-                return True
+        # distance = math.sqrt((best_star.fitval-self.fitval)**2)
+        distance=np.fabs(np.subtract(best_star.fitval,self.fitval))
+        if (np.all(np.less_equal(distance,R)) or np.any(np.greater_equal(self.fitval,-10))):
+            return True
         return False
+        # for i in range(len(distance)):
+        #     if (distance[i] < R[i]):
+        #         return True
+        # return False
 
 class ImprovedBlackHole:
 
@@ -77,28 +83,26 @@ class ImprovedBlackHole:
 
     def move_each_star(self):
         for star in self.stars:
+            # if (self.stars.index(star)%2==0):
+            #     star.update_location(self.best_star)
+            # else:
+            #     star = self.generate_random_star()
             star.update_location(self.best_star)
-
-            if (np.all(np.less_equal(star.fitval,self.best_star.fitval))):
-                self.best_star = star
-            elif(np.all(np.less_equal(star.fitval,-12)) and (self.count==1)):
-                self.best_star  = star
-                self.count=0
-                print("All less than -15")
-
+            self.compare_best_star(star)
     def calculate_radius_event_horizon(self):
         all_stars_fitval =[0,0,0]
         for i in range(len(self.stars)):
             all_stars_fitval =np.add(all_stars_fitval,self.stars[i].fitval)
-        R = np.divide(all_stars_fitval,len(self.stars))
+        R = np.divide(self.best_star.fitval,all_stars_fitval)*3
+        print("calculate_radius_event_horizon    "+ str(R))
         return R
 
     def get_evolution_rate(self, iter):
-        # if (round(iter / self.max_iter, 1) * 10) % 2 == 0:
-        #     return 0.2
-        # else:
-        #     return 0.8
-        return 0.2
+        if (round(iter / self.max_iter, 1) * 10) % 2 == 0:
+            return 0.2
+        else:
+            return 0.8
+        # return 0.5
 
 
     def crossover(self):
@@ -161,10 +165,13 @@ class ImprovedBlackHole:
 
                 star = new_star
 
-            if (np.all(np.less_equal(star.fitval,self.best_star.fitval))):
-                self.best_star = star
-            elif(np.all(np.less_equal(star.fitval,-12)) and (self.count==1)):
-                self.best_star = star
+                self.compare_best_star(star)
+    def compare_best_star(self, start_compare):
+            if (np.all(np.less_equal(start_compare.fitval,self.best_star.fitval))):
+                print("np.less_equal new best_star 2 "+str(start_compare.fitval)+"\n------ old best_star "+str(self.best_star.fitval))
+                self.best_star = Star(start_compare.location)
+            elif(np.all(np.less_equal(start_compare.fitval,-12)) and (self.count==1)):
+                self.best_star = Star(start_compare.location)
                 self.count=0
                 print("All less than -12")
 

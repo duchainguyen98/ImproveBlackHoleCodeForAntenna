@@ -50,14 +50,13 @@ class ImprovedBlackHole:
             self.stars.append(Star(location))
     #Tim giá trị tốt nhất 
     def get_best_star(self):
-        best_star = self.stars[0]
+        self.best_star = self.stars[0]
         for i in range(1, len(self.stars)):
-            if np.all(np.less_equal(self.stars[i].fitval,best_star.fitval)):
-                best_star = self.stars[i]
-        return best_star
+            if np.all(np.less_equal(self.stars[i].fitval,self.best_star.fitval)):
+                self.best_star = self.stars[i]
     #Tính toán bán kính chân trời sự kiện (Điều kiện giữ hay loại bỏ cá thể)
     def calculate_radius_event_horizon(self):
-        all_stars_fitval = [0,0,0]
+        all_stars_fitval = [0,0]
         for i in range(len(self.stars)):
             all_stars_fitval =np.add(all_stars_fitval,self.stars[i].fitval)
         R = np.divide(all_stars_fitval,len(self.stars))
@@ -119,7 +118,7 @@ class ImprovedBlackHole:
         new_star = Star(location)
         return new_star
     #So sánh và Thực hiện di chuyển các ngôi sao theo một hàm cụ thể
-    def move_each_star(self, R, E, best_star):
+    def move_each_star(self, R, E):
         self.stars_not_is_absorbed = []
         for star in self.stars:
             if not star.is_absorbed(R):
@@ -142,18 +141,20 @@ class ImprovedBlackHole:
                 new_star = None
                 new_star=self.mutation(star)
                 star = new_star
-            if (np.all(np.less_equal(star.fitval,best_star.fitval))):
-                best_star = star
-            elif(np.all(np.less_equal(star.fitval,-10)) and (self.count==1)):
-                best_star = star
-                self.count=0
-                print("All less than -10")
-        return best_star
+            self.compare_best_star(star)
+    def compare_best_star(self, start_compare):
+        if (np.all(np.less_equal(start_compare.fitval,self.best_star.fitval))):
+            print("np.less_equal new best_star 2 "+str(start_compare.fitval)+"\n------ old best_star "+str(self.best_star.fitval))
+            self.best_star = Star(start_compare.location)
+        elif(np.all(np.less_equal(start_compare.fitval,-10)) and (self.count==1)):
+            self.best_star = Star(start_compare.location)
+            self.count=0
+            print("All less than -10")
 
     def run(self):
         print("Run IBH")
         self.generate_initial()
-        best_star_value = self.get_best_star()
+        self.get_best_star()
         self.count=1
         print("Run loop")
         for i in range(self.max_iter):
@@ -161,19 +162,18 @@ class ImprovedBlackHole:
             evolution_rate = self.get_evolution_rate(i + 1)
             
             # Inner Loop Thực hiện so sánh với chân trời sự kiện và cập nhật các ngôi sao mới
-            best_star = self.move_each_star(R, evolution_rate, best_star_value)
-            best_star_value = best_star
-            print("best_star + "+str(i)+" "+str(best_star_value.location))
-            print("best_value + "+str(i)+" "+ str(best_star_value.fitval))
+            self.move_each_star(R, evolution_rate)
+            print("best_star + "+str(i)+" "+str(self.best_star.location))
+            print("best_value + "+str(i)+" "+ str(self.best_star.fitval))
 
             file_save = open("C:\DATA\Master\Python_Code\ImproveBlackHoleCodeForAntenna\Antenna_Cross_Pixel_MultiBand\IBH_value.txt", "a")
             # Ghi data vao cuoi file
-            Value_fitval="\n Value_fitval " + str(best_star_value.fitval) + "\n---------------------------------------------------------\n"
-            file_save.write(str(best_star_value.location))
+            Value_fitval="\n Value_fitval " + str(self.best_star.fitval) + "\n---------------------------------------------------------\n"
+            file_save.write(str(self.best_star.location))
             file_save.write(Value_fitval)
             file_save.close()
-        best_last_star_location = Star(best_star_value.location)
+        best_last_star_location = Star(self.best_star.location)
         best_last_star=Antenna.Anten(best_last_star_location)
         best_last_star.run_antenna()
 
-        return best_star_value
+        return self.best_star

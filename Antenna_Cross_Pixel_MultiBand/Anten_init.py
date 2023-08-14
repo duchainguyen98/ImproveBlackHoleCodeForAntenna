@@ -420,7 +420,7 @@ class Anten_init:
     #Run
     def run(self):
         self.myproject
-        frequency_min=2
+        frequency_min=1
         frequency_max=8
         widthsub = 160
         lengthsub = 75
