@@ -68,7 +68,7 @@ class Anten:
         self.Pair_array(left_half)
 
     def run_antenna(self):
-        self.mycst = cst.interface.DesignEnvironment(mode=cst.interface.DesignEnvironment.StartMode.ExistingOrNew)
+        self.mycst = cst.interface.DesignEnvironment(mode=cst.interface.DesignEnvironment.StartMode.New)
         self.myproject = self.mycst.new_mws()
         anten_init=Anten_init.Anten_init(self.myproject)
         anten_init.run()
@@ -91,8 +91,8 @@ class Anten:
                     par_change+=self.Anten_Pixel(i,j,size_antenna_x,size_antenna_y,pixel_size)
                     # par_add+=self.Add_Pixel(i,j,size_antenna_x,size_antenna_y)
         self.myproject.modeler.add_to_history( "Pixel_Ant", par_change , timeout = None )
-        self.Pair_array(Pop_value_1)
-        self.myproject.modeler.add_to_history( "Add Pixel: Antenna", self.par_add , timeout = None )
+        # self.Pair_array(Pop_value_1)
+        # self.myproject.modeler.add_to_history( "Add Pixel: Antenna", self.par_add , timeout = None )
 
         # Anten_Pixel
         self.myproject.modeler.run_solver()    
